@@ -1,6 +1,10 @@
 {% include header.html %}
 
+</div>
+
 <div class="promo row">
+  <div class="container">
+
     <div class="col-md-5">
       <p class="promo-text">
         <span class="line">AEM Casts</span>
@@ -15,32 +19,36 @@
              alt="AEM Casts - Screencasts on AEM Micro Topics"/>
       </div>
     </div>
+  </div>
 </div>
 
-<section id="episodes-section">
-  <div class="row" id="filters">
-  	<div class="col-md-4 col-sm-12">
-  		<a href="#advanced" data-tags="advanced">Advanced</a>
-  	</div>
-  	<div class="col-md-4 col-sm-12">
-  		<a href="#basic" data-tags="basic">Basic</a>
-  	</div>
-  	<div class="col-md-4 col-sm-12">
-  		<a href="#all" data-tags="all">All</a>
-  	</div>
-  </div>
 
-  <div class="row">
-    <div class="col-sm-12 col-md-10 col-md-push-1">
-  	  <h3 id="list-title">All Episodes</h3>
-    </div>
-  </div>
+<div class="container">
 
-  <div class="row" id="episode-list">
-    <div class="episode-list col-md-12">
-      {{content}}
+  <section id="episodes-section">
+    <div class="row" id="filters">
+    	<div class="col-md-4 col-sm-12">
+    		<a href="#advanced" data-tags="advanced">Advanced</a>
+    	</div>
+    	<div class="col-md-4 col-sm-12">
+    		<a href="#basic" data-tags="basic">Basic</a>
+    	</div>
+    	<div class="col-md-4 col-sm-12">
+    		<a href="#all" data-tags="all">All</a>
+    	</div>
     </div>
-  </div>
-</section>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-10 col-md-push-1">
+    	  <h3 id="list-title">All Episodes</h3>
+      </div>
+    </div>
+
+    <div class="row" id="episode-list">
+      <div class="episode-list col-md-12">
+        {{content}}
+      </div>
+    </div>
+  </section>
 
 {% include footer.html %}
