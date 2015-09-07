@@ -17,31 +17,30 @@
     </div>
 </div>
 
-<div class="row" id="filters">
-
-	<div class="col-md-4 col-sm-12">
-		<a href="#advanced" data-tags="advanced">Advanced</a>
-	</div>
-	<div class="col-md-4 col-sm-12">
-		<a href="#basic" data-tags="basic">Basic</a>
-	</div>
-	<div class="col-md-4 col-sm-12">
-		<a href="#all" data-tags="all">All</a>
-	</div>
-
-</div>
-
-<div class="row">
-  <div class="col-sm-12 col-md-10 col-md-push-1">
-	  <h3 id="list-title">All Episodes</h3>
+<section id="episodes-section">
+  <div class="row" id="filters">
+  	<div class="col-md-4 col-sm-12">
+  		<a href="#advanced" data-tags="advanced">Advanced</a>
+  	</div>
+  	<div class="col-md-4 col-sm-12">
+  		<a href="#basic" data-tags="basic">Basic</a>
+  	</div>
+  	<div class="col-md-4 col-sm-12">
+  		<a href="#all" data-tags="all">All</a>
+  	</div>
   </div>
-</div>
 
-
-<div class="row" id="episode-list">
-  <div class="episode-list col-md-12">
-    {{content}}
+  <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-push-1">
+  	  <h3 id="list-title">All Episodes</h3>
+    </div>
   </div>
-</div>
+
+  <div class="row" id="episode-list">
+    <div class="episode-list col-md-12">
+      {{content}}
+    </div>
+  </div>
+</section>
 
 {% include footer.html %}
