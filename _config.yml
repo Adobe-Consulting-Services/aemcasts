@@ -1,0 +1,5 @@
+name: AEM Casts
+pygments: true
+permalink:  none
+markdown: kramdown
+baseurl: /aemcasts

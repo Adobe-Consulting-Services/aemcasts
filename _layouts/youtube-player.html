@@ -1,0 +1,26 @@
+{% include header.html %}
+    
+  <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-push-1">
+		<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe 
+src="http://www.youtube.com/embed/{{ page.youtube-id }}?autoplay=0&origin=http://adobe-consulting-services.github.io" frameborder="0" allowfullscreen></iframe></div>
+    </div>
+  </div>
+
+  <div class="row">
+  	<div class="episode col-sm-12 col-md-10 col-md-push-1">
+      <div class="episode-header">
+	      <h2>#{{ page.number }} {{ page.title }}</h2>
+
+	      {% if page.author %}
+	      <h4>Presented by {{ page.author }}</h4>
+	      {% endif %}
+  	  </div>
+
+      <p class="episode-description">{{ page.description }}</p>
+
+  		{{ content }}
+  	</div>
+  </div>
+
+{% include footer.html %}

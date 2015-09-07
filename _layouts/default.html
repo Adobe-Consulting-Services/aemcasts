@@ -1,0 +1,22 @@
+{% include header.html %}
+    
+  <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-push-1">
+      <video width="100%" controls>
+        <source src="{{ page.video-url }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>        
+    </div>
+  </div>
+
+  <div class="row">
+  	<div class="episode col-sm-12 col-md-10 col-md-push-1">
+      <h2>#{{ page.number }} {{ page.title }}</h2>  
+
+      <p class="episode-description">{{ page.description }}</p>
+
+  		{{ content }}
+  	</div>
+  </div>
+
+{% include footer.html %}

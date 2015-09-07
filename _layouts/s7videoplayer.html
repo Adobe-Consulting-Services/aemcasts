@@ -1,0 +1,38 @@
+{% include header.html %}
+    
+  <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-push-1">
+		<!-- Currently the HTML5 Video component does not support multiple instances of the player on mobile devices -->
+		<script type="text/javascript" language="javascript" src="http://s7d2.scene7.com/s7viewers/html5/js/VideoViewer.js"></script>
+		<div id="s7_videoview"></div>
+		<script type="text/javascript">
+		var videoViewer = new s7viewers.VideoViewer();
+		videoViewer.setContainerId("s7_videoview");
+		videoViewer.setParam("serverurl", "http://s7d2.scene7.com/is/image/");
+		videoViewer.setParam("contentroot", "http://s7d2.scene7.com/skins/");
+		videoViewer.setParam("videoserverurl", "http://s7d2.scene7.com/is/content/");
+		videoViewer.setParam("asset", "AdobeCasts/{{ page.scene7-id }}_1280x720_2000K");
+		videoViewer.setParam("config", "Scene7SharedAssets/Universal_HTML5_Video");
+		videoViewer.setParam("stagesize", "945,532");
+		videoViewer.init();
+		</script>      
+    </div>
+  </div>
+
+  <div class="row">
+  	<div class="episode col-sm-12 col-md-10 col-md-push-1">
+      <div class="episode-header">
+	      <h2>#{{ page.number }} {{ page.title }}</h2>
+
+	      {% if page.author %}
+	      <h4>Presented by {{ page.author }}</h4>
+	      {% endif %}
+  	  </div>
+
+      <p class="episode-description">{{ page.description }}</p>
+
+  		{{ content }}
+  	</div>
+  </div>
+
+{% include footer.html %}

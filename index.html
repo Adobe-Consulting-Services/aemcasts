@@ -1,0 +1,17 @@
+---
+layout: homepage
+title: AEM Casts
+id: home
+---
+
+{% for post in site.posts %}
+<div class="episode-row row">
+  <div class="col-sm-12 col-md-10 col-md-push-1">
+    <div class="episode" data-tags="{{ post.tags }}">
+        <h3><span class="episode-number">#{{ post.number }}</span> {{ post.title }}</h3>
+        <p class="description">{{ post.description }}</p>
+        <a href="{{ post.url }}" class="push-left btn btn-default">Watch this episode</a>
+    </div>
+  </div>
+</div>
+{% endfor %}

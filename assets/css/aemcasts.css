@@ -1,0 +1,207 @@
+body,
+.episode-list {
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Fauna One', serif;
+}
+
+h4 {
+    margin: 4rem 0 1rem 0;
+}
+
+blockquote p {
+    font-size: 100%;
+}
+
+.container {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.header {
+    background-color: #333;
+    border-radius: 0 0 7px 7px;
+    padding: 2rem ;
+
+    margin: 0 0 2rem 0;
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.header .logo a,
+.header .logo a:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+.header .nav {
+    margin-top: -1rem;
+}
+
+.header .nav,
+.header .nav a,
+.header .nav a:hover {
+    color: #999;
+    border: solid 1px #333;
+}
+
+.header .nav a:hover {
+    background-color: transparent;
+    border: solid 1px #444;
+    color: #fff;
+}
+
+.header .nav li.active>a {
+    background-color: transparent !important;
+    border: solid 1px #444;
+}
+
+
+.promo {
+    background-image: url('../images/blue-bg.png');
+    background-repeat: repeat-x;
+    background-position: top left;
+    border-radius: 0;
+    margin: 0;
+}
+
+.promo-text {
+    color: #fff;
+    font-size: 5rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Fauna One', serif;
+    text-shadow: rgba(0,0,0,1) 0px 2px 3px;
+}
+
+.promo-text .line {
+    display: block;
+}
+
+.promo-text .small-line {
+    font-size: 3rem;
+}
+
+.episode-list {
+    margin-top: 1rem;
+}
+
+.episode-list .episode {
+    margin-bottom: 0rem;
+    padding: 2rem 3rem;
+    border-top: dashed 1px #ccc;
+}
+
+.episode-list .episode h3 {
+    margin-top: 1rem;
+}
+
+.episode-list .episode .episode-number {
+    color: #0b99df;
+}
+
+.episode-list .episode .btn {
+    margin-top: 1rem;
+}
+
+.episode-header {
+    border-bottom: dashed 1px #ccc;
+    padding-bottom: 1rem;
+    margin: 4rem 0 0 0;
+}
+
+.episode h2 {
+    margin: 0 0 .5em 0;
+}
+
+.episode h3 {
+    margin-top: 5rem;
+}
+
+.episode h4 {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: .5rem;
+}
+
+.episode .episode-description {
+    margin-top: 2rem;
+}
+
+.footer {
+    color: #999;
+    font-weight: bold;
+}
+
+
+
+/* sm */
+@media (min-width: 768px) {
+    .promo-text {
+        font-size: 6rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .promo-image {
+        text-align: center;
+        margin: 0rem 1rem;
+    }
+}
+
+/* md */
+@media (min-width: 992px) {
+    .promo {
+        margin: 0 0 4rem 0;
+        min-height: 250px;
+    }
+
+    .promo-text {
+        font-size: 5.5rem;
+        text-align: left;
+        margin: 9rem 0 0 2rem;
+    }
+
+    .promo-text .line {
+        display: block;
+    }
+
+    .promo-image {
+        position: relative;
+        bottom: -2rem;
+    }
+}
+
+/* lg */
+@media (min-width: 1200px) {
+    .promo-text {
+        font-size: 6.5rem;
+        margin: 12rem 0 0 4rem;
+    }
+}
+
+
+#filters {
+	padding: 2em 0 0 0;
+}
+
+#filters a {
+	display: block;
+	color: white;
+	background-position: top left;
+    background-image: url('../images/blue-bg.png');
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 2rem;
+	font-size: 1.75rem;
+	margin-bottom: 1em;
+}
+
+#filters a:hover {
+	background-position: center;
+}

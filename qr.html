@@ -1,0 +1,1958 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>AEM - Quick Reference</title>
+    <meta name="google-site-verification" content="Z2AR1V-8wHOPnU9qDOnKWGperA-6oUAYCcytqEdenOA" />    
+	<link rel="stylesheet" href="https://necolas.github.com/normalize.css/2.1.1/normalize.css"/>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyOEQ4NTg3RDExODAxMUUzQTI5NEI5NjA0NkVBN0M1NSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyOEQ4NTg3RTExODAxMUUzQTI5NEI5NjA0NkVBN0M1NSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI4RDg1ODdCMTE4MDExRTNBMjk0Qjk2MDQ2RUE3QzU1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjI4RDg1ODdDMTE4MDExRTNBMjk0Qjk2MDQ2RUE3QzU1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OftWrgAAAa9JREFUeNqUUk1LAlEUvTN+5FcpQlIJgS6soASDCCSwjYgt+gHto8Btu2hbtPEXzKpl0ibQKCGQmIUEBUkRCkqofUlmzYwO4zivNzPWpLTIu3icd989975zuARCCAYJ8gcJRZG/Efqen4tiqTdJqBPqcYZPCqRL5rsoB2klMDiOM7dJwaYk1ymHSUkCJnA0X/bVOqyE8cchh68Y3NH8tq/WUpJU7P2MYpASeswRqx1jWK92ta2Y1dH1ascT1qtdp0PG+4ygaSBHCCEtSpzyt/1PNtXCwOnWldIizyE60cTVo17dfzVwFcTkpU3aPhMc0giqSxIrmfzGPpewDLONfCy05yPmHkKxDGwT/FNadYkBri0DzwhY9b22xg8gmQWXXU5RO2BVlI+fQNQBTgNcNOB8+ZuDCfQV8q0htim7FttD1JFqIBpLodwbYttdoNlafYXwXLdrKACZa+1X4ax8Llhh1vlrNdwuSOeAa0HiVK72TmiE9CI8ReGSk/WoIU8IBmAjAqtbUGlAvg70bv/CTRrgpQmeYfjDJZsFCg8QWeq6pBbVWmAxdEUTg673lwADAN6q+CgJHOLqAAAAAElFTkSuQmCC"/>
+	<style>
+body {
+    padding: 2em;
+    background-color: #f7f7f7;
+    font-size: 75%
+}
+
+h1 {
+    margin: 10px
+}
+
+h2 {
+    margin: 10px 10px; padding: 1em 1em;
+    color: #000; background-color: #ddd;
+    clear: both;
+    box-shadow: 0px 2px 2px rgba(255,255,255,1);
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(252,255,255,1);
+    -moz-border-radius: 2px;
+    -webkit-box-shadow: 0px 2px 2px rgba(255,255,255,1);
+    -webkit-border-radius: 2px;
+}
+
+a,
+a:visited {
+    color: #000;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+h4 {
+    padding-top: 1em;
+    border-top: solid 1px #f7f7f7
+}
+
+code {
+    display: block;
+    padding: 0em 1em 1em 1em;
+    border: dashed 1px #ccc;
+    white-space: pre-wrap;
+    unicode-bidi: embed;
+}
+
+.menu {
+    margin: 2em 10px 2em 10px
+}
+
+.menu a {
+    margin: 1em 1em 1em 0; padding: 1em 2em;
+    color: #333;
+    font-weight: bold
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 1em auto
+}
+
+.item,
+.item.col1 {
+    width: 320px
+}
+
+.item ul.checkmark {
+    margin-left: .5em;
+    padding-left: 0;
+    list-style: none
+}
+
+.item ul.checkmark li:before {
+    content: "\2713\0020"
+}
+
+.item ul.checkmark ul {
+    margin-left: 1em;
+    list-style: circle
+}
+
+.item ul.checkmark ul li:before {
+    content: ""
+}
+
+.item:hover {
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+    border-color: #ccc;
+    -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+}
+
+.item ul {
+    margin-left: 0;
+    padding-left: 1.5em
+}
+
+.item ul li {
+    margin-top: .5em; margin-bottom: .5em
+}
+
+.item.col2 {
+    width: 700px
+}
+
+.item.col3 {
+    width: 1080px
+}
+
+.item {
+    float: left;
+    margin-left: 10px;
+    margin: 10px 0 10px 10px; padding: 5px 20px 10px 20px;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    overflow: hidden;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+    border-radius: 2px;
+    -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+    -moz-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+    -webkit-border-radius: 2px;
+}
+
+.item.icons img {
+    width: 16px;
+    padding: 5px
+}
+
+.disclaimer {
+    color: #ccc;
+    font-size: .75em;
+    font-style: italic
+}
+
+.expand-toggle {
+    display: block; position: absolute;
+    left: 0; bottom: 0px;
+    width: 100%;
+    padding: .75em;
+    color: #999 !important; background-color: #eee;
+    border-top: dashed 1px #ccc;
+    font-weight: bold;
+    text-align: center; text-decoration: none
+}
+
+.has-toggle-bar {
+    padding-bottom: 4em
+}
+
+.open {
+    max-height: 10000000px
+}
+
+.closed {
+    max-height: 200px
+}
+
+.green {
+    background-color: #B7D968
+}
+
+.purple {
+    background-color: #B576AD
+}
+
+.red {
+    background-color: #E04644
+}
+
+.yellow {
+    background-color: #FDE47F
+}
+
+.blue {
+    background-color: #7DCDE4
+}
+
+	</style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40089470-3', 'aemcasts.com');
+      ga('send', 'pageview');
+
+    </script>    
+</head>		
+
+<body>
+
+<div class="wrapper">
+<h1>AEM 5.6 - Quick Reference</h1>
+<div class="menu"></div>
+
+
+<!-- BEGIN SHORTCUTS -->
+<h2 class="green" id="shortcuts">Shortcuts</h2>
+
+<div class="container">
+
+	<!-- BEGIN ITEM -->
+	<div class="item">
+		<h3>APIs</h3>
+
+		<ul>
+			<li><a href="http://dev.day.com/docs/en/cq/current/javadoc/index.html" target="_blank">Adobe CQ 5.6 API</a></li>
+			<li><a href="http://dev.day.com/docs/en/cq/current/developing/sling-adapters.html#Reference" target="_blank">AdaptTo lookup</a>
+				( <a href="http://localhost:4502/system/console/adapters" target="_blank">localhost CQ</a> )</li>
+			<li><a href="http://dev.day.com/docs/en/cq/current/widgets-api/index.html" target="_blank">CQ ExtJS Widget API</a></li>
+			<li><a href="http://dev.day.com/docs/en/cq/current/touch-ui/coral-ui/index.html#WhatIsCUI" target="_blank">Coral UI</a></li>
+			<li><a href="http://dev.day.com/docs/en/cq/current/touch-ui/touch-ui-concepts.html#Granite%20UI" target="_blank">Granite UI</a></li>
+			<li><a href="http://sling.apache.org/apidocs/sling5/index.html?overview-summary.html" target="_blank">Sling API</a></li>
+			<li><a href="http://www.unc.edu/home/adamc/post-servlet.html" target="_blank">Sling POST Servlet</a></li>
+			<li><a href="http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html" target="_blank">Felix DCS Annotations</a></li>
+			<li><a href="http://www.osgi.org/javadoc/r4v42/overview-summary.html" target="_blank">OSGi API</a></li>
+            <li><a href="https://dev.day.com/docs/en/cq/current/howto/taglib.html#<cq:defineObjects>" target="_blank">JSP Objects</a></li>
+		</ul>
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item">
+		<h3>Query Parameters</h3>
+
+		<ul>
+			<li>?wcmmode=( design | disabled | edit | preview )</li>
+			<li>?debug=(layout | mdev | mdevc )</li>
+			<li>?debugConsole=true</li>
+			<li>?debugClientLibs=true</li>
+		</ul>
+	</div>
+	<!-- END ITEM -->
+
+    <!-- BEGIN ITEM -->
+    <div class="item">
+        <h3>Checklists, References &amp; Tools</h3>
+
+        <ul>
+            <li><a href="http://dev.day.com/docs/en/cq/5-6/deploying/installing_cq.html#Further%20options%20available%20from%20the%20Quickstart%20file" target="_blank">Quickstart Jar options</a></li>
+            <li><a href="http://dev.day.com/docs/en/cq/current/deploying/security_checklist.html" target="_blank">Security Checklist</a></li>
+            <li><a href="https://access.redhat.com/site/documentation/en-US/Fuse_ESB_Enterprise/7.0/html/Deploying_into_the_Container/files/DeployJar-Convert.html" target="_blank">Jar to OSGi Tool</a>
+        </ul>
+    </div>
+    <!-- END ITEM -->
+
+
+	<!-- BEGIN ITEM -->
+	<div class="item">
+		<h3>Web Consoles &amp; Tools</h3>
+
+		<ul>
+			<li>ClientLibs 
+				<ul><li><a href="http://localhost:4502/libs/cq/ui/content/dumplibs.html" target="_blank">/libs/cq/ui/content/dumplibs.html</a></li></ul></li>
+			<li>CRX
+				<ul><li><a href="http://localhost:4502/crx/explorer/index.jsp" target="_blank">/crx/explorer/index.jsp</a></li></ul></li>
+			<li>QueryBuilder Debugger
+				<ul><li><a href="http://localhost:4502/libs/cq/search/content/querydebug.html" target="_blank">/libs/cq/search/content/querydebug.html</a></li></ul></li>
+			<li>Tag Administration Console
+				<ul><li><a href="http://localhost:4502/libs/cq/tagging/content/debug.html" target="_blank">/libs/cq/tagging/content/debug.html</a></li></ul></li>
+			<li>i18n Translator
+				<ul><li><a href="http://localhost:4502/libs/cq/i18n/translator.html" target="_blank">/libs/cq/i18n/translator.html</a></li></ul></li>
+			<li>Dependency Finder
+				<ul><li><a href="http://localhost:4502/system/console/depfinder" target="_blank">/system/console/depfinder</a></li></ul></li>
+			<li><a href="http://coderstoolbox.net/string/#!encoding=url&action=decode&charset=utf_8"     target="_blank">URI Decoder</a></li>	
+            <li>CRX Change History 
+                <ul><li><a href="http://localhost:4502/system/console/changehistory" target="_blank">/system/console/changehistory</a></li></ul></li>
+            <li>Error Log (w Tailing)
+                <ul><li><a href="http://localhost:4502/bin/crxde/logs?tail=5000" target="_blank">/bin/crxde/logs?tail=5000</a></li></ul></li>
+
+            <li>ContentSync Console
+                <ul><li><a href="http://localhost:4502/libs/cq/contentsync/content/console.html" target="_blank">/libs/cq/contentsync/content/console.html</a></li></ul></li>
+		</ul>		
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item">
+		<h3>3rd Party Code Samples</h3>
+
+		<ul>
+			<li><a href="https://github.com/activecq/com.activecq.samples/tree/master/core/src/main/java/com/activecq/samples" target="_blank">OSGi Service Samples</a></li>
+		</ul>
+	</div>
+	<!-- END ITEM -->	
+
+	<!-- BEGIN ITEM -->
+	<div class="item icons col2">
+
+		<h3>CQ Component Icons (16x16)</h3>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACSklEQVQ4T4WSXUhTYRjH/2c760tKM43RRYFhRS2qkYRWFAsquopquCAHXshqTo2mF8M7MzSjAk2CxVi0KMu7vCuikokZWCkYUd14J2KMZN9b5/R/z74Kp73wP8973ud5fs/78Uj4z5g+YVF1qSRMo0GpWGjRxVzgnL1BXfcsAIMRCNdZUfl0eEn8soBpW6NaOeSHsYe4EiNCrXMI1V9EvOce9lRtyucVBUzYr6ixR/dhZu56Gz8bgMQY8GkGKG1oxO6Af2VA7givAdVSzb/NwDgBdcCyR1jNsAqxWSof9Bb4eixL+0B7CNhFo1IRaoFKiGCRvIM6Tm2jDDnIKNByNAt4T1sL9NOkqFmKfHwTgC3UeeG3XerbW16x1aST9dDJBlh7zyJMh45aS724HQRkmT4ZkcWFqUHP6TMCIE7pYPKpZuc505Ha7dmaBaOqKhRF0STmYkzNRvH85fePArCTcjqvDrUO3q2H1+v9BxBKAhtXZZaSCg/9G4inJXS2NcHj/6JdmAA0u9qHWwZuXVhS/e+FaJoNJZQAqkqBzsc/CgB337uWm9cOw+fz5XMU7jYtxKrzcQklMhDjPM2d9LY3oevVrzzA2XFnrPWGqwYpSTxCZojAOCUAcVaOcR6jXeQ7WHj1199ENIB2iR39E+5ux34MPHhYALC6okr4GQXWkKvtSMCofk8TuoMJDaD1gd3hDbjc1n011WUr3kPO+XkeGJmJTua6TuvEy21PRsrN5gOSQYbEt5bYCxkr3l6fmQufXkYyHJ7sOll28A9FW8RNxW4lMgAAAABJRU5ErkJggg==" alt="Upload"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACzklEQVQ4T4WTe0iTURjGn2/77OalEsnUUDR1ZVGR/0RUGBIRFRbpHxaZIWW5XOZ0zlnemm3TjfKWU5RpZhoqlGQkhBohUihDlCgrnVageaEoFd3l63xnTJhBHXjOdzjPeX/fOe97DgPS7ndM9q31cAu3Wiyw8bJa4Biv/JqMRmOFLv4kCZsmWmSqOmf7DoW5h4u8WZ713zbwaQbFxY0DhrLk82TxMGPonePi962DVqvDyKgJIcFBGP0wBM5mhdnKgRGw2CoKW/bEYjE0hn5kX9kvIYBWpvr1Ty7hgAeSxBJcTUyAXq9HQeAM2IAQCDeHwLawhPS2IerV1jVApVJCVfMWuUkHdQRQyVR1zXCXIjyRLEmBUCAAt/ADecG/nQDy9nfUEwpZqNUFUOp7kC85XMKnj9G/nOQSIzch5UY6Ll6IhaG6Evm7VoFxcwPjsgrWia/IGfGk3oP6JhQWqpBb0gVl6pFSAihnyl9845KO+kIqlcFKss9yZrCWeVKNRZIDQMCuAVw9qcfvQKvVIEvbAZXsmB1Q+myMu3bcH7IMBc7FRqOxtgZyvymnI+R1mqjH70CnK4Rc3Q5N5gk74N6Tz9z1qCDIM2/S+gtsi1CEWugR2C0imsTb3eP2u2G1UYBM+RRFt07ZAbrm91xqtAiKrGzEnIlCS3MrMgJ/OeVAM+FHvYcNjykgNacFd/Nj7ADNo0FOFruTAizmJbgIBTDPjjtdKNYraNkrUN1BiqIRxaqzdoCqzsjJ4/ZArSnC1Pcp+Ph447KHiQIEG0nySBUq5rcte2lpUiTL6lFWFGcvY47+Vf/pyB17t/u70yCGYSAgNefFj1e2njcfUVbZPNRkyOqgF4l0vlJ12/P1G7x286Wij4lo5SNyzE1Pf+GDB0lcL73KpFtNFEoUQRRA5MJv5K9f2yc4IjPRGFE30bBjIQ/xInL9R7CDyUPmiOhz/gMhHFrkfMOOcAAAAABJRU5ErkJggg==" alt="Film Strip (Orange)"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAChUlEQVQ4T4WTfUhTURjGnzu1lbWCkAqhpIIQQ4KEzCCpyGKYlAaJWFIQgsZVhjMzlfJj6MxtOveRMzGGeDNRS1RUQkLI9oeifYChlpj5hzGTFRZz09M597IRoeyF597Duc/z4z33nMOBlmHAOSpXKGLWvV4E0sLE2LhVn5FEY04qN1c35Bo9H7UjJmqvjLEC1vj0MuoNbe+arVk3qHmKs4y4SVbcFgx8BrYGA3KmIGkcTJlBnPT21b5tq9A0TaAsOzaHznVwpuEVcud0KBwLgGd5FtZex4ZdZCWeRMT+g2CACtsYyvlTOmps4IxDLsKf3SkCjC0CWgvS4F1bx6f5736QIlSOHE0L2nQ8gogHpWYHNKp4IzVYuNrBJZKbsBvTP4AHjQLs6lT8cXsQdyLND+gatEGtFURACLeGEsMwKvPP1VODmdP3LRKVcg8m6T8tbxLQwKf4gz7Isx4LigzteFnHgxCCQu0raAsvSICa7gWSlxSOxRVAZRJgyr4sAuLjrsP+oh4ZV3g0thtQ9bhbBLC6q+nHo2KlBKjunCP5yQfwZRkotgnQZ17Cr99uJF/MFAFujxer3jXon/T6AerSHugeJkmAyrYZcu/aYX8HVbeUYsj5k7ZEi4WZTE/7/QBVcRdqNSkSoKJlkhSlR+KrC5ibn0VNY8+G2xgbfQj3byeK33ILnsNYnSoByprfk5Kb0QFP4L8GPq8VJn26tI1F5pGxqwmRx49GbBc9HMdBJpOJYuP/641jBmZr50fBXjAgHiT6CFdV9vYpdoUdC3SR2Pcl5zcW/kBzb6k6GEBOdYTqDFUEVQhrZJM1ETrvoZqjek015TMySBgVW8dmYR+TQdgWidf5LwKYM+SDyT0KAAAAAElFTkSuQmCC" alt="Reference"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACaklEQVQ4T4VTbUiTURg97+ZHZm9BSMV+5I8gxKioFaZQlDRB2H6UUIEl4g/BwmSYmaiQ5hhabqZOcRBCRKEwhVxDxUQGqZFD0yRYGhg6kGY2zMBp3Z773kZ+kDtwuF/POe9zn+e9EgjWHv9ItCxrf6+tIRznxjyjzZYsA8n8xBXpcX9g5GLiLm3ifhX3CovRT4tosLa9b23Ou0HBXqlpcIXlJUehZxrYEQFEc6rFPII81ZIYQzgQE4TpyRgqbybdpj2H1OheZrfO7sTw3PbC9QZVdg8e5KfU0l6LVN8fYPkXdisGsZF/s6AMeCaLX31w9zoVbVZOrjKq2SoqbMMwGc/V07JJqutdYAW6vWjv7MKZVIMiHOzrwrETWrzudiItXY/Fbwt493ZIMYmUfqHc6oa5KLWBDGySxTXPjOn7YLfbkaTLQAxlMeBy4Nr1bPz4zgsNOJ1O6PV6aDQaMMZQUt2H6pI0YfDo5RwrNGgw+dkH74QHKira6VNaJdjn820Qh+pw19SNh2XpwqCmY4YVXTqIydklTI8PKRVPSU7Gz+UlRbweubmiDncqnKi9bxAG5rYpdu/KIcwvU+HWlqAmA1mWEQwG4feLK4TAs+IwlnWiznRZGFQ9+8hKMxPwJUBdiPrXiQ3KTYuC4nbU11wVBpWt46w8++h28VvO8gufo9GSKdpYahv0ZOgSTh6Jj1UCJUmCSqVSyOeb8WZ4Crbmjg8vnhb30FkLj9AYza9c8p644+EeEj9f8M9y8QTphogObhBNPEw8T4wn0p+ArZ8WqTDiKnGGOED0hgK5SRyR3+N/4tBtuAn1TDznP8PJD+Q1/r0GAAAAAElFTkSuQmCC" alt="Versions"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVUlEQVQ4T4WTbUhTURjH/+feXafNJYlU+CE/BCFGBPkhCoqKDGQMVkExxOhbWKw1zMzmIF/G0HKz6VxFsQgpjTSQkowQETI/OLQXENQCIz8EMxkl+Jan59zTygzbA//dc+/u/3eel3MZKAI9sSGj2Zy/vLSEZJoaiQ6H/aesZIuR5tmN3vjQ4bz0/LxNimAljeHxGTQF2t9EwiXF9PIYaxmY5yV7UtDzAUg1AEYhVa4NxFSZvCZic9oCvHdHUH1293l61sGa+2f5uX3rUOysgVFj0MhhIM0tAhvSAIUAKgHOXLiiMwSg9nYUNY69DXR7iwV749xxcH1SgMctASpfRFVoEF7X/iDdtrDGF9PcWZCJ8a8ydVGCSFmsV6aeKEFjP+AJ9MNXdqiJnoWYv/sLdxVuxCj1VJhMKVT/L5Dow+rgnKOi7iXqKo5IwPWuKV5qzUakrQuawqEZqA+UQWJ3Yfi+AKQTWKxtNhsueZ/jWmWhBNR3TvKyo1vwcUbubtL+TGCtmV6seoqGq1YJ8LVP8MsntuLmvTZkZpj03VXGdS9jNIJVV4vFAlflEzR6j0lAbesodxfl4lP87wz+d6Kc5Y8QrD8pAdWRt9xzegfutD5GKm1voD6oWNb93+Y4lSWzEfUL2e12OEofoNlfJMfoDg1Ejxfk7tqeY/qdrqIoEEqUsDKbV4MTCIU73z+8X96jHyT6yXb5nnWbM7J2JvuQxP/Tsc/C/I58r0kdAmAkbSMdIOWQaA6Q3fs3RD10yDFJ6iONJV4UkCySqGMtcwInILMk/XP+Cb6c99WaYdFoAAAAAElFTkSuQmCC" alt="Title"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC2klEQVQ4T4WTa0iTURjH/+/cxTmdrkTnJW2EJmYpKkhidjXwg0EJ9cGK+tAHSxMxU1EpbSJaXvJaQQgRhlEWYZISUkYq4fJKkk6Zsjly0+nmJee209k7FIzCB/7nnPec5/lx3uc8DwNqVR36foGbW5TNYsFO0gwqBhorLyfRMD3VOvOwa6n/VKhrVKg3x87a0QYmDKitahlqaky9RJ3HmYaedZJ6mI+OScCZC/CsBpCFb3BaV4OBFTxnb4h9YsAXSVm4VGhGydNBFF+PuUk/XzN13SvkxhEX9GkArsUAq6YNPj7ukEi9sLamglGnw6KOC/e9ZyBw82MB8icK3EuPraCAx0xN1xJJPy5mATYavMcb8AmQYXVZB6NpGGbLJAS2MBj1QsgiLsKJbKCovg8lmfE1FNDAVHfOk4yEXZhYABaG6xARFwvzbyNstg2YTAMwLo1C6ncSUwotwuJzwWOsKKzqRmn2iVoKqGcq23+RzEQvjNGcLo6/gkQ8C6GHBsumWfC5YnhIgmFe9oRebUZ43FUQQpBX9hFleacdgAfvNCQryRe/VgCyOoeZkWb4B7nSbM7DiSOiEH9MfFci6FAyJF4yNpG3Sz7gfkGiA1DeOk2yzwZgygCI+MCKdghjvY/gHbwfPL4QSsUXRMZegyz06NYT3ypqQ8XdJAegtEVJcs/vY2+wW0i3rOvofFuNRYsMGo0BK7rPyL3TAGcXjy1AZsEbVJeccwDkz8dIfkoIZpYcNxDxgMmfP6DXz0GrNdBZg7S0tG0FlpHzEjXlFxyA4qZhUnjl4DYHtVoNuVwOlUrFztHR0dvO07OaUVeZ4njG/PoeRXJCSOSBQBHrxDAMOBwOK/v6b/vap0R9Y+voi2c5HWwh0cE3s/R9u5u7Z/hOjWQ/n9er7cEjNK6XLWU6CKiCqY5RBVLRLNA2+LcRur1BNU31iWp809EO8aSy/8f/gjeRdgh9M0c7/wHr007kRPHLawAAAABJRU5ErkJggg==" alt="Lightbulb"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABw0lEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbQ2XnLIKaQQoaCxMYWudeYGjKMs8DctcyTjn09X+2LRfYgLayVIKG/P79m6Fl1lmG5lyrXqDimYyT9n38n+vIh2IAExMTw79//7Aa9gcYTo1TTzC0FtpNAiqYxjhh19v/+a5CGAZ8/vmfgZv1P4YhIINr+w8xtJc6TQZKTmXs2/byf6GnGNEuAJlY2bmHobPSDWJAz6an/4t9pYg2gJGRkaGsdQdDd40nxICudQ//lwbKkWRASeMWht4GX4gB7Svv/K8IUybJgMKa9QwTWoMgBrQsuf6/OlqD6GgEeSG/fBXDpK5wiAFN8y/9r03QJTohtZenMeQWL2OY0hcNicbqqcfOBrtqGGnLc4OjDGQDKB2AMIiNDo6euMMwdfq6K8sXle8EJyQgIVXYvnUbL7+IPqGMBJJ/++YJSPNloL7j4KQMJNiBWA2IHYBYHohZQQ7BkaZBKes3ED8E4gNAfAumEGSICBCD/IFLM8xMkCFfgRicnQGfIvbVvbrSQAAAAABJRU5ErkJggg==" alt="Text Entry"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACe0lEQVQ4T42TW0hUURSG/1050zg5IykWKYUvISZFSuWdJExKRSWMKJKIHiLIh4IgoptIo9lU3h0pxIcyEKGLaVKUZtNoKFMoZEagpaB5vIw5jnM9rbOPMw8q5YKffc7e6/9Yey8WA0VV23iPSrMhxu1ywSPJ7YL3e+k6ZDabq/WnMskmkOys9u1UT3JkQEyQakZi/TdGfzOUljZ8qas4f5KSB1mdySpmRM4vGkW+qhT+UCqUPpjdYYfN4c1hqG74jmtn4/MpoYk96LSIWTsdcHtc3KBWqsm8HrGH9/oAXS2fYHcsYMG5QHsMlY8GcONckp5+DKz23aSYE+2BzTlPRwwh2k2IS9+H3jazDxCTthuml92YnbdwQHl9PwryU8qk52M1b8bFI3vW0OEsN4QFhxIgdgVA12IOvcHDzyi8kFpO6ZWs8tWoeDROAWFWQJBmIwJUAUjIiF8GMDZ/xJxtjldw19AD3aVDMqC8eVg8luQPp9uJQLUWiZkJyzrx4YURM1YL/Nau44A7Vd0ovpwhA+4//SGeSNHQy6uQnJXoM79/1smTARFT1imMTY8hPCSc790uM6LkarYM0DcOiHkHg7gxLTeVrx1knvwjYEQYIbvcWikiQiM44Ja+HfcKcmVA8eM+8XT6Zp6g9JN7P2GZwM+JIW6WOsODMURtjeKAwqLXKNUdlwG6erN4JjuMl7q6YLhZ2IqKkjy5jddrOnpzDuyIDg1ZHeDb12lUGBr7n9RdaSOAQapvy8Wi5y3awOBdbhoiPkykpUPk3ROEX5K5j3wmUpMEkC6+nbSftI3kxy+6ckhlOknDpHbSoDdRggST1P8we5ESxEri4/wXa6ge5FRpCIoAAAAASUVORK5CYII=" alt="Magnifying Glass"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACtElEQVQ4T4WTaUhUURTH/29cxnEca1IqbNGaEpdkRs2kyLJIwQ/zwYL6IEVfLUwGMxMV0hxEyyV1lIIwIgoTlTbJCAkpt0ZGHfclMDIUnSaDwWymbue9y3ywBQ/837vv3Xt+99xzzhVAVtm+ZJarVLG/XC6sp7mBfkt9xTk9uS2RVoVbHcvmExF+sRFbZCJrXbNM2VFT2TjYUJ9+lhZPCnVdqyz9oDfaZwAfT0AuyoOPPYnpIfC327YqfsB4dwBFF+Iv0b9mobbTwS4m+KJnjjsOdvdCpZSDMXIUGPbpwuAtV6wBFN/px/WMQ+X087ZQ3bHMMo75SwClFzA/MYx47TaAAF4+SrzttmJ/TDgUvr4SxIM5UWjqgdFwpJo+64SqVzaWmbQJU194BBPWUWj3qrHoUmDMuREH/L9jyjoMnS4cSqUSXsJPFFR2oiT7eA0BTEJF2wIzpGzGGOVUBEwPWZF8NAr3xhmeDDGk6mRICFzB7Og4YrR7oPLzQ27pa5TmJnPAzadzLEsfhAUHJY4AzU1NiIuNgyokBM9mGFZcAvQamnNxSOLhaFwxvsSN/BQOKGuZZdmpO/HBTjnwBpyOrxix9GK3JgKeQTvwbZXnzz5igTYyBGq1GpcLn6P8mp4DShqn2dXTGimCAEq2WDK73Y6+vj7s0kRiJWC75BwXHSrlQDRDfiuqjCc5oPjBGMtLC8PHZR6BWAmxB2w2G8xmswT5PL8ohe62zJzHqC47wwFFDUOs4HzUPzvQ4XDgvWVyze7iwoysh6itSONlzDN19Z9KCouJDObhCYIAmUwmSRz/ae96pmGqbxl+dD+nXWokegQZSl60qTYEate7SOK8bemT6Gwlv25SswiQk0JJiaRgEmUBf2/NQ6H+hJM0S3pDmnQvFCGBJPEc/3N2n0aEUM34df4NlGUp5GtUFDgAAAAASUVORK5CYII="/ alt="Tag">
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC5ElEQVQ4T4WTe0jTURTHv79tZc7NUEeCklPDZ4ighKhZWRlY7I8ULNNCCAwLUzEzUSFNES0f+cRMjOiBkSalopEmVs4nzkeJ0wW+cMmGLjdtPvbr/vZDwyI88L1cfr9zPvecc8+lQKywVdVvIhR6GzY2sJvmZAODFQVXJCRMRaSnHrZr+k+7C7zdrTkMa1cbnFhESWHtUE1FzGXiLKfKu/R0jO9etCqAfTzAhBGX3XMpGnKZFNwNHTZpDsQunnCxNUd2tQyZ131uEkAdVdqpo28E8NE99yeQR5IxrP/CaM9H2NtawtvbB1qtFq8bGnEpLARZjwZwL9YvnwAqqeJ2DR0baG4EmO1hIauaRYwNtMDBzgmrqzawt9/E9LQCwyNfcS06Ghll3chOOFZMAOVU0Xs1HRdkiXGVAepZLZTTaiyp9HBzs4KjoxDLyz8xPz+Ont5eHA88BS9PD6QXdiIn6WQJAZRRBc0/6ITgA3jXrsCy8hvE4lGYmWlB0xehVDrAwmICQ0NSiETWCA0NJd9ppOR+QG7KGRbw4O0cnSixQWXVZ/j7fifBLbCykkMgCENdnR1ksg2SyQqioq6CyyX1Ebud3YL7acEsIK9+ik46b4fH1Z9wNlgHHq8DfH4fTE3XoFD4oajIFfHx/nB2dt6+4lsZjci/K2EBObWT9J2wQ3jyvA+BRy1ICXLS8X5Q1CLW1o6gqoqPxETJ9ukMJSHtDYqyQ1hA1rMxOjXCFYOTGnQ09UNy7iApYRYGwyra2vTY3BQiPDxox4DFJb9Ccd4FFpBZM0ynR3kYHRYWltDQIMXMzAJWVnRwcnJAZGQA6YdgByA28QVKCyLYa0wt6xoIDXL1Oiw2MzpRFAUOh2MUs//bvnRPoqyifvTl0+RW4yCRxSYhp6lZuF/kudtDYv6rVbNM8AiJkxpHmSwmREyLTxCJicg84t+j2VRoonWiKaIOIvmWIwMRETF1/C94qxoGoiMyPuffYOhL5FKlQfQAAAAASUVORK5CYII=" alt="Flashlight"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACXklEQVQ4T4WSXUhTYRjH/2cfbuo2yxZFF+0u/CgGrZuCRC0JigqSECaGMdoSWSJ9eCG7qBQjUnO6loMQog+SGiQl2IWYrNrFhmtGhn1R5N1ZsWTq3PLtec/SZs584H/Oy/M+z+/8n/e8Aig6h8SASqs1LSSTWEtToeCYu+PEYWoTSXGhazga2F+kMRVtknHWmjH2/ge6Ox+87nPX1VDxpNAzGmP1e3Nwrs0DlRxQkGQCMJcA1men1vI0dv2pWrR4grhs39NOgF7BORxl9jId/FNArhJQKyCBVPRWUKMETQPIWQIXXX60NpY4CXBDuP4swhoq8uG45llqmE0C+eqUGzk54C4Ww2KxwNE5irbz5d2UcwktdyZYc3UBvkbJQdZfF/87jIamfjivVqUAl/rCzFG7A1e66AzIdhZ9VfnH8s84oFMtR1mtVtjP3kNPR3VqhGbXy2BlRcHOYkOuVCkIAmQymSS+/jde+D/A5fa+uX+7aUg6RHpsaWx7OqjN0xsX78CudjNmE/NYoF1Ndi6em9uX7kdE/Mabx6nvFekRB3CT20ilJANJOZCnPVO+dRox+pU+UY9KUeTz8mAkyuILaYQ0ueiRQ/QkPofwZIP23aHCGboMv/Dwsx7HI2JB2igcEiOlbuKKISnxeKOGHdmXA8zE0e8Dqr5HM9bx3mUbPttpFrnrgbFkMwzF6wgwj8mAiPB4DLqaOhzoda4ALUtMfBLZdOsFaEJeFNpMkoOQJ4zobjNKb93M6CJj8q3tJFN/HERibgEJ4zFsd0l/K2OsujFy9CBjcgXKvAOr1nDib44h6B+5fxAmAAAAAElFTkSuQmCC" alt="Download"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC8UlEQVQ4T4WTW0hUURSG/zOXxvEyhk6OiWUmiWkh5YMkWhaaSBhopA+iRdCDhclQZqZW3hBNRx2vRWVJUZomiElGionX0MZLZN4d8p6jTSoxzji7fWbQhyJc8G8O5+z1nbXX+jcDGrkNi90CCwsPvU6H7TTd26MokUUG0bRFKg2T36Tu9nM193CVcFjWtqEYWUZBbkVfWUlUBN08zBS3a0jUsR1oGANMuHqYqmrxW3EH68sj0OjFsPGRQeJ2fgtsK1xH+uNepFzxvEZfVjOFLWvkqo8pOqcpQK+GpikAS9+7oNUCXD4PDNcSIq9S7HEPAcNwwALSHvYgNdorhwIeMPImNYk+KTIARNppmPfehhYbIAwPM6Nt+LE8CWJ2CIHSTnB5AnCJFslFnUiXHpdTQDGT915FYvytMLIECNfGIJl8Ar79QYDHg7K7Dq0fX0AgkiAwfoJWJASf2UBSbgsyYk8VUEARI6ufJ9JAGwzSngrWFyDuS4LIejeliTA1qsCntkpYO/nD+3K1oQJCCOIzPyAz/rQRkF07Ta4H2WF+jW0isNT1CI6cRmB2DkPjw+izCkXIpSxaEH+rkTfT3+F+YqARkPVGSWKD92J8mQ72lw75VUPwdpjAGec5VDWrMMUPgOf+nQgL2LcFuJFch5x7QUZARsUouRXqBOVPgtTaWbxqm8AJzwOIDLKB/JkS377OwFGoRsJZCYIDjhgg0sQa5KWHGAFpzwdJQrgLGgc1iChSwFbMgXpVDyc7M3weWIBEYoIV1Rp87YUov+tjAMTEVUKeFWYEpJT1k6SLh/G6TYUL2S3g61Zhar0LHA4HG1odVuZU4OjUcHRwQf9TP+io3aUUUCgLN44xoai955y/y1E3BzMDnWEYQzIr9vnvaO0YQXFpzZeX5XENBiPRxU6a8bbewlLsvt1FYr+rFqfY5AGa12GwMl0EVM5UvlQOVOy8/v21sRRCRU0OJVUz1fDmRhYipmLP8b/kzdOwEOoa43X+A8DlUeTFUg8gAAAAAElFTkSuQmCC" alt="Person"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACWklEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbw867DAzH18/Ha0BSaiKDBOcvhta5FxiasszzgIrXMk459PV/ti0XQ2nTNIbIQBcGI101DENAcrn5WWBxkAEts84yNOda9QK5Mxkn7fv4P9eRD2xAXkoIAyNQ9D8Qw2iQpklz1jA0V0EMYP7/m6Fx6gmG1kK7SUDuNMYJu97+z3cVAhsQHeSK0wtL1+0GG8LK+Jehtv8QQ3up02Sg4qmMfdte/i/0FGO4DgzTedMg3mBiBNnPwPDv/38wG0QvX7+Hobsui+E/kF3ZuYehs9INYkDPpqf/i32lGF5+ZWDo6YW4QliIH8MrIG+ADACBstYdDN01nhADutY9/F8aKMdw7z0DAzcbxBBYWCD75827jwwgb4AMKWncwtDb4AsxoH3lnf8VYcpgFwhzMjBUtkxjyAcGJiwgQYaA2LDABBlQWLOeYUJrEMSAliXX/1dHazA8+ghxQUf3NLhTkV1w4cptuAvyy1cxTOoKhxjQNP/S/9oEXbBaj8A4MA0KKBhgBAYiiA+id6xfBBbOLV7GMKUvGhKN1VOPnQ121TDSlucGS4IUMjExgTGIjQ6OnrjDMHX6uivLF5XvBMrNBKmQKmzfuo2XX0SfUEYCyb998wSk+TJQ33EgXgsygB2IQenXAYjlgZgV5BAMqyECIL/9BuKHQHwAiG/BFIIMEQFikD9waYaZCTIEGGeQ7AwABwke5A04zowAAAAASUVORK5CYII=" alt="Script"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACjklEQVQ4T4WTfUiTURTGn3eaVroSMQsJpYQwow8SsoK0JJVBRjUtSpIwCCyXzI9UVMiPYdOcOp2SoIY4U0FT0dU0JAU/IpdWomL2h+SoSFEpIUt2O3cvRpS2A8+9l3vP+XHPuecKICs0zg45SqV+lpUV2JJ5xDRcrokKo7BZ0rJQ3L04dNrX2c93u4SzbNrwu3mUFDa8ri6PuUrOk0JZ/zKLOeYA43tgoz3gyGUnru2JaSeI86rt2PQDqsoRZN30v017TUJp7xK7dWIzBs1Af4MRnT3ja94iJHAvwq+HggNyKkzIVhwvIMcHgrZ7kSlObYFGIwY/aYlbEyA7VwwOUSiCkKkbhEoZoCXHMqGoc47FBbtCFtEIQ2ME8lvGYGEMINGI2NDdkDo7oaRjDIaHo2ivlyOjsBe5SUEldKwTNIbPTClzR3isHjXqy9B1TeDsEU/0TXyC8eUHSJ0ccGiXK1pb2+D+7Shq9QFIVT+DOjVEBNxvM7OEMA9EXumBOs8b9aavtM/gKqXCEqAg6gA+mufxZXEO+srv0NcF4o7qKfLTZSIgr3maJZ33xI2UJkSFbIPuFYNEkFAaFlgsDIlBO6014YCWrhlU3JMjMbMdBXfDREBuwxRLuej9u4jZGWf+KSIP1moHrEWMjw+FMv0xilQXREBO7ThLi/TBwsICqqpe/PcZo6P94eLigrjkRmjzLomArOo3LOPafpsd+KeDIqEOpZpI8RnTdP0mebDP4X1eTlYfQRAgkUis4uu/rW9wCrry5tFHNclGayPR4KHM7TBIt7odtPWR+Pnc7AwPfktxA9ZWpsGRtId0kuRF2sAvsk5OvLd+kqZJz0mTq44c4kbieawXvMrkkCWS9Tv/Akb9LeRofshrAAAAAElFTkSuQmCC" alt="Button"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACHElEQVQ4T2NkAIL+na/PsPPyGf/784eBEH5y4cz5GX3xvkBtb4D4J+PEfR/OuGjxGmuJM4HMIgjO337PMLlv5cX5MzJjgYpvMU479vN/piUbw867DAwcLAwM7CDMDGGzAM1kZoTQMCDB+Yuhde4FhqYs8zyg2FrGKYe+/s+25WLQNO8Cq5m/rgxMr9jvhNU1XWE7GFpmnWVozrXqBSqYyThp38f/uY58DCeeMjBws0JsBgE+dojNINcgu4D5/2+GxqknGFoL7SYBlU1jnLDr7f98VyG4CzZth7hg6jbsLuiN3M1Q23+Iob3UaTJIGWPftpf/Cz3FGK4DwxRkGzcbxAX8QBfAXIPsl////zNUdu5h6Kx0gxjQs+np/2JfKbgLDuyDuKB9PXYXTIjZx1DWuoOhu8YTYkDXuof/SwPlGO69h9gOCgcQ4IG6BFtIljRuYeht8IUY0L7yzv+KMGW4C44cgLigeS1uFxTWrGeY0BoEMaBlyfX/1dEaDI8+oroAm/9hrskvX8UwqSscYkDT/Ev/axN0SXJBbvEyhil90ZBorJpy7GyIm4aRtjw32AJGRkYGJiYmMAax0cHRE3cYpkxbd2XF4vKdQLmZIBVShe1btvHyi+oTykgg+Tevn4A0XwbqOw7Ea0EGAGOcQQ2IHYBYHohB8YBpNcQp/4H4NxA/BOIDQHwLphBkiAgQg/yBSzPMNyBDvgIxODsDAHHw6tWqFmAHAAAAAElFTkSuQmCC" alt="Bulleted List"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACn0lEQVQ4T4WTbUhTYRTH/3eu+Zazhizwg2YfkmpRJGRFhSkjorKC+lChrqLSkTYNhiXlC8J8SUrdapo6IsiBi0pKHFRLQqRwDFtB+TISJyFuhh8MQ7enc+9t4Qvogd9zHh6e8z/n3uccDmQP7BP9kfK1KYH5eQR5AvMI7Zf6Hy6X62Gd5jiF+Yg/XPO7qf6DW2NSkjdIea1VbWDYj/r69gGLMT+LLg9ylr4ZptkTBYcngIgwQCblICMfQXphEoLjPS3/TBk5h2qLE3dy9xXQ0TOu5cM0u7RfDud4cMXAhQKG1k8o0x6oo7MmrtnhZ5fTFIJA1BognDLLKC3vpVQBX82AywlLawuycjTYuzsFleZeVBQcauB/H2d+M8GuZijhmeIrWBwopdLd7s/Q5l5BIBCASrUdba2PUNbgQGWRupEETJype5xpD8djyBfE5M8xOLqfQ5NzAXGKWAx//4ry8nJ4PB6kpqbCZDKBMYaSu3YY9EdEgcZXo+za0QRMzjBoL57HyPAgCWQjMzMTOp0OXq8XCoUCVqtV8LwVV71G9c1josD9FyPs+olNGP0VFLK3mY2Ynf2NjYmJQub09HTk5eUhKSnp/0voK1+i9vZJUaCu4xsrOp0sVLA+kkOP4y1qamrg9/uhVqtRWFgIpVK5qD+KSm24V3FGFKh+6mb6syp4pxmiZaCX4GDv6oTNZoPRaIRcLl/WXLpb7ag3nBMFDI9drDh756oduPBCvv4JjLXZ4jOWmnucpzK27dqSECPc4TgOEolEgN8vtd6PQzA2dXyxWkrsQiPREn+jqrMrdl3cjgANkTBMxNIhCp35fGN8sJvi+oRWpiWc2EykEYkE9SOWpxZLYcQcMUq8JwZDF3mROCJ6heDQ1/AiM4Qwzn8BUxch5F7oME4AAAAASUVORK5CYII=" alt="Checkmark"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABw0lEQVQ4T2NkAIJpO1+e4eTjMf775w/DPxD++4cBxkanH5w/f356b4IvUNsbIP7JOGvfuzN2WrzG6uIsILMIgot33jJMnLj84vwpubFAxbcY5x//+j/BgougRpiCX79+MXTOP8tQl2GVBxRbyzjn8Mf/yTZ8JBnQPvcUQ0OWbS9Q00zGWfvf/k91ECLagN+/fzO0zDjK0JTnOAkUfIwz9rz8n+4sRrQBf//+ZWiYtJ+hpch1MlDTVMapO57+f/Y0FWxAS9JWhpp53ljZWvZtYPGrByoZqnt2MrSXeUIMmLzl4f8XLzOJNuDawSqGio6tDJ2VPhADJmy4+z/fX4loL4AUlrVsZOiuDYAY0Lv6xv+iEHWSDCiqX8PQ3xQKMaBz2eX/ZZE6JBlQULWcYWJ7FMSA9oXn/1fEGZBkQG7ZYoYp3XGQaKyfcfBsoLO2kaYcL9gQRkZGBiYmJjAGsdHB0ZO3GabMXH1lxfzqneCEBCSkijs2beMXENH/C8xE4MwExOiZCCb25s1jkObLQH3HgXgtyAB2IFYDYgcglgdiVpBDcPjpP1D8NxA/BOIDQHwLphBkiAgQc+PRDDMTZMhXIAZnZwATI+DV41Og6gAAAABJRU5ErkJggg==" alt="Dots"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOElEQVQ4T2NkAIJpO59/5eTj4/r75w/DPxD++4cBxkanH144931aT6ItUNttIP7EOHPvm6/22vxc6uIsILMIgot33jJMnLT8+/zJuTFAxXsY5x//+j/BgotBy74Nq+ajOyrB4kJcTGD6////DM0zjzPUZVitAXLbGOcc/vg/2YYPp80//0Ckvv3+z/D1FwODDD8jQ+P0IwwNWbZngMJVjLP2v/2f6iBEkgvqJx9gaMpzvAg0oIJxxp6X/9OdxXC64Ouv/1AXAF0BZMsLMjHU9u9haClyhRgwdcfT/1nuUjhdcHAbJAzEeBBhUNW9g6G9zBNiwOQtD/9ne8kyMDIyYrgC5P9PP6EuANr+6y8Dg6oIE0NFx1aGzkofiAETNtz9n+Mjz6Dr1InVG1vWV4DFlYWZ4bFQ1rKRobs2AGJA7+ob/3P9lRj+MbLCDfjzD2Lbn38MDJ+hLgC55ttvBgZjaSaGovo1DP1NoRADOpdd/l8QrMZg4NqD1QWLl0FcYCKDcEFB1XKGie1REAPaF57/XxShxfDqO8IFf4Eu+Av0+l+gC34AbQa55tef/ww/gLSjEjNDbtlihindcRAD6mcc/hrorMmlKccLtgkUmExMTGCMLWCPnrzNMG3G6h/LFlRfASckIGFY3LnxKD+/KOdfYCYCZyYgRs9EMLF3rx+DNL8E6jsNxG0gA0Dp2AWII4FYAYgRfsEaKgzAoGR4AMTLgXgPLPJBhqgCsTAQQ1IMbgAMGYa3QAzOzgBwtBVo0Y0C9AAAAABJRU5ErkJggg==" alt="Inverted Bulleted List"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACSElEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbw867DAwcLAwM7EAs8PsZw6FdW8CG2bn5MHAJSsENluD8xdA69wJDU5Z5HlBwLeOUQ1//Z9tyMZx4CtTMzMDA+QOhGaYL2RCQAS2zzjI051r1AuVnMk7a9/F/riMf2ACQzcx8UmCDdqycBdYflZDGwAL03YMnzxgUZKQYmP//ZmiceoKhtdBuElB6GuOEXW//57sKMdx4ALHZPxqi4fVLCD8uKQ1s0KJ5s8DeUZUVZ6jtP8TQXuo0GSg8lbFv28v/hZ5iDLNmQWyEAZBGUJjADIaJp6amMlR27mHorHSDGNCz6en/Yl8pFANANmkoQAIO3eC0tDSGstYdDN01nhADutY9/F8aKAe3CeRnkM3z5kCcjGwQjF/SuIWht8EXYkD7yjv/K8KUGV5+ZWB4//oZhs0gG0EA5BWYYYU16xkmtAZBDGhZcv1/dbQGw6OPDAzcbIjAQw4PZJeAxPPLVzFM6gqHGNA0/9L/2gRdlABEDjh0zSCFucXLGKb0RUOisXrqsbPBrhpG2vLcYEMYGRkZmJiYwBjERgdHT9xhmDp93ZXli8p3AuVmglRIFbZv3cbLL6JPKCOB5N++eQLSfBmo7zgQrwUZwA7EakDsAMTyQMwKcgiG1RCB/0D8G4gfAvEBIL4FUwgyRASIQf7ApRlmJsgQYJxBsjMA8ZMb5DeseIoAAAAASUVORK5CYII=" alt="Expand"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACzElEQVQ4T4WTeUiTcRjHv++a85gHhWhOcB0ousOkhV0Umgf5xzIN1JCiP4K0MBnmlQppLsnyaF7YgWBRTMlIytTUStAMNM2K4dyhw2GSphOlluLb792bYRc+8Hn5wft7Ps/zuyiQKGub7rd3cZGtLC9jPcxDA4M1pSflJG2aYKVudFn6w0XOMpEnh3GtG4Ojs6goU7+rq0k+QSZrqepeK528l4c2PeDABewZNrBj7lc96KFK8N0CMGd6jnGP0wgPCYXyzhAKzu4+TwQPqcruRfrcASf0mdckkma4ViNcJm+BywmGm8AX1IIRqvoWJF0sR+HNAVxO2VdCBLWUqstCp4S62gR8O7ayg1UL/lwDXL0ksIy8AhY24tPsEp7peEhNy0J+VR+UioMqIqimyttn6NSITRj9wnbA/WaE0+xdOHsFYdnSCB61GZpWLZrNAQiTJ0AWJEVeWTeK0g9VEEEVVdoyRSuiPKAhe0rNk8qf1RCIA/F9ppEIPaHtMOLxmB8io+MhkUjA5XKRfbUDV7MjWcH1ZjOdJhdAb9BgfrgWfnuCwVtph92KO0Y6TWge24qI6OMQiUTg8Xi2U8pQtuJabhQrKG4ap9NjfNCjzoDvNhn0b67AJ1CEyY8L6JwSI+JIHKRSKezsyAb9jAv5T1BySc4KitQ6OituO17cTkLoriDoupvwVmOE3jMWh6MTIBaLf1VeFShyH6FcGcsKCu9p6JxEf5yJCcR+yRbwHB0xAX+ERR39ZzIjSc1sgKo4nhUU1A3TeaekMJlMMBgMoCgK3t7eEAqFv7W99oqmpN1HZWkie4w5Vb0DxyL8d4qFfNscRsDhcGww4z+jp0+HqpqmDw/qM9tsF4l8BIqipy0ubu471ntIzP+Z6Qkm+T3Je227yuRjT/AjhBCEBGa7/y7NtkITlgjjhJcE7epERuJOYNbxv+TV1TCSRYLtOf8AHPwq5KOJhBwAAAAASUVORK5CYII=" alt="Pencil"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC4UlEQVQ4T4WTa0iTURjH/6+7ednmNZV5WSBeMsXQSArsRkZ+8EMZ9UEKCQq0TMXMzElq2lJzmtcSxCgpFFIIE42QkLx8mGkp5C1Nt2nmdEpu6tSdzruhH8Lwgf9533PO8/w4z3mew4BaSbtWKRCJwkybm9hLmoG+/mrF1WgapqVaZ552LCvPBArDAt2sWNae1j+mQ3lJw9e66vgr1HmUqepeJ/FH+Wj/AVhzAeHiDMRDPeDpZkG2NrHp6Axu+AlwJN5muLuNEfm1A8hNCL9Np2+Zik49uRlhi14NDVaNweFzC5xC/MG34cK0qseqega/RsbBibkGvl+wGZBX04eHiceKKeA5U9axTBJPiaEcmIV7Wz3cIg4DC2oYVRPgMQRce0es/DFCNTwMSbIMQg9P5FT2Ij/leBkFVDGlHxZIUqQTJl81wtVmA3xigL6rE6AXyqEAQr8CP39odavQSzzgcz0ZWSWdkKedLqeASkbROkdSolzxs6QUHt4O4MXE7XqRywU5mDbMIyi7HBkFH1GQcdYCePJOQ1KjJZgqegw3ew6sb6TtCtA9eoApw28cyqvG3fw2FMmiLIDCpimSdt4bIzW1cJobg93WOla+KGEitCQMYDIaYRsUCh2PYM3LHQcSZLiT04Li7GgLQN4wTu5d8oFmXIWVZ3Lsc3UFV6fDmmoaJhOBwM0T6w5iTKqHECQrhkjqixRZM0rzL1gAefXfSWZsAKaXAc7kIHQvFBDb2UMoEINQwNLqIuaXNPC9dR/OwUfM6SWlN6Ks8LIFkFv3jWTFBe/krZ+ewGxbMwzqCZhoI/G9pPA6dxGi/X47Pompr1GhiLWUMbOyuy8mMiD0oNTO7MAwDKysrMxi//+1rt5xVFY3Db15md5ubiQ6SFLk71tF9i4hez0kdn9Bq2aDB2lcj7mV6SCgYs93kkpKxWMPsmstAULXN6imqD5RjW47shAXKjaP/wVvM1mInsr8nP8CMddP5HEyM5UAAAAASUVORK5CYII=" alt="Stop"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACO0lEQVQ4T2NkAIJpO59/5eTj4/r75w/DPxD++4cBxkanH144931aT6ItUNttIP7EOHPvm6/22vxc6uIsILMIgot33jJMnLT8+/zJuTFAxXsY5x//+j/BgouBkZGRQdOuFacBR3dUMnz9xcAgw8/I0DzzOENdhtUaoOI2xjmHP/5PtuHDqfHnH4jUt9//4QY0Tj/C0JBlewYoXMU4a//b/6kOQmBFIFeAwP///xm07NuwGnrtYBVD/eQDDE15jheBCioYZ+x5+T/dWQynC77++g91AdAVQLa8IBNDbf8ehpYiV4gBU3c8/Z/lLkWSC6q6dzC0l3lCDJi85eH/bC9ZuPORnQLy/6efUBcAbf/1l4FBVYSJoaJjK0NnpQ/EgAkb7v7P8ZFnYGFhwRsLa1dXAAOSgcFYmomhrGUjQ3dtAMSA3tU3/uf6KzH8Y2SFW/7nH8S2P/8YGD5DXQByDcyAovo1DP1NoRADOpdd/l8QrMbwn4mNgYMVEgtffv5jMHVtxxkLBVXLGSa2R0EMaF94/n9RhBbDq+8IF/wFuuAv0Ot/gS74AbQZ5Jpff/4z/ADSjkrMDLllixmmdMdBDKifcfhroLMml6YcLzwmmJiYGEAYli6QnXL05G2GaTNW/1i2oPoKOCEBCcPizo1H+flFOf8CMxE4MwExeiaCib17/Rik+SVQ32kgbgMZAErHLkAcCcQKQIzwC/bkBYwLhgdAvByI90BCDWKIKhALAzETdn1wUWDIMLwFYnB2BgAT+xRo3N3hhgAAAABJRU5ErkJggg==" alt="Nested List"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABzElEQVQoU2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtbxgn7vt4xkWLx1hLnAlkDkFw/vZ7hsn9Ky/On54Zyzjt2M//mZZsDLNmzSKoEaQgISGBoXXuBYamLPM8ximHvv7PtuViOPgQoleIE0JzsKDyYSbzMv9iaJl1lqE516qXcdK+j/9zHfnAmkEaYZpgBnGzojqI+f9vhsapJxhaC+0mMU7Y9fZ/vqsQ0c5OTk5mqO0/xNBe6jSZsW/by/+FnmIM198wMPz5B7GZj52BgR+IQewff1Bd8///f4bKzj0MnZVukxl7Nj39X+wrBdYM9y8zAwM7UCOyF5AdX9a6g6G7xnMyY9e6h/9LA+WIdnZaWhpDSeMWht4G38mM7Svv/K8IU2b4+APo7P8MDKAAwmUjzPbCmvUME1qDJjO2LLn+vzpaA6wZ5FTkaMIV8fnlqxgmdYVPZmyaf+l/bYIuSc7OLV7GMKUvehJj9dRjZ4NdNYy05bnBFjEyMjIwMTGBMYiNDo6euMMwdfq6K8sXle8EyUoVtm/dxssvok8oU4Dk3755AtJ4GajvOEgzMEYZ1IDYAYjlgRiUpjCthDgBGKQMv4EYlJgPAABU9NLxfh4HZgAAAABJRU5ErkJggg==" alt="Horizontal Lines"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB30lEQVQ4T2NkAIJpO1+e4eTjMf775w/DPxD++4cBxkanH5w/f356b4IvUNsbIP7JOGvfuzN2WrzG6uIsILMIgot33jJMnLj84vwpubFAxbcY5x//+j/BgougRpiCX79+MXTOP8tQl2GVBxRbyzjn8Mf/yTZ8JBnQPvcUQ0OWbS9Q00zGWfvf/k91ECLagN+/fzO0zDjK0JTnOAkUfIwz9rz8n+4shtWAmnneDC1JW1Hk/v79y9AwaT9DS5HrZKDEVMapO57+z3KXgivSsm9juHawigGkGQRABsDEQPz///8zVPfsZGgv84QYMHnLw/853nJgxSCFIAAyAARgLkAXr+jYytBZ6QMxYMKGu//z/ZUwXIBuAMxQkHhZy0aG7toAiAG9q2/8LwpRJzoMQAqL6tcw9DeFQgzoXHb5f1mkDtGxAFJYULWcYWJ7FMSA9oXn/1fEGZBkQG7ZYoYp3XGQaKyfcfBsoLO2kaYcL9gQRkZGBiYmJjAGsdHB0ZO3GabMXH1lxfzqnUC5mSAVUsUdm7bxC4jo/wVmInBmAmL0TAQTe/PmMUjzZaC+40C8FmQAOxCrAbEDEMsDMSvIITj89B8o/huIHwLxASC+BVMIMkQEiLnxaIaZCTLkKxCDszMARPTs1Wgjtv0AAAAASUVORK5CYII=" alt="Pagination"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOklEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbQ0n7LAY1YYR+26A0BhagmTNnooonJCQwtM69wNCUZZ4HVL2Wccqhr/+zbbkYZs2axaDunsYgxMnAcHzDLAaYAfvXzGIIjk0Dm7x28SwGkAEts84yNOda9QKFZjJO2vfxf64jH9gAy4A0Bg4WBgaQJscQiGEgTXFJEAMWzZvFkJiYyNA49QRDa6HdJKDQNMYJu97+z3cVAhuADPyj0xi4WRkYli1AFU9OTmao7T/E0F7qNBmofipj37aX/ws9xRiuA8P0zz8GsAv42BkY+IEYxP7xB0LDwP///xkqO/cwdFa6QQzo2fT0f7GvFNgAkJNBgIOZgYEdqAlZI7Lrylp3MHTXeEIM6Fr38H9poBxGLKSlQfyNHjsg8ZLGLQy9Db4QA9pX3vlfEaYMDgNQaIP8DQosmAEgcXR2Yc16hgmtQRADWpZc/18drUGSAfnlqxgmdYVDDGiaf+l/bYIuRiwg24rsf5B4bvEyhil90ZBorJ567Gywq4aRtjw3WB0jIyMDExMTGIPY6ODoiTsMU6evu7J8UflOcEICElKF7Vu38fKL6BPKSCD5t2+egDRfBuo7DsRrQQYAY5xBDYgdgFgeiIHByIBpNcQp/4H4NxA/BOIDQHwLphBkiAgQg/yBSzPMNyBDvgIxODsDANTfD+RhTmh4AAAAAElFTkSuQmCC" alt="Squares"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACnklEQVQ4T4VTf0hTURg9d+45p+kqTEMiJUnMkEKDyCgyMpAS+gEFWVL/FDrMhpnanOjmMFc6U59SJEJEoeEKUdMoC8ElNX9kVmQSGAoZiuyPtZbD273v4cCs/OA87r3vnvOde7/vErCwds84VMHBiQteL1bC1PDAUENVRhqjzTB4yM0ep+NA3KrEuHAF11oxhj7Podba/LapIfMM2zxG6u0emrnLH1qtViLTeS/6XOf/KnQuWYmsjC0wNw7DmLXzItvUSup6XVS7JxCUUh9p++lB3LmWIM1D/H7BC39pfCpvEG+a4lF2ewCm7KRKtnSL1PQ4aXZyCFqaWyD4qyEIBOLzdfDbHI+O3CDgp6x7SHTB89WJTlMoSsV+mHV7a9hyPal+OktzUtaiz/7K56CkLQpRSevx7UUb2quP4PClx4jZnYwRhwtd5jAYrL0oz9tfywgiqeqcprrUMIyOvpcEBEGA3haCHUlhmHQrIKYSaJ9QbFAvwGH/jocF4SiseIaKwoOywI22KZqbFgGLxeJz8EmTs+wS3Rol1E4vGi+ocMXchetFqbKAxTZB845uxJc5IIjdVZAABCgB5X+qerm0HZUlabJAefM4LTgRjSKDQcpqMhphKC6GWq0Cda/Gh5jX2DQWKc3dbg/KTCboih6h2nxMFii795Hq02OXlHHRv/sHhTqQLDkOIQQ5+S2osZyUBYxNI9RwNl5ywLNcLdRLDngEIByaOTum10QvcZCdex91VelyGfWifeB4SmzC1khWcxY8g0KhkMDHf0Zf/zjEBtvog7v53VIjsU+ErryjM1gTum2lh8T/z85McvI7xuON08oFVAwxDPsYInkrcCPLUssLvN/nGSYYXjKMLW7kIqEM/Bz/Ii9qchEXg/ScfwOBoSDkFgbp8AAAAABJRU5ErkJggg==" class="Dropdown"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC0UlEQVQ4T4WTbUiTURTH/8+W0zmnlbPCJBElp6YLlSTB3kjFD/vgovogRRB+sFAZZiYqpDlEy5fmGwZiRDS0NIqSZiE5yTQUbb5kUzAh0dF8w1y+rdu9z4ORRXjhD/fec87vnnPPvRzoKDfaep3l8oifGxvYTlMDff21ZRfVNMxGtcrdbV/sPR3sFhG8V8RY247+sXlUljd+bKhNuUCdLVxN1ypJOSpB3ZMeeMiceYCYI1CGKuEildI5sOMP9j7pGnT1Ayi4EpVGXZu5KtMyuRrjitedQ4hS7QchgMRFho6uQfgHB8HZxXVLVgxQeK8Pt1KjS6mhjtO3L5LUk+5o6xzBoYBd+LYhxZhjJ464r+CzeQgqVRDc5bLfEDFZR351N3TaY3q6WcNVtM2S9NjdaOsYRNzxUNwfJXhmJkg8LEKM4ge+jIwiNCQAbnI5D3HiHMgrN6Eo81QlXVZzZa1Wok3YA339Y6RdPosPPd1Y+r4M+5oD6oQ4PshoNCI+Pp6fE1pjdvEbFGfHCYA7z6dIhtqbN3Z2dsBuX0F4eDisVissFgu/r9FottzDdd0r3M5NEAAlLZMkM/EAzGYzpqenERYWhg36Hvh0nZxgs9kwPDwMhUKBwMBA+Pj44Fr+C5TeVAuAosZxcuOcP5qamhAdHQ2RSASHw8GLb6lYDIlEgoWFBZhMJiQnJ0Ob+xQVOo0AKHz4ieQkKWEwGBAZGckDpLT/LAu73c6vZTIZ5ufnMTExAbVajfSsJuhLzguAggYzybsUypfAAljgzMwMlpaW4Onpya/n5ubg5eXFl+fn54fUjEeoKksS2phT3dV3JlYZHuIr9JrjOP5UJjb/e7zrHkd1bcuQ4UGWkdrqmIe3tuhlq9xDodruIzH7rO0rCx6kce+pmhmAfYCDVCeofNnls0T+OVrYoA8d61STVG+pLJuODKKgYnX8L3iTySDLVPx3/gXkY0XktkW+hwAAAABJRU5ErkJggg==" alt="Tag Cloud"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC6UlEQVQ4T42Te0hTURzHv/e2B3NOo9ZjWzVTUFMsSEuLioo0LPyjgowki/pDNEzW0h5qpmWippk6p39YED0oetBDSQ0RI7eG2ssSbSorxaSNWE5rOHc69y6FirAffM+5957z/dzfOed3GNC42GBtF8tk4W6XCzNp6FXHS31pYhy1WamczKVme/uWEO/wkAUsx/qvOJhS/fqKPnkfndzLVLU5SfIaERr6AIkAEFGtVrgwPtIId3siBKpV09DxARPku2zI0ZuQlxJ5hA7cZSpbx8jh9V4wDgFyL8Df12NmhysgVG0FmfgK1tsfduMpCIKL4eu3F6crDTiburaEAmqY8mY7Sd3kg1aLAxEqERwjzZhlzoV0URTIdwuI2wn7YA8U28x8JpOTk8ipaEO+ZkM5fa1iyhptJC16Dmr69EgKSEZfkxqqwANgBXRPiBtgWNq5YHtzHcrt/Twg+2IrCtI3V1CAjimtHyGa2Pm48fkBllhqEWR9AUIAsWIdJAuX48eXbjiGTLyZC0IHTxY+ReHJGA/gwsMhoo1T4rJFh4Pqw9Mb9u6RCooFERgd7oIixgiRZB7OD5Tg1FItMvKfoDgr1gMoumch6TuWIKhpLuL9jyLLTwND5yEsc1rRPy5CVEwd3DSjmp4WfBV38IBjuY9RcibOAyi4ZSYndgcgrHkh9kuGsVnyALIPSfgWmoHwEC1MdgOefRqFU/oW7x0GXAu7A03WfZTl7/QAzl3rJpkJwYh4thh7BB+RFsn8WoYb1YNleGFv+624OEDa8dsoL4r3APKuvCHZB8JQ++kShMxsiMd2gnHLeJNQ2gkfeQ8tLgGVEHJWiQCsRqr2BipLEzzHmKlr69gVHbwyVC3lTQzDgGVZXtzzn/HcaIZOf6/r5tXjDXwh0UapKairl/nKV8x0kbhxm3WQM7+lPgNfyrQRUwVSbaRSc5lzifz1a88Heh6YoLJQtVD1Tk3kIHIqbh3/Mk8xOcgYFX+dfwINXUrkaZLRUgAAAABJRU5ErkJggg==" alt="Lightning Bolt"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACvklEQVQ4T4WTa0iTURjH/++mc8uWkVqgkB+6IFtSZCAVWomWBgvMMEiKwE9WS5YtM12kOW/p5m1KUggVmUqTJCXDJIRsgaKmsLwkKUqutpblzF1P592rH8rCB/6HA+c8v3PO838OAxraTnOfn1gc6XG5sJZmB/sH6jTnZDTNTGVnKrvn++Ik6yMlW3gsa80YGLeiWts01FCXfpZuHmNqe+0kfb8AnR8BoQ/gx4rPzX0os6XlFQQ8N75afmJxyYHyG8lQ3x9E/oWoyxTwlKnpsZGL0evQ9cFGNxIvQOwvhFDgAyHjQHGlHgkxUgyPzmJh0Q7VpUQU1PfjtvxAOQXcZaq654n8yAZcKWiG3eECn8+DyA84kxKHJ/T0b99tiD0YAePEHNweD27KjyNPZ4BaEVNFAbVMxUsLyYjfhEJdB37ZnTTZF9OfrdgXEQZZ/B7o299h9JMZtoUFeDxu1BenQaXtQZEytpoCdIymw0QUiZuh0jzzFlBIAUbjGKTScGSnJ6wqKiEE2SVdKMk+ygHK2mZJpiwEacp78BA3eDw+toeKsTFAhFOyQwgODFgFuaZ+gTu5iRygVD9FlElbMWkF/AVUvpwDQyPjMH2xICpyF0zmH8sQAsmOUFzNe47yWzIOUNQ0Qa6nbIPJBgSKOOvYsDucKKtpBF8UjCW7y2uh0+mGVpUCRW4rKtQnOUDBIyPJSQ3H9PyfN2AhhoFJPGw14NiyjTZqY6EyCRlZzagqPc0B8hveE9X5iH924MycFcW6NkRHSbw2sgXMU5yAPPMxajSpnI05ut7+5PjwvdIwfy+EYRhaSJ5X7PzveGOYgK5OP9L4IKvT20h0CFEUtXeIA4J2r/WR2HWLeYZNHqZ5b72tTAfad9hJdZgqjIr6gNVHc1chVE6qKarXVGMrG1lIEBX7jv8lr7yGhVDPuO/8G9JCQ+SGqowQAAAAAElFTkSuQmCC" alt="Workflow"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACyElEQVQ4T4WTa0iTURjH/++gjNLEFAU/6IdIzJBEYWqoXZ0omaZl0vISWDFzmpc5pxPmZc152bxNUQtLpDJwpaWkiJiaN5yamtaUwNAPhiJWBpL0ds47lCjEB/7wnOfyO+d9znsYENN2rIyaWVh4/N7awl5amjCMV2uig0nbCtEmU9a9PnrBxdzDxY5HWXva+NwaKrRN7+urRVGk2MhUDWyyIu/9yNE0wcrSfAewtv6D8/+OsSwLUbQAyocTyI33TCTpZqayd4O963twV4CfpwumPn6Bq7MDZuYWcev6eeTXGpAnPlVCADVMefc6Kz57GJkFjbifcWPnBHRN7bZQgGct/YgM8UFLxwjiYwKQoxuCMtmvnKSrmNLOVTbJ/wikygYOoNbpwZLMt+8/OUBIAB9e7k4YGjNi0PAJ9+IuIlvbC5XkXAVJ6xhN+zKbHGiLFEU91Fl0LkDv8AzaugycT2OqSj1kCWHQ1r2CRBQKmboLapnABChuXWJTg+0hltchLNALPYMfkEGK0/Mfc4BCeQwKCIDGtLWtyEy8gnTlGxTJA02AQv0CK7nsgDvpVbCxtgSdtCwhHJK8RxzgkoAPXzLIPnKqsenPkCddRVrOa5Qogk0AVdM8mxFxFHEpZShWxEFV0QyZOBxpigccwNraamewB8zIdadFIln+AqXKMBMgv3GWzRI6IzaxCKFBfvDhH0f/yCxetvdxjUH+3uC7HcPwuBGTswtQSoVIkj5HeeE1EyC3fpLNjnXFzaQS2NnZ7uy2vPyV86MiBOh8O4GA027o6p/kAOLUJ6jUCE3XmKUbMIT7O7ufcDzENTAMAx6Px4n6/9q7oXnoqvXTTxukHSRXQyvsk1Vt7RaWNif3ekg0v7qySJunSN8gUTMFmBE5EZ0hciTaRw/y39amAP3HfhEtEPUQGbcLKcSGiH7Hbs3bTArZIOKe8x8jAD7kFs0k3gAAAABJRU5ErkJggg==" alt="Numbers"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACs0lEQVQ4T4WTfUiTURTGn3duzo80CckwyVISMSTQIiySjLT8Y6AFCYqtCCKrKdPMRC01h2jqTJ1fZVKKNUGLcKIlFkK6Qt38ws8MxVGDqRlpzVm3+74vs0DKA88f99z7/Lj3nHMZ0FC2m3rFTk6Bv9bWsJkM+j5dRdE5CbWZqMzMvc6l3hN+WwL93AQsa9PQTS6iVKkeqK2Ii6WHJ5jybjOJC7JF+wfATgiIqTSDSnxbmcbUYCy89nxGYoQEDMNw8B32q1DU6JF95VA8XTYxZV3L5OpRB2gN1GwDvNINwd3lPfx8RKjW7sTqcgs1eeNy8LV1QE51H+7IDhfSRBVT0rlEZCHOHMBRBNyuGcalCDEK3k1j7scnRB58ioF+oPlCGwewIRZkqbRQyINL6LKcKX45TxJCt2Fygb9BYqUavgfsUNfvATvzR3i43IfZLERHgoYDiJifyFB2ITf5eCldqpiiViORh2/HKK0pC6jXZ+KrZQjGLyJoNVIIHRcQ4r8b5XFHOAAhBKl5HchLDeMBBS8MJEniDuMyLSIFEHxHZddDPB95DcvMRZwK8EJm9F6IhH+6dEPRhrvp4Twgv3mGJEfuwvQirYEtXwe2G41Nj2BZAaRS6YbWXs9qQWGmhAfkqqfIzbPeMPVEQeRgzx3OeOAMWbwM4+Pj0I9MIDFyksuvzC/ANUgNefozFCtO84Cc+lGSFuPLAayR3eCGsJNhmJ2dxdjoGG5FG9f3WEBCSiNK8qN4QHbtIMk477/hmv9LyJIaUFYUw7cxTdXddybUN2CfpyPnYSdOIBBwsk7f37C32imoKpqHnzxOaaf5KnY+3eW5mlanra77N/tI7P68aY41D1FfD1UTCxBT+VAdo/Kkon0AP/gbg9CUhWqG6g3VhPUgC3GlYt/xL7MVx0Lo1PDf+TfNyS/kNh4qwQAAAABJRU5ErkJggg==" alt="Tree"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACg0lEQVQ4T4WTXUiTURjH/+8kZaYGIRVe5EUQYkSQF1FQVGTlxaQPysAsyWCumjrMtqWjzbmt6b6cm1MxBtmXohZRpiESQuaFon1AYN4IeRHMxJzYPk/nvG8bLQsf+MN7nnP+v+c55z2HAw37kG8iJT09LxoOYz3NT09OeWyXJNTmowpwzSNLE8dy0/Jyt4oYa92Y+rKIFnv3e69HVkIXz3CtYwEi258Mc/sQbw6FwnGIf+UnAsEQFBUX4rlt4iAM96ZRf21fBU32ca7RFXL9YCoPUEpPrOlAoX+CjLRUlF0p5OcYoKFjEnr5ASsdtnPOkSUiP5LxT0AwHIXS1ANZaSEe9g5DLS9EEglB5x6HQXHISQGtnOP1AqnM34y7bYNQlZ9M6CAQIVAZuxNyltvnoLGPwlRztIVOuDnbwDeiKNgCneMZ7lSdii9mZhCCcJQgGIrgh38Vjo5XsNUVQW0ehll9XABYns+TaklWAoCZw5FoHOZb9PPfVlcvnPoy3DIMoqmuQAA09s+RmtPbUaXtgkNbAr4yDVaZhe/7sjBOFqPZ1sUDbupewKqVCABT9yxRnd/BA8yai3FzzEhSxOACqzzA0uSFxyiFou4pHIYzAqDhwWdSW5wDqaoTes3lhANbDgpdsIjS87BavGgzlqNS2QNnY5EAqPd+IJrS3bih6YRIxG7jH6bf2yA0xwBJnAgu/VXIqx/BZSsWfmOte2zybH7O3l3ZG/lKHMfxICb2/Xe8HZ+F29P/6fF9Jbu67WxFlsL0ciB9U+ae9R4Sm1/wfWXmj9T3jqqPAVKodlIdpsqm2sAaWVNaSLD9hajmqN5QzcQWMkgmFdvH/8wxJoOsUPHP+RevWkLkxNKb+AAAAABJRU5ErkJggg==" alt="Paper"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC7UlEQVQ4T4WTe0hTcRTHv3dqljqHuVyNSEISNSJIyAqzB2pYCKmQkGn+UX9YmpjvV/laa+bmY06tTE2EtFJDUrRUxHyGMh/VSDOVGj5Q10yLubXb727oHz3wB98f9/7OOZ977jnnR4Gs3JaFAXM221Wv02EzKYcG5cWSEF8StkCkofLb1QOeLlauLjwWw9p0ycdVkObWDJcXhwUT5zGqqEdDhx3dgpYJYKuJHhaLDfgpv4U11Ti6TSpgw7HagKrUK0gM94Pg0RAyrrndIIZaqrBzlb5+3AJ9SgLQq6FpP4OlL/3QagE5p/qfgKwHg8iMOCYmgPtUQbuajjhlbQBYa5WwGkqCFr9AU6YoU3jiTsKljQyS7lYhPToQ6bI+CKI8CoihiMp7tUhHem3H+BKwbXUCvKkymO12BkxNEV+5ZgCIZHWgiffy9x/kPQipuZ0Qxp6WkiMZJWmao6N87KAgNTVfmwd3OBXWtrsIzRo3a20gSmZqBXT2f0Bj6yDEt0ORKGqFKNHbCMhpUNLRvnzMrTJFBJb6S7GX1QbMzCJi5CL8fY6go/c9EsL9EZf1GNKsq4gTNONeio8RkF03Tcf67cFnFWnssg75zz/C3X4S5xxnIahaA9eWA5qmSfUDEJtZgRJRGGLSX0Kc5msECGs+0QkXHDD9jUZmwwyquydxwm0fQnzt8FqYj5y0KxBKa5EYEYCYtFKUSiIRlVKPPIG/EZBVpaCTg5zQptAgWCbHTi4L6hU9HPiW4E814/xZD7gfdkbXWwVeNL1BRUEMIuOfoiA70AjIKB+hU0MP4Fn3Ii7ndMJMtwIL2x1gsVjwZo+Cx7PbaOPc3DweikkGBFAoCTK2MVnWMxjg5XRov72lwZGiKEMwI+b5z9XVO46ikvp3TyrjWwyDRDZ+lLCxic3hHtzsIjH2xYWvTPAoies1jDLZzIkciU4S2ROZMYn89WnjATNPZMgxTdRBNLbuyEC4RMx//C94nclAyNQYr/Nvq09Z5Fbe4ekAAAAASUVORK5CYII=" alt="Person and Number"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACkklEQVQ4T4WTfUiTURTGn3d+fya6rPxDkyDMijChMCpSUjCw6IMkpAgLwsRkLDNRIT/G0nLqdIqFCRGKgouipFXMErQRrlkJilrDcIq16aQETet27vuiZiM88Fwu997zu+ece64AskqDvdcrICD29+Ii1pKtz2yp15xLITc7aV6oNs70Ho72j43eIOOsNc0yPI2aytb3TfUZZ+nwkFDXM88y4jxh+AR4uwNeXG7A3Hcn3IgpDw6C+1/sjT4/oWrsQ/HlvVcI0C7Uds2yzAO+MNkkRw7hDsYXRoyP2XDhIr9oxTig9I4ZJVn7Kmi1QdAaZ1hWfKAI8POQAPo2PcZtE/D19YFjahpatXKZ4MYWUKQzQaU4qKXFOqHquYNlJwZjeEqKYNRqRcPdZmhUSgT6e+Obw4n1IUHLAA/hFworu6DOSaihRZ2g6ZhkiuRQDFBNxdx/OFFV3YjN4ZtwNCkOO6IiV6XAGENe2UuU5SVJgNuPbUyZEobJWQqfALyIE+MTaH3Uif5BKxL2xyD9zJFVkGuqZ7hVkCwByvWjLOd4OD5PUw08V+rAC8kBN2uaUZKbjkiKaMmuFj1BxY0UCaBuHWHXT28RIwjxAQaHrHhrGcCemG34anfiXksHNEWZCJWv1EFR8BBVqhMSoPTBAMtPi8KXGSkCYWEO3SYLOrvfwY9eIfVYvEsdsnPboC1PlQDFTR9Y4fmdLh3Iwze8NkN56ZTLXpayGbWaNOkZ83U95pOJUbu3R/iJBwVBgEwmE8Xn/1q3aQS6en1/y/1cg9hINIQp1E87AtbJd631kfi+wz7GnT+S3xuxlWnwIm0lHSJFkKgf4Xq1FAojLZBGSa9IQ0sHOURO4nn8z3kpGw6hN5O+8x/9nCDkqmHfRwAAAABJRU5ErkJggg==" alt="Dollar Sign"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACfklEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbw867DAx/7x9mOH/pBkOwrwvDf0FFBhagmWsWzUExtDgrjqF17gWGpizzPKDEWsYph77+z7blYjh0/CzD0ZPnGQJiUsAamRkZwPTS+QgDAr2dGZTkpRlaZp1laM616gUaMJNx0r6P/3Md+Rha+2YzGOlrMqgY2jCwMzMwsLNADJg1E2KApLgog7iYMIOLnTlD49QTDK2FdpOAwtMYJ+x6+z/fVYihfcIchujEFLhGkCEgA3onzWYozktlOHnqDMOxUxcYynITGWr7DzG0lzpNBhowlbFv28v/hZ5iYAPC41MYuNkYGN4/u8+goKjIwAF0xY3b9xk0VBXBrgCpqchPZqjs3MPQWekGMaBn09P/xb5ScC842tuAba0uSsWIEZA3QeJlrTsYums8IQZ0rXv4vzRQDh6IIF3//v3HMODgMYgXKgtSGEoatzD0NvhCDGhfeed/RZgy2KlrN++B24ruApDz9XXUGbxcbBkKa9YzTGgNghjQsuT6/+poDbAXmJiAcQcFIJtAAGTw+q17GazNDRnsLI3BYvnlqxgmdYVDDGiaf+l/bYIuwRSIrCC3eBnDlL5oSDRWTz12NthVw0hbnhushpGREegSJjAGsdHB0RN3GKZOX3dl+aLynUC5mSAVUoXtW7fx8ovoE8pIIPm3b56ANF8G6jsOxGtBBrADsRoQOwCxPBCzghyCw0//geK/gfghEB8A4lswhSBDRIAY5A9cmmFmggz5CsTg7AwAZnkZ5ODcV6QAAAAASUVORK5CYII=" alt="Cycle"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACiElEQVQ4T4WTa0iTURjH/2ea0+l0hJj4QYug1IggP0hCmuKFfRhkXoLECI3SbK1ppqJCXoaXcup0roQUQi0FTcSsWYgKqYGiXUAy+yDph0ppVlba8PS8e1OitD3wP+95z/t/fu+5PIeBotq8OC6Vy4PWrVbY08LUxKRJf1pFaYukVVY7sDweGegWFLhLIrDsxuSbT6irbn/ebEpPJvMMaxhZ5elHnGB+Czg7AlJBDmLfkZgOTHxuhLfLGnS3p1B8IfgSjXWy+uEVnnFUhrEFYKTdjP6h6S1nER0WgPjUGAiA0sYJlKhDqsh4ixkGlrk63B16vZj8sFuzJUB5vBYCRK2OQJFxDDptqIGMDaymf4lronZCmdCBvo6Ef5K/zmiBD7WAlwaJBSHovReHwuphlGVH1JHZyPR977lW6YX4i61IuByAcLf9kLkBEuaCdf4dfJJefkeaaRAtraHIq3iCirxoEXCjZ4FnqXyQdGoIr8+mwN3RF85rEajanQq5qxQen0s2Z5BWFIvWtjBc1T3C9QKlCKjsmuPZsb44l9uJKVU5fqy9o113AfsSj5ve5zf//nF5Cd2P59FYHocrRb2ouqYSAWXtszw3ce/mJn4r7AG3zhFEhj3WDKQ7RUJINhhGbZuYmRkDbcF91OhOiIDSlmmen+QPi8WCpqZn/z3GlJRgKBQKaHI6YKg8KQKKm1/wwjMH7VbgnwZ1Vhvq9UniMeYbRybiovwPH/BztXkYY5BIJDYJ/b/j6dgsjKauV3fv5JhthUSNj7bsQZ/cw/OQvYskfF9anBeSX1LeqK2UqZGS9pGOkfxIO4SJbLMmTuM/SXOkQdLMhlGAeJKEdWyXvMEUICsk23X+Bd5OHOTn7wFpAAAAAElFTkSuQmCC" alt="Image Button"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACx0lEQVQ4T4WTbUhTURjH/3evvs3IlsmETNfLMtLMD2XQi5GCH0ZUoJAs+lYmJmpmogM119TS2XSuwhJCKgstokSjhgjZCIemgeZb+Y42WyM13eZO5+4iRBB7Lv97zz3neX6c5zzPYUBN127tFksksW6XC9403WvpMVadU9IwK9Uqc9tk7z4RGRAbuYXHsrxaz7ANNbqmTw3GNBV1HmLqulZJWpwI7aOAjwAQs+JzYwFl8hnuu24hvg5o7vei5NKBy3SumantXCLph/1gnqaOhMAyuApT53f0zSyDT/9jwiVIjJfioEJE4QxYQOk9C65nHKqkgLuM3mQnGfGBHsDI4C8UP5mEUyCF36YprCz6YWmewe5QCdJTgqDc50OhThQbzNBkHdFTQB1T/WaBZCYEYfgHkF9vRbd1GeRrGzZ/M8IpisBauAqLwXFIlPOhvyCFkFmDWtcJbe7xGgowMFWtcyQrKRgD9ExTylyQ+Vsw+yIbuko1ftptyC00IFRVD9uKDP0lgSA0rfzytyjPT+QAt15OkxylDHNLQPKdZUTyzXhWdhYKeQQcbmBydhYqbQcss8F4l+3rOcurmjbcLEziABUt4yT31FaM2YAHJhcChfOY6DDAoLsB9vCLNBXgxVyE2+EL9UlaGmpXil+hskjJAbRNI+Rastyzg6EZNxq/ANEbfyNKNAKGPh9XtmPULkbqLgZxO7h6ZhU+R7XmNAcobRwgBakKTNi52o9ZXTCNE4wtCiGk/vIAB45uEyAqhOfpEdYy855CX5HCAUoa+oj6/F6vHfi3Q0bOI9RWpXJlLDB0Wc4kKPbvCfP3+DAMAx6P5xE7/tfem0dgMLZ8fvwwr93TSPQly9K+bpVskEZ7u0js+oJ1ig3up3EfqJpZgJhqJ9UxqjAqIbuR/+RE6LyTapyqg2po3ZGFSKnYPP4XvM5kIbRm3HX+A4dcOuTBGTWsAAAAAElFTkSuQmCC" alt="Radio Button or Eye"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACn0lEQVQ4T4WTa0iTURjH/2duTje3tJathYotcijrZnSDoiQDPwhlUR+k8FNkYraWmqmQ5hAtdV6mGJgQUhhp0EXUQsJIhTQto8j0w7Bpl4kMFXNOT+e8b1pk4gM/3sM55/k9z+G8h4BFSYuzW65SRc57PFgJR19Pb1XxmViW5mTMkNI2V/fhcL/I8HUS7loxej+Po7yk/m1tVeJptnmAVHbM0MS93mgZAnykgJzjJY6lzOlFxO9CaH3dsNT0Iff87gtsroFUtE/RpP0KdDn+nxjw9SLwvRQITMG41gouyLvVg+vJ+4qYoJqUtblo8iE12u2TGJ0dgGdOAaPKsFgxdIi18DtGwig2Bswix9YFi+lAGZuuJNbWMZoSvRobHmuxXqmEWhoMH3cU0vRmKL0UMEz/6WDQz4ot2jlkl7QjPzWqnAlspLjpGzXFBGLP66OYdzvw0z3MzuwLMnECldtyoJYpFjto+tGKSxHRyCh4joKMI6Lg5iMHNcfqEPZsDdb6R0JCPKAeO5MoEOpJQqr+nCDgyTPKflwNNSPN0owbWTGioLDRTlOPBS8r4Mlc8rfgcs4TFF2LFQX59YP0ykk9jG1abHKOCNWmdQnsOmXCWKV0YTs5K1T/MNmJOuMDmLIewmqJEwV5dR9pZrwBO18GIWjUDiqZAJlXwUWboQu/veTH4oKU9PsoKzwlCnJr39HsBCNqhkshI/6QT8UJAh4y5RuoNZ/gLZUyZNBIdNBjF5LNd1FRHC9eY6ato+d4tGFHRIhSSCKEQCKRCPDxv/GqaxC2qsb39+6kt7C1ar5DZ8p/2qRapdm60kPi62POLzy5n+V1Mhq4QM7YzDjICOGd80aWlBYnKGOWYWe8YAwsbOQSDYOfY7nkBSeXTDGE5/wLIHwi5FRZDpEAAAAASUVORK5CYII=" alt="Image"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACFElEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbQ2XnLIKaQQoaCxMYWudeYGjKMs8DctcyTjn09X+2LRfYgLayVIKG/P79m6Fl1lmG5lyrXqDimYyT9n38n+vIR7QBf4Dh1Dj1BENrod0koAHTGCfsevs/31UIbMDMzgqGlStXMri4uMBdcvbsWQZTU1OGf//+gcVAdG3/IYb2UqfJQO5Uxr5tL/8XeorBDTA2NmYAaXr79i1Yo6CgIMOePXvAhoLYIAsqO/cwdFa6QQzo2fT0f7GvFNiAjop0sCKQZhhwc3MDGxAaGgrWzMjIyFDWuoOhu8YTYkDXuof/SwPlwAYoCPxn6OrqYpgxYwbYRpBLQAaA+BkZGQx37txhEBISYihp3MLQ2+ALMaB95Z3/FWHKRAciyAWFNesZJrQGQQxoWXL9f3W0BkkG5JevYpjUFQ4xoGn+pf+1CbpEJ6T28jSG3OJlDFP6oiHRWD312NlgVw0jbXlucLiBnMjExATGIDY6OHriDsPU6euuLF9UvhOckICEVGH71m28/CL6hDISSP7tmycgzZeB+o6DkzKQYAdiNSB2AGJ5IGYFOQRHmv4PFP8NxA+B+AAQ34IpBBkiAsQgf+DSDDMTZMhXIAZnZwBmXQ7k8ZbC/AAAAABJRU5ErkJggg==" alt="Password"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACO0lEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbw867DAwcLAwM7CDMDGGzAM1kZoTQMCDB+Yuhde4FhqYs8zyg2FrGKYe+/s+25WIoaZ8F1sgCxExATT9+MzAIckLYzEgGZKcmMLTMOsvQnGvVCzRgJuOkfR//5zryMZx4ysDAzQp1BdAQkEtANoMNRTKA+f9vhsapJxhaC+0mAQ2Yxjhh19v/+a5CDLU9s+Aavv9hYBDigLgG5AWQK2AgOTmZobb/EEN7qdNkoNhUxr5tL/8XeooxXAeGKcg2bjagK6AuAIUDOvj//z9DZecehs5KN4gBPZue/i/2lWJo6Z/FwAbUyArEYBrJ2Z9+MjDwsUOMSktLYyhr3cHQXeMJMaBr3cP/pYFyDPfeQ2yHhQOyv9FdUdK4haG3wRdiQPvKO/8rwpQZOiYCYwHoZHTb0TWDXFBYs55hQmsQxICWJdf/V0drMDz6iOoCfCkqv3wVw6SucIgBTfMv/a9N0MXqAmS/wwwEuSC3eBnDlL5oSDRWTz12NthVw0hbnhushpGRkYGJiQmMQWx0cPTEHYap09ddWb6ofCc4IQEJqcL2rdt4+UX0CWUkkPzbN09Ami8D9R0HJ2UgAYogNSB2AGJ5IAamRwZMqyFO+Q/EwETO8BCIDwDxLZhCkCEiQAzyBy7NMN+ADPkKxODsDABA/uPVJ9DlxgAAAABJRU5ErkJggg==" alt="Horizontal Lines (Tight)"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACD0lEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbQ+3+coKaQQpqrZsZWudeYGjKMs8DctcyTjn09X+2LRdJBrTMOsvQnGvVCzRgJuOkfR//5zryMZx4ysDAzcrAwMHCwMDODMRAmgXoKxAbRMMA8//fDI1TTzC0FtpNAopNY5yw6+3/fFchrC6otu1k6GhpYGBkZITjqqoqhtr+QwztpU6TgQZMZezb9vJ/oacYVgOaHTsxwuX///8MlZ17GDor3SAG9Gx6+r/YVwqnAS0tLXDbmZiYGCoqKhjKWncwdNd4QgzoWvfwf2mgHMO998AwYEOEA7K/0Z1R0riFobfBF2JA+8o7/yvClBlAfgPZwMzMDKZBuLa2FsNlIG8V1qxnmNAaBDGgZcn1/9XRGgyPPqK6AGYrevoAGZBfvophUlc4xICm+Zf+1yboMtTU1MBthrkCKMZYs6/sP7IXQAbkFi9jmNIXDYnG6qnHzga7ahhpy3OD1YGiDOYFEBsdHD1xh2Hq9HVXli8q3wlOSEBCqrB96zZefhF9QhkJJP/2zROQ5stAfcfBSRlIsAOxGhA7ALE8EAPTIwOm1RCngLzzG4gfAvEBIL4FUwgyRASIQf7ApRnmG5AhX4EYnJ0BPYbs1e+T4w0AAAAASUVORK5CYII=" alt="Image and Text"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB6ElEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbQ2XnLIKaQQoaCxMYWudeYGjKMs8DctcyTjn09X+2LRfYgPbyNIKG/Pr1i6Fl1lmG5lyrXqDimYyT9n38n+vIh2HA7t27Gdzc3MAG7tq1i8HV1RXM/v37N0Pj1BMMrYV2k4DcaYwTdr39n+8qhGIATDNMIyMjI9yQv3//MtT2H2JoL3WaDDRgKmPftpf/Cz3FUAxA1gBiI7vi////QLV7GDor3SAG9Gx6+r/YV4poA0CGlbXuYOiu8YQY0LXu4f/SQDm8XgB5ydjYmEFISAjsmpLGLQy9Db4QA9pX3vlfEaaMNxBBmkBOh4HCmvUME1qDIAa0LLn+vzpag+hoBBmSX76KYVJXOMSApvmX/tcm6BKdkEBpJbd4GcOUvmhINFZPPXY22FXDSFueG+xCUKgzMTGBMSwGkFPX0RN3GKZOX3dl+aLyneCEBCSkCtu3buPlF9EnlJFA8m/fPAFpvgzUdxyI14IMYAdiNSB2AGJ5IGYFOQTZViQ2KCR/A/FDID4AxLdgCkGGiAAxyB+4NMPMARnyFYjB2RkAQ2cQ5IUbdKcAAAAASUVORK5CYII=" alt="AT Sign"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACgElEQVQ4T4WTbUiTURTH/88yzcyiGhoS+cEQsyLID5Fgq9DAcsQS6oMUlemyUBlmZm7g1Clam69zbRBCRWGkUpRkxSjTtUBxlajoihQXE5S0MLHM27nPgyN60QN/7uXec373nHPvFUBW2TbeFRAcHDM/N4el5HF191hMJ5QUNk6aFartU13x0atiokNlnLWk9Qx9Rm1l45sGS8Zxch4U6h2zLGO3P9reAyv8gACuZcDr+zZ09o1BX6iD32/sDYHfYbjuQtG5XVkEaBLq2qfZ+biV6O/rRam1ZdEMLqtViNgciRJbN4ozY43kbBVq7FMsc99qXLPakHToIGZmvgGMAYIgjozPybxeL/oGBpF6+hT0ZicMmj01tFwvVD2ZYNkJ63yAjcYK5CgomMyQVI3DpS5xXqCYFAFpZ1Khq2xHWe7+Wlo2C6bWMaZJDBEBZ9XpgCbLB9DHFyPZ9EEEGFUydDicUKenIb/8GcrzD0iAqw88LEcZ5svg65dJMW2BSuAjr2B+/ic8nk/4ODIqHnLR8BhXtIkSoKJ5mOWqNolNfPHSsWgTFXGx2BK9DRf0D2EsVEqAskY3u3Q0AmPTwPpA+K6Ml8Sv8Wa17i+oRtuCKsMRCVByq58VpERhZAoI8ictl97DYoDsvLuoqTgmAYoa3jLdye3iKe6hAfD+P7W3I1S+FvIQOWz3OqDNUFEfGKUv+WXm3EadKUW6xgKzozs5IWrn1vAgcZM3TyaTieLzP63T6YbZ0tx750ZeG+1ZuUeYpuxRa/Aa+Y6lPhLfnxgf5cHvKO4VqYkDAkiRpL2kcBJ1QazkX8af5Q/SMOk5aXDBkUPkJF7H/4IXgBxCdyZ951/5pTDkA1omRgAAAABJRU5ErkJggg==" alt="Slideshow"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACbklEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbw867DAwcLAwM7CDMDGGzAM1kZoTQMCDB+Yuhde4FhqYs8zyg2FrGKYe+/s+25WJgrHvCcDpDBmwASAPMEGYgG9kAXuZfDC2zzjI051r1Ag2YyThp38f/uY58DIy1jxkY/v8H44dl8gzbV8wEMv8z/Pv3D0wnp2eDHcH8/zdD49QTDK2FdpOA3GmME3a9/Z/vKsTAWPOI4VqBHAM3K8Qb6xfPgGsGGZCTkwM24O/fvwy1/YcY2kudJgO5Uxn7tr38X+gpxsBY/ZDhbok8Azcb0P/AMAAZAgoHdAAyrLJzD0NnpRvEgJ5NT/8X+0oxMFbeh3gBBKBe+d+lwjBp0iSwF2DeKSoqYihr3cHQXeMJMaBr3cP/pYFyDPfeM4Btl2i8w/C7QwUecBMmTIAbADKkuLiYoaRxC0Nvgy/EgPaVd/5XhCkzPPoIMUCk7jbD/25VvOmhsGY9w4TWIIgBLUuu/6+O1kAYUHsL4YU+DYa+vj54YJaWloINzi9fxTCpKxxiQNP8S/9rE3ThBoBiATnwenp64F4oKysDG5BbvIxhSl80JBqrpx47G+yqYaQtzw2WZGRkZGBiYgJjEBsdHD1xh2Hq9HVXli8q3wmUmwlSIVXYvnUbL7+IPqGMBJJ/++YJSPNloL7jQLwWZAA7EKsBsQMQywMx0BMMmFZDIxhI/Qbih0B8AIhvwRSCDBEBYpA/cGmG+QaUWL4CMTg7AwA59zjkk0FhJQAAAABJRU5ErkJggg==" alt="Sitemap"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACsUlEQVQ4T4WTW0hUQRjH/2ddXTO1EivwoU02clEi0IeoKFfJxNCHEiqwNCEEq80WMzMV0lxWzVvrrktaWWHFBhnISTLMvJBarHkpCnSJpIQMrQx80NwzfXNOFhXhwH9mzpn5fvNdZgRQq26bcmkCAqKkhQUspYmhgUFHVWoSmU2R5oRLHTOuXeH+UeFrVZy1ZBsc+4LaaudwoyPzMG0eFep651jmVh+0jgI+xHB1iohf7YSvIEEtMHhJElo+HsJ2QyI8HiBywzzMV4dQfGzLSQLcE2zds+z4Dj/0vCOAAPQ/EbFnVRO8GIOaO0WA5sm0PwAl9QO4YNxWSauXBWvHDDPGBKL0iggNGXAjf3cpvPnpBPGm75nQc6ApJFJ6ajyK7P0wm3ZaCVAn1DyaZllxQRh+r4TQ81hE8spr0BBAzSRwy1ufM2CIUULQrfegsLoblpzYWgLYharWSWZKWIPnbxXAsy4RBwMbyBsGXxIP4cbXTMTGKgCtliGvrB1lebsVQEXLBMtOCsELAgQtA7raRaQFOmRDuZEH17+dQAx5wH+FhgJnzA9xsSBBAZQ3j7OcvevgGgP8fIA+qkKKn02uwiKkcfYUDFQFDtDpgNNFIirPJykAi9PNzu7XwcaT6AVZQa8LlIzxHND4KaJUdp8nMiMjEaaC+6gx71MAJU1vWH6KHsNupQLcg6O+FcrpcuolNMzn/fIgLAzIyr0La/kBBVDcOMIKj2zCCA9BTVUgQLrK8jsHBKj3FCI6OlHm6fWAMfs2bFUpShnz7b0DyXH6yAjtcjlngiBApVLJ4vO/29N+N+yO5ld3bua2yReJuhCT5UFrwIrgzUs9JL4+PfWBG78kuz75KlOnIW0kGUhakjd35J+jfxaVhu+kcVInaXRxI4cEk3gc/zNeZFImMEuSn/MPn2ZP5H3DBRcAAAAASUVORK5CYII=" alt="Orange Grid"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB4ElEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbQ2XnLIKaQQoaCxMYWudeYGjKMs8DctcyTjn09X+2LRfYgLayVAZGRkacBv3//5/h9+/fDC2zzjI051r1AhXOZJy07+P/XEc+og34AwynxqknGFoL7SYBDZjGOGHX2//5rkIYBujoBMFdcuXKOjAb5IJ///4x1PYfYmgvdZoMFJrK2Lft5f9CTzEMAz5/+8lgaRYJ1ohsAIhf2bmHobPSDWJAz6an/4t9pbC6AKQR5BJkA0BhVNa6g6G7xhNiQNe6h/9LA+VwGoAcoiAvgAwoadzC0NvgCzGgfeWd/xVhykQHIsiAwpr1DBNagyAGtCy5/r86WoMkA/LLVzFM6gqHGNA0/9L/2gRdohNSe3kaQ27xMoYpfdGQaKyeeuxssKuGkbY8N9i7ICcyMTGBMbZEdfTEHYap09ddWb6ofCc4IQEJqcL2rdt4+UX0CWUkkPzbN09Ami8D9R0HJ2UgwQ7EakDsAMTyQMwKcghy6COx/wPZv4H4IRAfAOJbMIUgQ0SAGOQP3JkBYhLIkK9ADM7OAB0zDeR4AT+zAAAAAElFTkSuQmCC" alt="Form Link"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACdElEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbw867DAwcLAwM7CDMDGGzAM1kZoTQMCDB+Yuhde4FhqYs8zyg2FrGKYe+/s+25WI48ZSB4djKnQy7Dl7H6go3e02GkGR3BpABLbPOMjTnWvUCFc5knLTv4/9cRz6Gvj6I5u0b8rEa4BkwkQFkSG6uE0Pj1BMMrYV2k4AKpzFO2PX2f76rEINn6CqGbatCcYbB0f2HGVqnv2DYsiKYobb/EEN7qdNkoOKpjH3bXv4v9BRjCMlZyrCoM5Lhy+fvDFw8DAxMjJwM//5/Z/j2BWLmmatXGJbO/cGwZKkdQ2XnHobOSjeIAT2bnv4v9pViiI46yNDZpQwMNU6whs9ffzLwcrOD2c+fvmd4/fEt2ICly+wZylp3MHTXeEIM6Fr38H9poBxDWsVahjg3UQZuMQOGr68ugOk/P17BvQQyYMPuJwyzOoIZShq3MPQ2+EIMaF95539FmDI8EJtrfTDCAaR50qTj4EAsKnJnKKxZzzChNQhiQMuS6/+rozUYPnz4wDBv3km80ZiUZM4gICDAkF++imFSVzjEgKb5l/7XJugSTIHICnKLlzFM6YuGRGP11GNng101jLTlucFqGBkZGZiYmMAYxEYHR0/cYZg6fd2V5YvKd4ITEpCQKmzfuo2XX0SfUEYCyb998wSk+TJQ33EgXgsyABRXakDsAMTyQMwKcggOP/0Hiv8G4odAfACIb8EUggwRAWKQP3BphpkJMuQrEIOzMwDCZh7kf8TfGwAAAABJRU5ErkJggg==" alt="Button"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC0UlEQVQ4T4WTWUhUURjH//fOqs40qYP7VpqkUUY+pD5EiAU9SFAPPkTRSw8GJhIhUUFoIlmO5oqECNGCgT5EGVbYAlqEayvYULml4j46Mzree07fmVv0YvjBHw73nP/vfss5EiiqOmd7TVZrOlMUbKaJwb6BRsepXLLNktakW11LvTmplvTUcFmwwDmHJEn+9UYx8G0BtVWtQy2N+Sdpf1hq6Fnj+ZlGrCkMi6sK1hlgM8nQyzIYB3TENeokyH+gPp8PZc2DKDm7/xwB2qS6N25+JsOI/kk3lhSZDpMZDEY94GU6BMgMURY9DDodjAQL0jGU3e5HaUFWJQGapJquJZ6XxtA9IyMzJhBBBhluH4NCpRjoz/NehgWvDwqls65ybLcAzfeGUFZ0oIYADVL1szmek+jBYkAYMsL1lLKoX4jy9zeFOkVl+VSGsWUVwzMreP94COUXsmtpt15ydEzz5ASO5MgQJNl09E1rpt8rcciC46+fY2FVxYvRNfS19+D6xcMa4OajCR6bEozsKAPsgQIgaZMQWRBAhMoleGn5wwX0f3Hi80snblw+ogEq2kd4aKSCvUlxSLDqsdXAQAOAyiR4VAluBRiZd2NifBwutwexZhVPn0+h8mquBihvdfKsbcv4PrOMgNAI7EnZgVAzMOVah/PnKDzuZcheF+xBJgRbA5EYF41Sx2tUlx3TANfufuWFR2MwMTkN59gvTCnkNgVCt+pCmFFFhD0YIVussIeGwGw2Q6/Xo7D4IWoq8jRAScsHfuX0bjDG4HK5MDJGqa6sIMRmQ2xMNCwWC5X0r7GiJwXn76POcUIb46X6nr7jh3bu2xUf5G+YuMbCILTRle5+50R9Y/unB3eKO+l4k5hPVFH5kw6rzZ622UMS+3Oz48L8kXxvSW0CYCIlkw6S4kkG/yw3DjHXddII6RVp+O9BAbGTRB3/f4oaVEDcJP9z/g3mqkrkgfyWPAAAAABJRU5ErkJggg==" alt="Cloud"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACDklEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbw7Jrcxn+/PvD8OfvH4bfQPr3398IGigGk6u1bmZonXuBoSnLPA9owFrGKYe+/s+25WI48ZSBgZuVgYGDhYGBnRmIgTQL0FEgNoiGAaZ/vxhaZp1laM616gWKzWSctO/j/1xHPoblR14RdD5IQYi5IEPj1BMMrYV2k4DcaYwTdr39n+8qBDYg0kYMxZC1J14yBFuIo4j9/fuXobb/EEN7qdNkoMRUxr5tL/8XeooxrD7+iiHUkrAB////Z6js3MPQWekGMaBn09P/xb5SDOtPvWYINBMl6AKQgrLWHQzdNZ4QA7rWPfxfGijHAHIuPsDCyMDwD6gg0FycoaRxC0Nvgy/EgPaVd/5XhCmDDUD3LzYxkCWFNesZJrQGQQxoWXL9f3W0BkkG5JevYpjUFQ4xoGn+pf+1CbokGZBbvIxhSl80JBqrpx47G+yqYaQtzw0OAkZGRgYmJiYwBrHRwdETdximTl93Zfmi8p3ghAQkpArbt27j5RfRJ5SRQPJv3zwBab4M1HcciNeCDGAHYjUgdgBieSAGJmgGTKshTvkPxL+B+CEQHwDiWzCFIENEgBjkD1yaYb4BGfIViMHZGQC2WQ/kQclKRQAAAABJRU5ErkJggg==" alt="Table"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACxUlEQVQ4T4WTf0gTYRjHv7f5o3IgoWKGUEYqZCEkgVGQYOgfFhomNKQi/ENqOLamLmea4nRzbpou548sttJQ07AIsdDwD7EQUzIhFNJEKNA0Ay31tl3P3fmjBdIL33vv7vs+n3vved6HAQ1Tz9Kwt0wWwzmdcJPEmd2Y6Zndfj83MjJ6z5p+nsK+k9YYc9/KcELU7phjwQzP+u8YmVyCzdL+4UFj5mVaPMlUDTg51SkpzGYLpqa/IPzwIcxMjINzs2BdDBiJF8Iij2x5CoUC+sYxlGSdUBKgk6nsX+XUZ3xxQ6HE9cwM1NfXo+tcHRL9gOgA4Jc3MFsjenZHCwwGPUpso9CrYy0EaGDMvcucJt4PWUoVpBIJmN+LaE+2ewC+1oqeVOoFo7EUxdVDKM05XUMAG1PRs8RlJ/pDpc7BtatyOJoa8OlSA4I4wFcCjK0DJ1+I3qPHrTCZDCioGIAhL85KgFqm/OU8l5sUCI0mFy6XEz4cCx92GXCuYo1yIPHaBacsUPD4HZjN5dCVvoGx4KwIMHZ947TJ+5Cr1SFdfhFt9vtwJHjm4MdD0eN3YLGYoC1+DVNRoggo65jl8lJDcSvvNtz0FS/3GkZTqoRfiNkrJvGnXfRcLrcAyCnohlmfJAL0T6a4fHkYdPmFSEtNRsfTTowklXnkIL5X9Jpb2gSARvsclaYUEVDsmOAKr0QIACe7Dm8pVWJh2uNAuYPCt7xSQxnUNztwtypNBBQ1jXN3MqJgLK/A/Nw8QkKC0RerEQChdDj5KlwY2vayszVQKVtRbZWLZdRZ371PTYg8fvTgHiGIYSjzVHNe/P2/Y3DwM+psz8abW3JfCQeJLvvV+p5umX9AtJuaxrOhNpror2ZaWJzlgz9S3FvhKNPFlxRBiiMdIFHesVNnUW3AkmZI/aTJzYU8JJBEHbBj8Obf8JAVktDOfwD2QFHkWLKMnwAAAABJRU5ErkJggg==" alt="Film Strip"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC9klEQVQ4T4WTeyyVYRzHv+9ZHBEhuZ2NYbnlMkyNldtC1nQzMpa1/mlqmFsILWLmfnemZrZWmuyotSiWa8KKjiNLbnEIMwcHHescJ2/Pec/YqjW/7fPsed/39/s8z/tcKJAobhENsDU1XXbkcuzH/NAgn1sUEUjKRAQpVdq+PnDG9pCLrQFL4do3+BNrKC+uF9RyI6+S5HGqqldKR7qpomUKUDsA7KwuYq2zAUYG2mDvbGNpUw7OKT9om5gxcsODMmTXDCHz5slo8sijKrol9K3T6uifB8TDvZC9qIDdRx50HN32ZsPnOOCX6zlYefkzgqwHg7gf5V5IEqqpsvZ1OspbCx2CRQjj/OGxNvZHsQq3DZvV6ehpbYVrUR045mbIqOxHdqxHGRFUUSWtK3SMry4a7iTDuLMWtlY2zMi0iSs0UrIgGR2GtDQRS/NCTNl442LxQ6QXdyMn0aecpFVSRc1LdGyAPmrNVOCpw4KuoydoyLBq6wODiOtYKMiAoXgZ64JW9IikCJ2SIyX3LXJT/JSCgpfzdHygMZ54WOHExjfoHnPBxhFzGGTkQ03nKKQjAkjL07A23IUBVSME903jdvYb5KcFKAV5jUI68ZIJeAnR4PDKYXq3ABp+wZBvbUK9uQOyOQHkX7ognJnEnFcozlfVISHjFQrvBSoFOfWTdHKIBSbGZjB4wQk2DpbQDwiBrK0JWqqq2FmahnhhGp8kLLg3fgDHzgGxac9Rkn1ZKch6PEqnhltjdh1Y7nuNyfgwmP0Qw1CPDZpiQbz1ExM0GxZZNXAKCmMWOCbpGcryrigFmbXDdPo1+709F018BZ+bjy3+O2zNkjU5Gwr7G3EwdnDey4mKr0NFUbhyG1MreweDfK2dj5tqMAkURYHFYjEo+n/H+/5JVHIbR54+SmphDhJpjGNzmpo1D+s57neRFN9XRN8VxZ9JXR9zlEnDJlgSvAimBBXFRP4ZWvmCJmwThIROwvhuokKiR1D8x/+Kd50KiYTAXOffRUJX5EZHoa8AAAAASUVORK5CYII=" alt="Flash"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVUlEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbw867DAwcLAwM7CDMDGGzAM1kZoTQMCDB+Yuhde4FhqYs8zyg2FrGKYe+/s+25WJIWl3OwAxUyALUzASkgfrAdIltJ4qrQAa0zDrL0Jxr1QuUmMk4ad/H/7mOfAwde1aDbWcDGsAKxCCDrr0/w9Dg1MnQeqgcbkiTfQtD49QTDK2FdpOAgtMYJ+x6+z/fVYhh6uHVcI0gl7AC8WWgAfUOnQyNB8oZDIRNwIaE6AUx1PYfYmgvdZoM5E5l7Nv28n+hpxjDpENAA4Ca2FmBrgAZAHTNlQ9nGJodOxlq95czGEINCNQNYajs3MPQWekGMaBn09P/xb5SDPNOroZrBHkBBM6/xTQgSC+Uoax1B0N3jSfEgK51D/+XBsoxTD8CDAOg7aDQBxkA8gYuA0oatzD0NvhCDGhfeed/RZgy2AW87BCNMIBsAEwM5KXCmvUME1qDIAa0LLn+vzpagyFvSzkDG8h2UPxDvQDSBNKADvLLVzFM6gqHGNA0/9L/2gRdgikQWUFu8TKGKX3RkGisnnrsbLCrhpG2PDdYDSMjIzABMYExiI0Ojp64wzB1+roryxeV7wQnJCAhVdi+dRsvv4g+oYwEkn/75glI82WgvuNAvBZkADDoGNSA2AGI5YEYGBfglIwN/AcK/gbih0B8AIhvwRSCDBEBYpA/cGmGGQgy5CsQg7MzAHPz/NVCmQAjAAAAAElFTkSuQmCC" alt="Carousel"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC1UlEQVQ4T4WTa0hUQRTH/7O7umqZZWqbiUaFmmtE+SGKCos0LITKVFITv/TBxGwxM1MhzcW01HV99aCEiMpApSjTCBMjE3FTS9N8oeR+0FZtK5N93DvN3ZtQRnjgP8zMOed3z505Q8CspMnQKXd2DuKtViwlfbeuq6o4PpylGZhMpLTZ2HkgYHlQwBqJwFrSuoZmUVZS01NdlXiSBQ+SyjYTTdxpj1uNvXCQAvYyQMZYhHmd7AApm0j/YO/e5gv17W7knt5xhoXUkvLWOZq0xwntekDOAA6/AUKiAFpsCkcz8m7qcDl5VxHz3SDaZiNN3rcCD1+JFSgDA/H49QQopLByAE+kOHvYHYMDfTZW4GY/5FS0Q63aq2XLSqJ5MU1TQlwxNCNWIGcV3Gn5hvWrKCwchW5kHuoTCsiEkpjZEQ7ZJa3IT9tfxpYVpLhhkqrCPNBR+xz2lLMFNBg3QOrlDd5kxoDehKpT6/CpX6xAqVQio+AlCjJCRcC1J3qaGu4JWpgPeHmB/PyBi+ZgyD09QC1W9IxZUJ/m9ddRnFc34mpWmAgorBunaUe9YdZqYGcnBaE8kvgwOLi6gDfz+Dg+ibjQbrbPwX31Whz0O4RzOU9RdClcBOTXDNMLURthKbgCGW9hgRRx5Dgc3VfCYuYwNjqLmMgeyGQc+j53oehIKVRZ9dCoj4mAvHv9NDPWH/NZWXDkTLYGiEQciMIVJguHr6PfERn1DkZ+CoYpPUqiNUhJfwRtYbQIyK1+T7MTtgAq1hduLuzerIgwRIBuUoBj9/ildwYxCR2YlxgxMtKP6/HVSE69j/LiWPEaMyvadBEh/tuVPstsB0UIgUQisUmYL7Y37cOoqKrrfXA3vcnWSGzwVOU/a3B2cdu61EMS/NOGCSH5A8t7a2tlNsiZfJmCmXyEXhEK+efT4gZlsjCNM7UwDS4EChA3JuE//pe8wBQgc0y25/wLYB1D5AMmbhEAAAAASUVORK5CYII=" alt="Chart"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB90lEQVQ4T2NkAIKuHR/OsPLwGP//84fhHxBD6N9QGsj/jRB/de7c+SmTo32B2t4A8U/Gnr1fz7hpcxrrijOCzCIIzt36wDCtd9XFubPSY4GKbzH2H/nzv8CamaBGkIIfP/+C1bXNPs/QnGuaB2SuZew78ON/oT07w8XztxnS0tPxGjRr5kwGfUNVhtoJJxlaCi16gYpnMvbs+fK/2JmbwdzMiQGkAB8AWXDy1D6Gmp6jDK2lNpOAaqcxdu/48L/EnR9sgLm5M14DTp7cCzagquMgQ3ulw2Sg4qmMnVte/y/zFgEbUFPVjteAlrZKsAGVLXsZOmpdIAZ0bHj+v9xfAu6Fzs65DOXlyQwg2thUh6G4OAZuKMgSkAHljbsYuhrcIQa0rXn8vzJYBm4AKJCwAVgggwword3G0NPiDTGgZdm9/9WRiiTFQnH5Roa+rgCIAY0Lb/6vi1MjKh3AFBUWrWGY0B8KMaBhzpX/9cnaJBlQkLeCYeLkSEg0Vk0+cTbYTd1IR4ELbAgjIyMDExMTGIPY6ODYsbsM06etu7JkadlOcEICElKFLTu28fAL6/8DZhrUDAXNREiZ6e27xyDNl4H6joOTMpBgB2JQIDgAsTwQs4IcgsNP/4Hiv4H4IRAfAOJbMIUgQ0SAmBuPZpiZIEO+AjE4OwMAYYDy1XP13zcAAAAASUVORK5CYII=" alt="Credit Card"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACtElEQVQ4T4WTeyyVYRzHv+9p2JTamsvyB00y08xKNw2FKGunUqqVZS1lOxp2dkJuW+TMyK3DcVabbC2kRDdCnGLCGiFNxpnSUuFY84c/nNvT733fnVVb5Xn3fe6/z+95nt/v5UCltE0/YOfg4G8xmbCSZoYHhzQlsVIy05OWuRvaxYH9Pmv8fVwkPGvFMjT5A+Wl9SPVGtlZ2jzBVfYuM1mALVATDzAGmE2AxQwYjWLfsEx9A/miMc0ZMjqgrBpGbsKuJAI85Cq6l9ilIHsCXAQ2OJExDyAxkgDhASQTQca+wZClRd6tQVxL3FNMgJucSrvIEkPW/joBs4gnsVDLn8RsbalPa8b4e8hR90MpD1YRoJIra19gyeHrUdczh9OBzv99g4a+r4ja6YLs0m7kp4SW02Y1V9Iyy+SRznjQN4cTAc54NNqAno9duLBbhvHZMXROtiNscwSO+kajpnsGZ4JckV7QgYL0CBFQ9GSGKaSuaHozT3R6AyoJDXFIClagZ6oLsTvikNGsQNHhctzWfsb5UDekKltxPStSBBQ2TrOUKDc8HZiHdPufgPbx5wKIB1ZGV0HT9gmyAxtxOecZiq9KRUB+vY5dObkJrUPzOLjVSfBa+/YOAj32wt7GHi91nQjxDBOuoGqeQtIhD8izmlCmPCYC8u5+YJkx3ngxoke4nyMFgCLAiW/J0cePOU6cKH6sg+KIJ5LT7kNVeEoE5Fa/Y9nnfNFJgO+LJjFqZGTkc8lshoEmDDQwGC2wXWVGapQXEhW1qCiJEcOYqe4dPB7uvW2L+2rRK3mTSCSCrJ5/j+3rfh3Umsb3dXfS2oREospVnt/c4rDO0W+lH4lfX9B/4Y1Hya5PSGWq7EhepH0kd5KNcP2/F3ogUH5jmvSKNGHdyEMcSfw9/mVsRfKQJZLwO/8EANNk5OjlmWsAAAAASUVORK5CYII=" alt="Calendar"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACoElEQVQ4T4WTbUhTURjH/3crNfMFSjL8kB+CECWC/BAFvZKVHxQsSkEUU0mtpo1pc7nFdM45021N55yog96VtIgyLZMQWn5QtBcIVAgjA2MixkbtxZ3OuTcts/CBP/fe/znP7zzPuedwoGHsd44Eh4cnBvx+rKWZ8dExqyE7haY5qTzc9cGFkaPxYYnx0SLGWjPGJufRaOx8Y7cWZdHJE1yzw0OK9gZBb+vnk30+/zLE5f4Bj9cHaXHGsrd1gxfa9nFUnd9TTM1urmnITS7sD+UB8oLjqyqQau4hIiwUebmp/BgDVLeOQiPZ10A/bZx5cIFIDkf8E+D1ByDXdaEoJxW37w9AIUmFmPhQaRmGVnrATAHNnOnZHClJ2oTalj6UF55YUcES4E+z/sppqIxD0JUdaaS+hTP0zhJp8hawUo2q372yJA+twB8g8PoW8c31HabWpzAo06HQD0CvOCYA6h/NEFlKDGbdQIgYCF4HlFa2Qa86C7nGzj+d8y6+iOjNkQih45e1fbimTBYAdT3TpCxtGypND5GWlICPn77guWNyRSvnMg7y/gvHFMyaPLrAYzSoUwSArnOKlJ/ZjkvqmzCps+BZJJCp26G/mgt5VQdKZdmgFoLEHGpqO2CtKYBU+QAm7UkBUH3rA6nIjENBeRtstfn46vYtr74YAOgWCPtA1VBvR0tNIUrkXTDXpQuAKvtbosrZiYuqNohE7DTSjF8RYNm8QyiIQMyJ0KTJh0R2B02GTOE3Vlgco6eS4nYnxG7kJ3Mcx4OY2Pvf8Wp4ChZrz/u7N+Ts6NrYjBip7klveGTUrrUuEhufc35mye9o3muqbgYIptpBdYgqlmo9K2TV0oLBemKbNE31kmpiaSKDRFGxPv6XvMRkEHpqhOv8E80uQ+Q0JR6UAAAAAElFTkSuQmCC" alt="Page Break"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACtUlEQVQ4T4WTa0gUURTH/3dWMzOLQkqM3A9JiQ+spKKgUFHBD36wJ2QPAymtzBYzW3el1NZNTd3U1bTCCKkMNJCUDLEQtP2gaT6QfECSfiiUEvG9zu3cGZWCyMP85zJ3zvnN+d+5l4GioGGszcnVNVC227GaRjvbO0rzz0VS2Rhpjj1ommgL9Vkf6LNVEqxVo2PgJ4oKqj5XlMafpeR+VtI6x+MPrkHDEDDZ04iRH78AzsWlxHb3TdgfFLoCdneeh+lJJzIuH7hGk9WsuHmKXzm8DrZR4H11Jfz9/EDlSgFjDF1d3TgTIz6mhgDcLW9HZsKhPHosY4VNEzwheAMsZS/h4LgWWs9tf9kY/jaC+fkFBSnJi7gaexzpVhtMuiOFNFXCLO/GeWLYZpgsT3H6RBRkWab2RboMSdKAQcLk9AzNM9TW1cFw/TzSCpphTg4poiQry6//znURWwhQgfCQYMh8kYoYvVONcBmYnp0jqAYtthak6S5An92IbH24CrhfO8qTIj1wO/cxAnbvA+N2Mq/UK6PoZsEug0kO6O3+hPTkWNw0vUWuMUIF5NQM8+QoTxjvPYKv/x76ol1ZPCUIwgVEFt0w9PV2wqS/hBvpb5B3J1IFmKsG+a2TO5CaVQavXQGUpi6YTJVsqQ1llBwx9KWLABehM76GxXRUBdyt7OOGaG8Yssqh9fIjC7PKHlhyQCAODXXENU74OtCNrNQ4JKa8QmHOKRWQUdHF02L8YTQ/xPTMgtK3xCRlCdUeVJoAujg7IlMfh4Sk5yjOj1Z/o8Ha2n4szHuvr9ZFsS38S5KkaGUt/tgZLbZBWEtrel48S2lQNhLdPHTmunrXjW4Bqx0k8X58bEQUd1PdR1K1ADiRdpKCSFqSo/oD/xnCifA5TPpA6l9OFBA3YfM/xctEAZkiKcf5NxiOSuTv1gy6AAAAAElFTkSuQmCC" alt="Folder"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACoUlEQVQ4T4WTe0iTURjGn2/eUrPCxEJMizJMibxUUqCYumiEQQZGSNK/JmZLp4kKaQ7TdJo6h5KYFoWRBlHmvBFDzULTyjK8gZKlNDFTy+m2r/d8XwsKxRcezuG87/M7dw4URVp9j52TU6DZaMR6muzv7dOoYiPJpicZuFvtcz0RPhsDfbZJGGvd6BueRWlR3dtqTdx5Kh7iyrsMfNwRW2hHgQ3WgB2Tldi3JqYVJ7aW2G6/DGVVP7IvBl2isXquTLfIxwc7QDeoR9PrUXydWQBHJp6yKytm2NpIsLRsQqj/LpwI8gID5FT24nrC0UIqqeBK2uf4hGObkF7zChH+7jjo5SqYhfjTWVoxomPgC8am5pF4yhdZ6m4o5SElVFHOFTfP8IlSZ8QWtEAdHwoTmXStz/85i5AIGeYXDUir7kJNUjgyi3TIVYSVUpGaUzVO83KZK87d0KLychiWjYDJbIaZQDzPCy07B7PJhJSqTtxVSJGW14q8tOMioODJJJ8U6YaqliH8WPiJcD937PNwFlbAzN++/0LBozeYXTAgOmQPTh7eiRRlE25myERAfsM4rzjtgbFZYHhiCnVtH1AcF4zuwWncaf4I1y0OkAbsEIyWSM56isJrkSIgt26Evxq9G9OLwFZ7IOV2B2SHPHG39RNqabmrhTzjMYqVUSIg594gnx7jjYk5wNEWUGjaYKQzqE1e3cyAiakPUZJ/VgRkV7/jMy/s/zuRqqEfV6L8Vp3ZMpiQdB9lqhjxGtPVXb1npN4Bvp6OQp6jVySRSASx/v/R2T0CtaZh4EFtqpZyFazCTZ77rNFps8uB9T4Sy8/oPzPze/K9JNUzgB1pLymU5EmyYQtZYw/CCyeNk16QhiyFDOJCYvtYy2xhMgjdmfidfwPtfDPkbUWvqAAAAABJRU5ErkJggg==" alt="Word Bubble"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADDUlEQVQ4T4WTf0yUZRzAP8973Htw+ErAeRilGJFzZmNmzXB6WcuWMcaqLf5wura0zQz0pkgOrPg1dpCghyepc1ZjNt0iIgJtQKlJZCBUbEzCH2zYj3mOXYTBHcfT897Nf9oc3+3zPO/e9/l+9rz7fr8CFXXn/L02w1g1OzPDXNwa6OtvqN2So9L8imlxqCvQ+8LyeauWp2ima87o/22c+rrTP59s2L5ZHR4WR7qn5fYsnebmLwl3lBMfayVWF9htGrraY2IEulUQDoURz+wlffVLVJ4YoOzt1QVK8Lk4fGFS7lhnp7XgKeIMJ4lP52IZH0aMXYwILFYNTUmERTD1D2S4v6XiWB/l+WsOKMFR4e0KyPzn5nN2TxaGM43k3DLsC5eihydg4AT61TNYzRtMzzITtJLwTielvh4q3S6vEhwRB7+5I3duSKL3vTXE2nTszofRp//EyNqGLTOP2ZE2gp3lBCfDyFkdR+F59tddoKrw+Xol8Inatr+ke6OTy6VrsS9awYK8j7Dd/YOY3kPExRtYXMX8217G3Z9akEInueQS+zwdePa9GBV82HJL7s5J5VrNOuxaELvjIYz1u9DSXATbiyBlJTHpLm57ssFiI6Wih72VZ6kp2RgVVDeNysJXFjNY4yIhyUGCaxe2m21YM16GpMf4+5O3eKDgK27Xv0lobJBUz4/sKW3lwAc5UUHV6RH57uuPMup9FucjK4jL8RG+fp6p748Tv6URf3U2iVuPM9HdzETXxyyqvYy75AsOVr4aFVQ0DsniTcsYqllLoiGJW5CJ9vtVguMBxMKVTN0YgnkPEgoEkFN+lnivsLPoDN7qvKig7OQvcv8bTzDZ30L4ogdNWpgxS6YwSxcOySiqzZM3v4+h+iR/9ykO126KlrHY19332oZlTz6eFh9pYyEEmqaaR2E+/z8u9Yzga2ga/OzTonORRlJLqrvq6zYjwZE51yCZ3+/4x8zkX1XeD5FWVotNsVSxXpGmsJoXuc9USfU+pBhVfKcYvnfQlDgU5n/cL/me05RMKiLj/B8gkU/kYuYiNQAAAABJRU5ErkJggg==" alt="RSS"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACtUlEQVQ4T4WTX0iTURjGn2+j5UwbxLAc6S4k22YaJBEFjooMvPCikrqQxhC8sDAZZiY6SOeQWVNTp5g0Y4ZhqUHUyAjJQeaFov2BwPyDLJXmZJqOOR1+vd/58KKifOFh5+x5n9/5zjkcDlT1/f6R3bGx6VuRCHbS3PjoWGudIZtiflKYuz+wMnJOF5Ou2y8RWDvW2LcAmuq7P3a0Flyl5gmuZSjMF5yUIUKrb25u/hcglUqZb304jqprJ27QsJdr9gT56xnRCAaDzAyFQrDZbPB6vWyekJAAk8kEhULBFpHL5ah+MApL4Sk72W1c48AKX3hmLwKBAFZXV1nIbDbDYDCwscvlgtFohEqlYuH4+HhUOoZhNekbyW7hGt4s8UWZ++Dz+bC2toatrS3Y7Xbk5OQwQE9PDzIy9NBqtZDJZNBoDsNc70FNydkmsh1cnfsHb8qKw8LCApaXf9I5RNDZ+Qh6vZ4BPB4P0tOPEyAFUqkEKSkalNnewlZ2XgTcezHHF2erMDPjpXNYZ6He3i62DaEsFguF06DTHQHHgQCHcMv6GncrskRAbd8sX3IhEVNT89jYiLCQ2/0MeXl5bOx0OqFWayiYyuZabSJuVr6E/U62CKjpnuRvX07C9LQP4fA6faYMg4Nu5OeLgPZ2J5TKg7R3DfOSkw/AVPEcDdaLIqD68Ve+PFdDgCVERUXTNQbZlS4uTjIAz8ewX50ujXlJSUoUlT5FY+0VEVDV8Yk3G1MxPx9ijdvl9/t+myuVcWyuUslRWNyF5rpc8RrLHUOjlzI1x1LUe1gDRyclkUiYhPGf9X54Eo7Wvi9PXKX95LUJHSpTzSt3rEJ5dKeHJPhL/u9C+DPlPpB6BcBuUjLpNElN2iV8yF9Li3/wJOHBzJLekSa2GwWIkiTs41/hbaYAER4Oe86/AF9vNuQ+wDnKAAAAAElFTkSuQmCC" alt="Light Switch/Toggle"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC4UlEQVQ4T4VTeyyVYRx+vnM47mukXFtzSaKSg7lbWTUaZtW0FTIr05JZrItFcln945Jchgmx1lpCuRWJaYu5dVDKVmJzYjuGHHM7x9v7fV8otvptz959v+f5Pe/7e7/3x4DGw/aZbpG2pgNRKLGqVGCVWykUChBu3cj/GBjsS0sM9KdlMoolprRD3u1hqeFgsV3Aev03hkZ/orioTpKedjaEioeZir5lcu6Q6pbCgpp+fB6bRUaUJxhmgyaEIOvxAK4G20XTbCVT3rVAgh3V/zKQyhZQ1dIKkcoi7G3c4GhtsM6zBpkVEsSG2qfTZAFT1jFHQp21saJcxYRsEUsrQF3nOEx1PsLRSoSMFzsQfcoWAgGBoZ4a1EVCZJT2IC7cKZsa5DEl72ZImPs25D+XoHtIAjtzEablwBkvDRjpqyC3Wg4tDWBctgwlTHA9xBVlz/pxLcLlATXIZYrbpki4lx46BydQ3daKCJ9RmFks0vul9CoFLZbLVJFZZQhrCzf4ue9BdkkHblzy4A2K3kySC947uR6/SeeQVNyEGP9qiPdJASLEpEwL8WW+OO/nBy87I053N7cd8VFevEHhaym5eIwnOLKiB0et0+B0QAaiEGJ6VoiUp1HIjAlc16Tdf4tbMd68QX79GIn03fX7BHLUt+Uh0qcOhY0umJzVROzpdjR17YeeQRyOiE05XXJ6E27HHecNcmq+kssB5hzxpPk7pOOpUBIzmJoGwUBXG80dtbAxbsHIbDQSwlw5XdK9Bty5eYI3yK78Qq6ctOKITyMyPGrsR5D3QYj36nO5scl5lNT2wtnWBD4u/EaJqS+RkhDA/8b08g89vp5mYktjet00GPrsBAIBt7LYHL2SMZSUNgzmZEW+olwBqzBOzm+t19bRtds8OOww/TlI7Pf0lJQtHqB17ykqWQM1CraHwxS7KdjB2Lo1fxRCQd8qRilaKYbXhKwJ27TWP4rXumFN5im4cf4FDWo75C9Ys24AAAAASUVORK5CYII=" alt="Star"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABR0lEQVQ4T2NUsc0VZWNi2Pn//19DBhIAIyPz+V//GNwZtexzz8nIiBuqqKgzMLGwAY1gJGDMf4a/v38y3L1zk+HJs1fnGTXtsv7b2zswPH3zg+HDx+8M//7/x2sAI9B8CRFeBlEBVoYDBw4ygA1wcnFnuHjjOQMuvarywgzdZZ4MIoLcYMNtomYyGGhIMuzbuwthwIXrz3HavGFqDFwz3ABNoAF7iDTgyLJ0uM0wWwzoYgDMZnS/gcOAGBeA/A4CsMB78/4rmB+QvYQ4A2A2D1wYEO2ChNhwhpv33+BMB3Nbg8ByydXrwDQTEwODqpwww4IlqyEJKTYykOHdp98MHz6BkjKmOcgGgDQLC3Az8HIyMCxduZkBnJm01OUNDfR1GFhZgaIE89J/ht+/fzBcOH+R4drtJ+cZwdmZGZid//0jMTszgbMzADyouOxZszdIAAAAAElFTkSuQmCC" alt="Facebook"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAACWElEQVQoU4VSTWtTQRQ9d95LYvKMKQ21hNYiBIrFUihYsWh3QbA7l/4BN4I/oULBlb9AF0IXhULciaVCBCWSKlWU1i/qIm002nZhSzJp8/HeG++dWO2i4IHHvLlzz7ln7h0CY3ilmsu47mw26oy5RBGJHSI48t8Ow85mO1jdCoKZ9YmBAg0tV3OX4+7i+WQ08q3poxkahMZASLxYBCAbSyjC4AkXn/c7nbcH/jRdLH0v5Xrjk2uNtk32OVnZ1fzd+8QxFpU1DIELyShe1lvLdO11tZaOUHK3I2UM7gzEkHIJM5UWqkEIh8MdPhFRqS5IuwrtEHW6WqrouKM8zYm9DuF+NgEiwt2yRrHZvYJABLg4WmRwCgpRoEFTL8o6GVFeMzCW/GD4pCV/avjQfHH5N/wV91rI/2piX+7O+xioQRPPvuqeiOtplu13gIcjKUsgR9lVSVmlsHPgI/tmS9TAE0EfceWRp190Oup60uUME+ZGeyxpvdZCvc2lucOyX/qpcW9PzIsYd07IQ4sf9SBXFnKKY/nxtE2+/W4H8+L7OIgdIccfr+kzjuOtt1iVG7JzJQOHbS5s1nBro/6P+mfmNsBFGA1C/r3m4XmHL+LJWB8unU5AOQ58nqmxthUKP2q4sbrdFWNnXfL8So03yUNyKqqwNN6Pc2nPNkuxC2lYefcAY883AJ6IJRtTJ8y9KvHhJHjORz1eT8VwNuFyLj9NPni0rVEJun75XvLUlnmwxRx7XOSsiH0F/4N0OjAdhMF0V0oEjJkFqVGQsaM9FoZCmPAD257BzanCbzhb/9jVVq65AAAAAElFTkSuQmCC" alt="Twitter"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACwElEQVQ4T4WTa0gUURiG31FL3dwkXYtElGpLs5YgxTBTSjJcwh8VFShFiD/awmQxMdGgTJMs767LVipFJiYaRN7DMvBSuGipeVuMDf0Rrnc0XV1P38yoESIeeGFmvnmfc77L4UArq87UbiuV+iwvLWEzjXTqO7SZV8PIZiItcDmNU+2nvR18vHdZ8ax1y8wAa/pqzYmhjsEJ5GWVfSvWqq7Q6wBX0LLAVP5bNzRfHAIciVDsIULMZjNSCzuRfOPYLTJVcPmfZ9nNQMl/AIuFwWIB+iwcTvQDM/QcKQOeE2SRAClP9XgQfTyDTDout3GKRZ/avgbgzZGRRkxOWlBevhdfzBxCB4G5ZeC6C5CzexHJmjakqoNyyVTAZdePsZgQJwHAKN+oKCOKikyQSq3R3OwJhcIejTPAWQMwT5Bn7ssYetGEtLjgPLJouMzq30yt3CmYVapf0OlGIZFYobZ2PwIDHQTwsBlQ/ACmKJUaOcNH7Qc8SjgjAp68G2GxYa4oLDQJu9vZWaGqSo7gYKlg5o8eRHXQzwEhlGmNHEh4WIvHSUoRkF5pZHHn3FFfP41QStaRSt7V5Q03N7Ez4T+B0nFAbgt8PQjsoI7cvv8eGffCREBamYHdubSPqs6gVBrQ0DANX18Jmpo8MbvVCv59wOgSQOXAYXux1uqkt8hOPS8CUl71ssQILyEwMWGBn18vDIYFhIc7oaRkD8bJ3D1PaYjlEFZM/Bvkpl8WAcnF39nda4q1YE/PHwQE9EMms0FrqxdcXGz+OVeeomNfIz8zQmxjoqZFfyHE6+ghj21CmOM4at8ctU8CZ+ct68zNbQZotJXdpS/j6yio4yfcVZ1WVS11lB3Z7CLx8THTMG/uIl8rqYIHUH1xgHSSRMMKftuVq7PuADQtWCQZSZ9IA6s/8hCadvB5bGRepfGQWZJwnf8CNG475KtfoQIAAAAASUVORK5CYII=" alt="Alternating Arrows"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB1UlEQVQ4T2NkAIL+nW/OsPPyGv/784eBEH564ez56X1xvkBtb4D4J+PEfR/PuGjxGGuJM4HMIgjO337PMLl/5cX50zNjgYpvMU479vN/piUbA6MJQb0M/88wMPz69Yuhde4FhqYs8zygjrWMUw59/Z9tywU2AKQAn0GT4iczpKenM7TMOsvQnGvVCzRgJuOkfR//5zryEeUCkAEZGRkMjVNPMLQW2k0CGjCNccKut//zXYXA7p88eTJBf2RlZTHU9h9iaC91Aimeyti37eX/Qk8xghphCv7//89Q2bmHobPSDWJAz6an/4t9pRiA3iII0owhSspadzB013hCDOha9/B/aaAc2ACQAnwG/Tw2mSE3N5ehpHELQ2+DL8SA9pV3/leEKRPlApgBhTXrGSa0BkEMaFly/X91tAbRgQhyQX75KoZJXeEQA5rmX/pfm6BL0P/ICnKLlzFM6YuGRGP11GNng101jLTlucFqGBkZGZiYmMAYxEYHR0/cYZg6fd2V5YvKd4ITEpCQKmzfuo2XX0SfUEYCyb998wSk+TJQ33EgXgsygB2I1YDYAYjlgZgV5BAcfvoPFP8NxA+B+AAQ34IpBBkiAsQgf+DSDDMTZMhXIAZnZwCyvODVGVzQBgAAAABJRU5ErkJggg==" alt="Bars"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACvElEQVQ4T4WTa0gUURTH/+Pu7G66uq6bu2GSJLpGwVY+yuiBZEHQ5yBoTd1HGJUEfROC+pjQl6KHUeSjLNItP5UloQuZIWhlgSA9lNLKVdOdfe+MtzM7mkKGZ/jPnTsz53fPuedcrss70Nnqs+1Wq5P0DAxgdCctH5eegWg4FGytziwAMEWKcg6PKBy1QZ/MczRf3QIREY29s8GHTssu+nuEc3dIrHIbMB1JWtE74h/GLyGMnPWFie9GrYg7r8NoOpZWS1MP5+oQ2emSKN6OfUF+Vh6BdH9B5189x9CwDyf3WnFo045lgBABDJfpRQPnehJn9q0+lDV6kanX4cLOXGRbbBid/IC6NxMIqlOAiIDaLUaUF5QiQyvhdm8ATfb0KwS4zjkfx9jZUhEX+0fQPjgOiGHYt1vwcU7COz8PpOiBWAjw+9BxuAAGvRl3+4DmCuNVAlzjnJ4oqy5SY3h2Am4vAeStEOYADaWSaqC5iioigQsHkS7OUTBBHMktR/PxDAXgaI8wRzEPkUVRO/gVQxNRcqaKMFLSQmU4GiUR1mQJ5SYtAlPZaKlcBLSFmaNEs1CFIGr6PuNHjNiys9wPsrNsUhydBzdDr9KgoWcWLVUmJQJ3m4+5inj8jBkQjo3i3PvfGBfISU25yM7EQCyOMzYjDpg3wqSbx83uGdyrzlQANR6BdY17oaIGEXgdJnkDJH4NRUCAeWXlKqsRrrycRCBpGob6TgI4zAqg6kGAndrDUDfwCV1jQVpVQ3tAIss18bhVvAFmLQGX2aVn07jvtChltLf6BXuhVr8udakTlbQ5uv6179MRNPb5Q49OZN1INNKL7v6nTd/y96lVqpTEoVnlQMUlKbSfezlT466oJ4BHXkRLspLKSHKi1D0rLi6HI29pnDRG6iGNLEYpQ9aSqG//67yYjwyhzVKO8x8rMDDkn0IeDAAAAABJRU5ErkJggg==" alt="Twitter Bird"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADBElEQVQ4T3WTa0iTYRTH/+9e55R5yenK1DZJWyrYRWvTVrSUSMQbWUpGYCVJDrNPeYsUVPxUqdEHTSj7lFaKFM17swuSZmHe2MRqoYk3FHPqnNvbs3duRtTDw8v58Jzf+Z/z/g+lfj/AlN9vxvziMhwcaNgPY4vsAYxGE7yF7shVJkB6QAIejwcqKuUW4yn0hsDTB+sbZlieU5tfigIM6xvQrxhZmsDdCfqlacxMTaKyKBUSiQSUNC6PCd1/GLWlp+3Fl5ZNeNY2jQf1zVuKNqNAkQdGhvqRHitCcnIyqMjEAkYSHAZ5eAR2ePEQFuIKv+089vmvVRMq676j5U2HHeTm4oiFn1rIg4zIzMzcAmi+zYJDJFNEt/zgcVxOFUMicmYT79Tp0NjawsZi320YG/mEyMA1ZGVlEUACURAShqrCJGh0K+gdWESDqgUmkxk3lWcRIxewicX3xtDR04UAkQCjgx8REbAKpVK5BXhUnmyXaZFeVKFB7+BbFFw9g9hjnrDMJfZKLTzcnDA7MQrp7hUbIJ8oCIcjJwCSAHeci/eFr9CR7d8GeVKRzs6l5ukk2t+p8WN8ELK/AbYZ7BXJkJIgZqVPzq4jNechFNITKL0uYVXklDVh+Evfny3kM4FBYchIOQlXPo3XH+bR1NYKS1WLkrLqr1B1t+NVTQbcXGhcuNEAzXD/FkCeVMCcUEShJCeanUH/yDKq6lQ4tE+G7PMidPYu4PHzDqQlRuPUEQEK77aio70LssDNIUrjcpn4mGjkXIqCqzONetU0ej73g+b443ZeCIbG9ait78Ye/1Ao03ahuEqFFy87cTTYaP2N2YXVzNziCnx8/Eh9DjExMTO5Fj8wDIONDRMomgKXpmE2mTA1NQGhgA/uqtZqpJ6+YaakqhEz82SZaA7bBslj98FMAiMBcCgOAVBYJ3vhu9MD1y5GEy/0Wa28trbGaLVaqNVq6HQ6snFGtvK/jkUVl8uFWCyGQqGwLhN5zBgMBszNzUGv1/832Qa0QPh8Pry8vNh1/g2ja0iUMDca3wAAAABJRU5ErkJggg==" alt="RSS Blue"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACNUlEQVQ4T5WTzWsTQRiHf7NJTGWN/XAjTVoasCE0iigeUks9xBahaFuFQPWop0BCFU/9sOjBgl5EqnjwLxA8CFIFoSq5iIfaQ0mDNGBxiRpbNja22XY3m3ac2TSpkTbYYQ/v7s77zDPvzEtiH2bpvScvkcnmYLVaUB60FJUDGMYGGp21GIr2I3DSB7vdDtI1cJsecjYiTx3byVWiGmEVS+nvmLhzGT6fDyTQO0xdLcfwcPgC6g7WVIVkVzTcvP8aqYVZXD3fglAoBNJxcZQebvLj8VjffxkMjk9iUU6gs81AOByuBDx/E98RMtBzvPydA358jaPDqyESiTBAPzNo3psBB5xuXUc0Gq0E7GZQWp6bcIOf8hwCR9ZKgBFmcHRPNUgzQPu/gPEb51DrqH4Kv1c1jE1MmTX4awsj1Nt2Cis5raKAyrKKZw+uVBSPvzjEfZhPzGwDOi+N0rPBLiykMuw3BSEEFoGYiV9Sv8oQvveGuv1wSQfwduo92r1bRQz0DtG+nm7kNIqcqgOCAOsWgEM+zaVMCAec8LtBNnVMvnqHM36jeIyDt55SJbsGt7uZTReYA7v77OEmlFIUChuYmV+GVC+i1WVHOv0NzgYRtvVk8SJ9nE7Qu49eYCnDmskimOosDywdmywwGEAgAmwWgny+gCZXPa5f68bn+HTxKmuaRpPJJGKxGGRZZh1nmCvvNLiVzWaDx+NBMBgsNhObTHVdh6IoUFV11+QSkENEUYQkSWY7/wGxZfiFsWqkzgAAAABJRU5ErkJggg==" alt="Word Bubble (Blue)"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACTElEQVQ4T52T32tSYRjHv8ejU1KTrePQ/TKaiLYGK4Y2VmHbRSM2C6xFF0FdCcq66WJtRV0UdF3RRX9A0EUEYTfRD+wiupCi4eyHhE3W5hKtVf44etS39xw72sp50Xv18PJ+P+/zfJ/nYUIvFsi1Ww+QWc9CqWRRP0SO6gEEoQKT0YDZgAfOIRvUajWYselLZJvRhBLRN8QtIo3iJ1LJFVy/fAI2mw2Mc/I8MfcNwNihw6CtE6c8u5vK7wTf4PXbVXz9XsByfAGnD/fB6/WCGTkyTzq7Hdg/vB3TE4Mts7j3aBHPw5/wJRHFqF2Az+drAG5enJLEui1tTSHZfEm6n7kaxOpSBCNWHn6/nwI8NIMeB0TAZmKZKEJkwN7+AgKBwP8B1hKLcO7Iy4A5msFOHKAeHKcetCpB9iBJAa6/AQa9BkN2E44dam6kKI7E1qQuiB78UcIcsdr34EeWl0qVzRTjk+fugmvXbjBVr23Dh+irBmD06Dw56B5DfDmDXKFUB4ji/t6ODWJWqYCZ0+HJ42dwWX+b6JycJVMT48jyBO/jKQkgiod39f7TTsNWDZhqEcGHT7HPIdTaOHPhNkmv59HV1YOPKzzS33JwDXBgGAaEEJTLFTAsAxXLolqpIJn8TKdWC1UhVhukl+EouXLjPlIZukysQvqV6kDlqNJAoAAFo6AABqVSGd3mdpw9M453kXBtlHmeJ7FYDKFQCIlEgm6cIP3c7IhZqVQqWCwWuN3u2jLRx6RYLCKdTiOXy20qloEiRKvVguM4aZ1/AVyKBpREDHjQAAAAAElFTkSuQmCC" alt="Word Bubble (Blue 2)"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcElEQVQ4T6WTT0gUYRjGn2/GcaOp1HU2/FOO1LKp0R/WXBWNNj0kYSotJHSyQwi71KXANKhDBw+dCjpEl05CBEHYoUu5UVEgG0SWupS2lEm2W2Ktzu7s7tc7M662UiD0MAzfDN/7e9/3+56XBZ+/5oM37iM2/wt5eSJWxK1VRq6EUijj+8wYdD2NEkcB+gId8Ox3wWazgbWcuMSLHSWwF5chmcrAiGPL73QauD3YhXb/EPJFBnvBBsQXvmJudgbXLnfD5XKBedov8D376jD5MQYtoUNkVrjAKLsg4uXQaTScvAUhQzSSs6II78ZC6DlaAZ/PB9bYOcBd1W5MTM1BpChGAEM9x2sxMf0NV8+3mQCJWT1t2ZSPH1/CaKrS0dvbuwqYpM1GVgMgigK0FDezGzIAWR2qVREceYxGpwa/30+ADqqgxo1xauFPZYNzfi7D+MIHNOxcQiAQWAXsrSrFnYdjK1nXBma/jWrYzyl4dixmAf1UQS0U+0Y8ffVpXQAQoP5/AGta6OfOKje2KvK6K8gBNHUN8MPeFiwlkyYgq4Pu7ej0VqP5gJpzHN3n7iIyEUK9c/kQPe19/FhbK4afTZsb63aXI4/u80jTLoyMvseTUGQFoJYWoqZyM4YfPEJztW5d45mLN3l0fhFlZdsM/5ELyTD0GH7gnCOVSoORjSVRRIa8PTv7GQ67DGkpbBnpxehbfuX6PczFaJjIQIYozpyHDC10AghMIABDMplCeWkRzp5qxfibUcvKmqbxcDiMYDCISCRCE6ebmf8moypJkqCqKrxerzVMtJknEglEo1HE4/F/BmeBBkSWZSiKYo7zb+5yEZQBRsXIAAAAAElFTkSuQmCC" alt="Thumbs Up"/>
+
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACb0lEQVQ4T32TX0hTYRjGn++cMydtuPYP3JQNcy0NwjCaiV6seRNhKggFXdVFDTzUrWmgVBfRZUGR0E1Et0F/7iqZRHRhBmZTt0hbWSPdSMIzz9nZ9vWdMzcFN18Oh+/ie3/v873P+5LI+1l6+/5zpNc3IAg8ykFLp/IBqppHvdOCYbEPgaN+GI1GkNDZMWp31sNmdyObK0C7Trb+hABKNgcpo+o0m6UW0r8/WE3+wt3xc/D7/SCB3mv0SNtxxL6nISsqeJalQTiWXCl8Hivmv8zgwmkPBgcHQTr7R6m/tR2LS6vgWRbRyu4RdeYa/P0dR1eLinA4vA2ILa/pVTUAz3OYenKpjOk+P1E+exv24+v8J3T6ZAwNDTFAH1NwuB07ATUGgsnHlysCmj02LMx9xInmTYiiuBtQoBQCU/DuabgiwFpXi7WVBQQOZEqAEabgWFmB7kJBhWlfDXLMFUHgsCEp4ASjDnQ5zfjxbQ4d1QAPxvvR1uLa1cbZxSTEmy9w0GtH9PP0zieMUF/Ldg8e3hjYE9DUaEUsOrMN6BoYpSeDISz9TLOqFGNiCIeanLsUxJZTuPNoCi6HGW9eT6LDt9XEQO8wPXOqBxsy1d8KjoNQZYosrIGkoODlq7foblWLNl65PkFT6xm43Y3a/DENrI3s0+aBMkdyuTwIT2DgeRTyeSSTK3DaTDBsxouD9GE6Sm/de4bVNFsmZp8WLE/fB81SlQE4wjEAQZbtRYPLiqsXe9gsTBdHWZZlGo/HEYlEkEgk2MapeuVKoakyGAzwer0IBoPFZWKXqaIoSKVSkCSpanIJqEFMJhMcDoe+zv8BGSkQlKC+0SwAAAAASUVORK5CYII=" alt="Profile"/>
+	
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4NzMxQkNDRkEyMkExMUUzOEQ1MkQ0REQ0REQxNjhGQSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4NzMxQkNEMEEyMkExMUUzOEQ1MkQ0REQ0REQxNjhGQSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjgzQjU1RTA4QTE3QTExRTM4RDUyRDRERDRERDE2OEZBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjg3MzFCQ0NFQTIyQTExRTM4RDUyRDRERDRERDE2OEZBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+HiThAQAAAbZJREFUeNp8Ut0rQ2EYP++c44ylxk4oZZnaxZQkF3ZBu+bKZy79F5NypcTfIRQhF7QLF0uJJGrFxbBMlLQwWc6c98Pv7OXdfOTp7Zzn9z6/53mfLyKEWDp4zQsfdyhnVFDKKOW0pDgOZwyX5OFycqLTsizTNLWVo7eze/G/nF7kZ2bXU6mUbdv647sZadJcEeJubfV5Z9s+3APy9vb7BwZbxsY1QiKt3o1AWzKZDAQCumBU0wywrxbmnxamtS9521rEsTOZ9viUG42xbDZbKBQ8yBgYsRU7cpLpunmROi5hIoSgKgclce4RJQdkomJXW5ZeV6cgTB6PS0MxgJ8vyLylVLKlCQ6S5jrwL+0fcVNi7JsDeqLMx/UER0Fp4uUXHAc/dFAxUHTPk1BQmiTNdaAlDf2uj8/Jq/PukHoBl+4oKhx0Th2ZJvp9Fwr9OThARp2qkqI31HBMviNYA9A4NNw8MoqeEEIqi94/zNSaNicGTPpwn385cb656+U/dq78pWDfXiei0ajP5yPYp3Q6jT3B5DFLOZ0fPTUMIxgMxmKxcDhMwCgWi7lcDnvym618EFuu94cAAwBn/S/qI1TZuQAAAABJRU5ErkJggg==" 
+        alt="Alert (Exclamation)"/>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYhJREFUeNp8kj9Lw1AUxfNiQ9oGB5uAbkWwGWxwLzj0O3RRXPwaIk5+FnVy79ihorgIJV1qEQMWREqh1Wri++dJnqZpCh7K4yb5nfP67rtESnlx+zGVlqBMcCYZ44wJlhSUCs7xkrwNjw/2HMcxTVO7uv/qv8p/NPP9h8fp2fl1r9cLw7Aw+TZ3NzVo8qnlVCnHa9fz9n1fs7c7nY5t2wXJmaYZii4Zi1Xpvd/fSgrJeRAE8/lcxz9W38CpX1aI3zg9KbouTkVxJCF0+WdYlYq3D490PcZwHrxc2kFBufj1eh2GFNNFZgfQQ89TnjQeNSEE/V0yoCGKRmQ38aTxihOLHShNs0EgUrUljf81JFhsYEmV0ojc8f3hcnzWUBAsrgBhVYTy5DrGGV0jJDZUSgI3X6/V8IBO64my2dDN3VPZDAUx8ImMRqPLdjCLiiI3c4uVgX55bjcajVarRTBPg8EAc4Kbxw7qdrJCTw3DqFarzWbTdV0CIoqi8XiMOVmlU49lWWq8fwQYAK8aKo2Fth+6AAAAAElFTkSuQmCC" alt="Line Chart"/>
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbVJREFUeNqMUktLQkEYvTP5KkMohXBh0kKDClq7E7JFW0Va1Y/oDxhCv6Kt9Ny6CVpcikQhDNS7uT7wpkL56OGDe/XeubevJsboIR1mcZg5Z75vvjnIMIyjTPdVt+ma9teaalV3ttddLpfVauVObgfCAzEmIis+xQ7Oc7mcoij4aWRaWcDcRKx67cbcIs/znU4HQ0XuHzAIkSRpMBj8Yig0C0kxCURWZbqDEAKZqqq6rn83ZOqZ8GlYaAnAr6Xrw+whEIzfZfAY4CZmiF/F0410X+7Xe3XfvC/fzMuaXOqUmIHKxoaz7JlQFDzLHiitqApf4XujnsPm+GyJECobWz0zHmRCtWpNkzSiEves22l1pu5T9JTJMFFVyhK7iXK8HNuKcY9coVYIr4Uxhy3EQk+ZzMSY0+aEtb+578CO6ksV1CF/KLoe/azADIwx7G3sUbI0t8Q2oSWM0HtLrlnurvg8+gA8lxBCx/cVN+nSzLRiNpthXKjRaBxfVLqKZUL4QF2rXAYCgUgkgiBPoihCTuDnocLP62GmcLfX6w0Gg36/H4FiOBy2223IyU8189jtdhrvNwEGAKglTYZ2PPYOAAAAAElFTkSuQmCC" alt="Audio"/>
+
+    </div>
+	<!-- END ITEM -->	
+
+</div>
+<!-- END SHORTCUTS -->
+
+
+<!-- BEGIN CONVENTIONS -->
+<h2 class="purple" id="conventions">Conventions</h2>
+
+<div class="container">
+
+	<!-- BEGIN ITEM -->
+	<div class="item col1">
+		<h3>Naming Conventions</h3>
+
+		<h4>Nodes</h4> 
+
+		<p>lowercase; dashes for spaces/special chars</p>	  		
+		<ul>
+			<li><em>Example:</em> content-page, super-slideshow, video-player
+			<li><em>Blacklist:</em> config, install</li>
+		</ul>
+		<p>
+			Page Components are postfixed with the word &quot;page&quot;
+		</p>
+		<ul>
+			<li>Example: content-page, base-page, home-page</li>
+		</ul>
+
+		<h4>Properties</h4> 
+		<p>camelCase; no dashes, underscores, spaces</p>
+		<ul>
+			<li><em>Example:</em> pageTitle
+		</ul>	
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col2">
+		<h3>Application Organization</h3>
+
+<code>
+/apps/site/components
+</code>
+
+		<P>
+			Content components are the components that are placed ON a page and are not intended to represent the page template. All content components will have an (in)direct slign:resourceSuperType of the /apps/site/components/base component.
+		</p>
+        <p>
+
+
+<code>
+/apps/site/components/content
+/apps/site/components/title
+/apps/site/components/article
+/apps/site/components/accordian
+</code>
+
+		<P>
+			Page components implement cq:Pages. All content components will have an (in)direct slign:resourceSuperType of the /apps/site/page/basepage component.
+		</p>
+
+<code>
+/apps/site/components/page
+/apps/site/components/page/base-page
+/apps/site/components/page/home-page
+/apps/site/components/page/section-page
+/apps/site/components/page/cotainer-page
+</code>
+
+		<p>
+			sling:OsgiConfig nodes are added to the config folder to configure OSGi services.
+		</p>
+
+<code>
+/apps/site/config
+</code>
+
+		<p>
+			global.jsp is included in every component JSP (content and page) and is used to include common objects into the pageContext.
+		</p>
+
+<code>
+/apps/site/global/global.jsp
+</code>
+
+		<p>
+			cq:Template definitions are defined here. Futhur organization is at the discression of the developer.
+		</p>
+
+<code>
+/apps/site/templates	
+</code>
+
+		<p>
+			Any ExtJS widgets used for authoring inputs are maintained here.
+		</p>
+
+<code>
+/apps/site/widgets
+</code>
+
+		<p>
+			CQ Workflow related assets are stored here.
+		</p>
+		<ul>
+			<li>scripts:: ecma scripts (needed for OR splits, etc.)</li>
+			<li>widgets: ExtJS widgets used for WF dialogs</li>
+			<li>dialogs: Custom dialogs used in Dialog Participant steps</li>
+		</ul>
+
+<code>
+/apps/site/workflow/scripts
+/apps/site/workflow/widgets
+/apps/site/workflow/dialogs
+</code>
+
+	<p>
+		Client libs will contain the front-end assets managed by developers and not modifiable by Authors.
+	</p>
+
+<code>
+/etc/clientlibs/site/css
+/etc/clientlibs/site/images
+/etc/clientlibs/site/js
+</code>		
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col1">		
+		<h3>Multi-locale content organization</h3>		
+
+        <ul>
+            <li>/&lt;root&gt;/&lt;path&gt;/gb_en/</li>
+            <li>/&lt;root&gt;/&lt;path&gt;/gb/&lt;website&gt;/en</li>
+            <li>/&lt;root&gt;/&lt;path&gt;/en</li>
+        </ul>
+	</div>
+	<!-- END ITEM -->
+
+
+<!-- BEGIN ITEM -->
+    <div class="item col1">     
+        <h3>CRX2 Performance</h3>       
+
+
+        <h4>Structure</h4>       
+        <ul>
+            <li>Avoid 1000+ child nodes</li>
+            <li>Static content: higher tolerance for large # of child nodes; dynamic content: lower tolerance</li>
+            <li>Shard using &lt;year>/&lt;month>/&lt;date>[/&lt;hour>/&lt;min>] or <a href="http://jackrabbit.apache.org/api/2.2/org/apache/jackrabbit/commons/flat/BTreeManager.html" target="_blank">BTreeManager</a>
+            <li>When Traverse trees rather than Querying</li>            
+            <li>Save in batches (~1024)</li>
+        </ul>
+
+        <h4>Query</h4>  
+        <p>Use QueryBuilder API; Generally avoid raw queries</p>            
+        <ul>
+            <li>Fast
+                <ul>
+                    <li>jcr:primaryType match</li>
+                    <li>Property comparison</li>
+                    <li>Simple fulltext [jcr:contains(., 'keyword')]</li>
+                    <li>Like on distinct values [jcr:like('@email', 'davidjgonzalez@%')]</li>
+                </ul>
+            </li>
+            <li>Slow
+                <ul>
+                    <li>jcr:contains with initial wildcard</li>
+                    <li>Like on common values [jcr:like('@email', '%@gmail')]</li>
+                    <li>Ranges</li>
+                    <li>Path constraints</li>
+                </ul>
+            </li>            
+        </ul>
+
+    </div>
+    <!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col1">		
+		<h3>Component Organization</h3>		
+
+		<p>
+			<a href="http://dev.day.com/docs/en/cq/current/developing/components.html#Properties%20and%20Child%20Nodes%20of%20a%20Component" target="_blank">Adobe AEM Component Properties</a>
+		</p>
+
+<code>
+/apps/.../sample
+/apps/.../sample/analytics
+/apps/.../sample/clientlibs
+/apps/.../sample/clientlibs/css
+/apps/.../sample/clientlibs/js
+/apps/.../sample/clientlibs/css.txt
+/apps/.../sample/clientlibs/js.txt
+/apps/.../sample/cq:editConfig
+/apps/.../sample/cq:htmlTag
+/apps/.../sample/cq:template
+/apps/.../sample/dialog
+/apps/.../sample/design_dialog
+/apps/.../sample/icon.png
+/apps/.../sample/sample.jsp
+/apps/.../sample/post.POST.jsp
+/apps/.../sample/views/x.jsp
+/apps/.../sample/partials/y.jsp
+</code>
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item">
+		<h3>OSGi Services Checklist</h3>
+
+		<p>
+			<strong>OSGi Services are usually singletons.</strong>
+		</p>			
+
+		<ul class="checkmark">
+			<li>Follows package organization
+				<ul><li>Put implemenations under .impl packages</li></ul>
+			</li>				
+
+			<li>Has logger named 'log'</li>			
+
+			<li>Avoid mutable service state outside of conrtrolled life-cycle events (activate, deactivate, bind, unbind)
+            	<ul><li>Else, use synchronized/atomic access to mutable state</li></ul>
+			</li>
+
+			<li>@Component
+				<ul>
+					<li>label, description, metatype</li>
+					<li>label = "&lt;Project Name&gt; - &lt;Service Name&gt;"
+						<ul><li>Example: "Acme Inc. - FooBar</li></ul></li>
+					<li>Use default of: immediate = false (unless runs autonomously)</li>
+				</ul>
+			</li>
+
+			<li>Consistent @Property declarations
+				<ul>
+					<li>Default value: DEFAULT_FOO</li>
+					<li>Property field: foo</li>
+					<li>Property name: PROP_FOO</li>
+				</ul>
+			</li>
+
+			<li>Use Sling PropertiesUtil to read @Properties</li>
+			<li>ResourceResolver/JCR Sessions are NOT thread safe
+				<ul><li>Do not persist in Service state</li></ul>
+			</li>
+
+			<li>Avoid leaking presentation into Services
+                <ul><li>Exceptions include JSON/XML endpoints</li></ul>
+            </li>
+
+			<li>Unit tested</li>
+		</ul>
+	</div>
+	<!-- END ITEM -->	
+
+
+	<!-- BEGIN ITEM -->
+	<div class="item">
+		<h3>CQ Component Checklist</h3>
+
+		<ul class="checkmark">
+			<li>Choose a presentation approach and stick with it!!!
+				<br/>Avoid mixing Scriptlets and EL/JSTL.
+			</li>
+			<li>Follows component organization</li>
+			<li>Follows naming conventions</li>
+			<li>i18n support for non-authorable text</li>
+			<li>XSS protect all ouput</li>
+			<li>Has jcr:title, jcr:description</li>
+			<li>Has cq:componentGroup
+				<ul><li>&quot;.hidden&quot; for fixed components</li></ul>
+			</li>
+			<li>Includes app's global.jsp</li>
+			<li>Handles &quot;unconfigured views&quot; (cq-*-placeholders)</li>
+			<li>Implements applicable Drop Targets</li>
+			<li>Business logic moved to OSGi Services</li>
+			<li>Analytics node defined 
+				<ul><li>cq:trackevents, cq:trackvars</li></ul>
+			</li>				
+			<li>Move inline CSS to clientlibs
+				<ul><li>Scope component-specific CSS with component-specific selector</li></ul>
+			</li>
+			<li>Move inline JS to clientlibs; 
+				<ul><li>Component instance params exposed via data-* attributes</li></ul>
+			</li>
+            <!--
+			<li>Inherit from base/basepage component
+				<ul><li>sling:resourceSuperType</li></ul>
+			</li>
+            -->
+		</ul>
+	</div>
+	<!-- END ITEM -->	
+
+	<!-- BEGIN ITEM -->
+	<div class="item">
+		<h3>OSGi Service Rankings</h3>
+
+		<ol>
+			<li>Higher service ranking wins
+				<ul><li>Constants.SERVICE_RANKING</li></ul>
+			</li>
+			<li>In a tie, the lowest Service ID wins (registered first)
+				<ul><li>Constants.SERVICE_ID</li></ul>
+			</li>		
+		</ol>
+	</div>
+	<!-- END ITEM -->	
+
+
+    <!-- BEGIN ITEM -->
+    <div class="item">
+        <h3>ACLs/Permissions</h3>
+
+        <ul>
+            <li>Permissions resolve using bottom-up approach; First applicable ancestory rep:policy is used.</li>
+            <li>Per-node collision precedence based on order in ACL list AND order of membership on Principal; Be careful.</li>
+            <li>User permissions override Group permssions</li>
+            <li>rep:policy nodes NOT replicated</li>
+        </ul>        
+    </div>
+    <!-- END ITEM -->   
+
+
+    <!-- BEGIN ITEM -->
+    <div class="item col2">
+        <h3>Reading and Writing to Nodes</h3>
+
+        <p>
+            <strong>Use 
+            <A href="http://sling.apache.org/apidocs/sling6/org/apache/sling/api/resource/Resource.html" target="_blank">Resources</a>/
+            <a href="http://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html" target="_blank"> ValueMaps</a> for READING data &ndash; Use Nodes for WRITING data</strong>
+        </p>
+
+<p>Getting a Resource and/or ValueMap</p>
+
+<code>
+Resource myResource = resourceResolver.resolve("/path/to/my/pet");
+ValueMap myProperties = myResource.adaptTo(ValueMap.class);
+
+// Default value of "Ira" if no property exists
+String pet = myProperties.get("name", "Ira"); 
+
+// No default value, but converts to String[]
+String[] petSounds = myProperties.get("sounds",  String[].class); 
+</code>
+
+<p>If you know the full path to a resource, use .getResource(..) instead of .resolve(..)</p>
+
+<code>
+Resource myResource = resourceResolver.getResource("/path/to/my/pet");
+</code>
+
+<p>You can get related nodes by...</p>
+
+<code>
+Resource parent = myResource.getParent();
+Resource descendant = myResource.getChild("great/grand/child");
+Iterator<Resource> children = myResource.listChildren();
+</code>
+
+
+<p>On CQ 5.6+..</p>
+
+<code>
+ModifiableValueMap props = myResource.adaptTo(ModifiableValueMap.class);
+props.put("color", "golden");
+props.remove("sound");
+
+props.save();
+</code>
+
+<p>
+Otherwise, write to a node, use <a href="http://dev.day.com/docs/en/cq/current/javadoc/com/day/cq/commons/jcr/JcrUtil.html" target="_blank">JcrUtil</a> or JCR apis.
+</p> 
+
+<code>
+Node node = myResource.adaptTo(Node.class);
+JcrUtil.setProperty(node, "myProperty", "some value!");
+node.getSession().save();
+</code>
+
+
+<p>
+    In some contexts you only have a Node; turn it into a Resource or ValueMap to read from it.
+</p>
+
+<code>
+Resource myResource = resourceResolver.getResource(node.getPath()) ;
+ValueMap myProperties = myResource.adaptTo(ValueMap.class);
+</code>
+    </div>
+    <!-- END ITEM -->   
+
+    <!-- BEGIN ITEM -->
+    <div class="item col1">
+        <h3>Default Content</h3>
+
+        <h4>Components</h4>
+
+        <p>Create a cq:template node under the cq:Component and populate with default properties or default resource tree</p>
+<code>
+/apps/.../demo[cq:Component]
+/apps/.../demo/cq:template[nt:unstructured]
+/apps/.../demo/cq:template@cat = "meow"
+/apps/.../demo/cq:template@sling:resourceType = ".../demo"
+</code>
+
+        <h4>Templates</h4>
+        <p>Create a jcr:content node under the cq:Template and populate with default properties or default resource tree</p>
+
+    </div>
+    <!-- END ITEM -->   
+
+	<!-- BEGIN ITEM -->
+	<div class="item col1">
+		<h3>Data Access/DTO</h3>
+
+		<p>
+			<strong>Use Resources/ValueMaps for READING data.</strong>
+		</p>
+
+		<p>
+			<strong>Use Nodes for WRITING data.</strong>
+		</p>
+
+		<h4>Augmenting Resource ValueMaps</h4>
+<code>
+ValueMap props1 = resource.adaptTo(ValueMap.class);
+
+Map<String, Object> map = props1.getMap();
+
+map.put("customKey", "custom data");
+
+ValueMap props2 = new ValueMapDecorator(map);
+</code>
+
+		<h4>Custom ValueMaps</h4>
+<code>
+Map<String, Object> map = new HashMap<String, Object>();
+
+map.put("customKey", "custom data");
+
+ValueMap props = new ValueMapDecorator(map);
+</code>
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col1">
+		<h3>Resource inclusion</h3>
+
+		<em>[..] indicates optional</em>
+
+		<h4>cq:include</h4>
+
+        <p>Path accepts 
+            <ol>
+                <li>'.' for current resource</li>
+                <li>relative or absolute resource path</li>
+                <li>optional selectors applied to 1 or 2</li>
+            </ol>
+        </p>
+
+<code>
+&lt;cq:include 
+    path="[/]some/resource[.s1.s2]"
+    resourceType="some/component"&gt;
+</code>
+
+		<h4>sling:include</h4>
+
+		<ul><li>If resourceType not set, sling:resourceType of target is used</li></ul>
+
+<code>
+&lt;sling:include 
+    path="[/]some/resource"
+    [resourceType="some/component"]&gt;
+    [addSelectors="s1.s2"]
+    [replaceSelectors="s3.s4"]
+    [replaceSuffix="foo/bar"]
+</code>
+
+	</div>
+	<!-- END ITEM -->
+
+</div>
+<!-- END CONVENTIONS -->
+
+
+<!-- BEGIN CODE SNIPPETS -->
+<h2 class="red" id="java-snippets">Java Snippets</h2>
+
+<div class="container">
+
+
+
+<!-- BEGIN ITEM -->
+	<div class="item col2">
+
+		<h3><a href="http://dev.day.com/docs/en/cq/current/javadoc/com/day/cq/commons/inherit/HierarchyNodeInheritanceValueMap.html" target="_blank">Inheritance ValueMaps</a></h3>
+
+		<p>
+		Use with hierarchy nodes such as CQ Pages, whose content is stored under jcr:content. 
+		</p>
+		<ol>
+			<li>First the property is searched inside the current resource</li>
+			<li>If not found, looks for at relative path under closest ancestors jcr:content node</li>
+			<li>Repeats until property is found or jcr root is reached</li>
+		</ol>
+<code>
+Resource resource = currentPage.getContentResource();
+InheritanceValueMap valueMap = new HierarchyNodeInheritanceValueMap(resource);
+String val = valueMap.getInherited("foo", String.class);
+</code>
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col2">
+
+		<h3>Get a ResourceResolver from a JCR Session</h3>
+		
+In AEM6+ it is better to use `loginService()` using custom Service Users instead of `loginAdministrative()`.		
+		
+<code>
+@Reference
+ResourceResolverFactory rrf;
+...
+Map&lt;String, Object> authInfo = new HashMap&lt;String, Object>();
+authInfo.put(JcrResourceConstants.AUTHENTICATION_INFO_SESSION, jcrSession);
+ResourceResolver rr = rrf.getResourceResolver(authInfo);
+</code>		
+
+	</div>
+	<!-- END ITEM -->
+
+
+	<!-- START ITEM -->
+	<div class="item col1">
+
+		<h3>Getting an OSGi Service</h3>
+
+		<h4>From a POJO? Don't! Pass in the service.</h4>
+
+		<h4>From a JSP</h4>
+<code>
+&lt;% 
+sling.getService(SampleService.class);
+sling.getServices(SampleService.class, "(uid=foo)"); 
+%>
+</code>
+
+		<h4>From an OSGi Service</h4>
+
+<code>
+@Reference(target = "(myprop=foo)")
+SampleService sampleService;
+</code>
+
+	</div>
+	<!-- END ITEM -->
+
+
+	<!-- BEGIN ITEM -->
+	<div class="item col2" >
+
+		<h3>Getting a ResourceResolver</h3>
+		<p>Whenever possible, use the ResourceResolver exposed via Sling and the SlingHttpServletRequest obj.</p>
+		<p>In code not associated with a HTTP Request (ex. workflow, events) you may retrieve a ResourceResolver for a specific user.<p>
+		<p><em>NOTE: Avoid using the admin ResourceResolver/Session whenever possible; Instead use a service account whose access is tailored to the use-case.</em></p>
+<code>
+@Reference
+SlingRepository slingRepository;
+...
+Session adminSession = repo.loginAdministrative(null);
+Session session = adminSession.impersonate(
+	new SimpleCredentials("userIdToImpersonate", new char[0]));
+adminSession.logout();
+...
+// When you're done, close the impersonate session
+session.logout();
+</code>		
+
+	</div>
+	<!-- END ITEM -->
+
+<!-- BEGIN ITEM -->
+    <div class="item col2" >
+
+        <h3>Creating CRX Login Tokens</h3>
+
+        <p>Create a login token for a specific user.</p>
+<code>
+@Reference
+private SlingRepository slingRepository;
+
+...
+
+// Typically in an @Activate method
+this.repositoryId = slingRepository.getDescriptor(REPO_DESC_CLUSTER_ID);
+if(StringUtils.isBlank(this.repositoryId)) { this.repositoryId = slingRepository.getDescriptor(REPO_DESC_ID); }
+if(StringUtils.isBlank(this.repositoryId)) { this.repositoryId = slingSettings.getSlingId(); }
+if(StringUtils.isBlank(this.repositoryId)) {
+    this.repositoryId = UUID.randomUUID().toString();
+    log.error("Unable to get Repository ID; falling back to a random UUID.");
+}
+
+// Create the login-token and set to the response
+TokenUtil.createCredentials(request, response, repository, userId, true);
+</code>
+
+    </div>
+    <!-- END ITEM -->
+
+
+	<!-- BEGIN ITEM -->
+	<div class="item col3">
+        <h3>Workflow</h3>
+
+		<h4>Start Workflow programmatically</h3>
+<code>
+@Reference
+WorkflowService wfService;
+...
+WorkflowSession wfSession = wfService.getWorkflowSession(jcrSession);	
+WorkflowModel model =  wfSession.getModel("/etc/workflow/models/x/jcr:content/model");
+WorkflowData data =  wfSession.newWorkflowData("JCR_PATH", payloadPath); 
+Workflow workflow = wfSession.startWorkflow(model, data);
+</code>		
+
+<hr/>
+
+<h4>CQ Workflow history</h3>
+
+<code>
+List&lt;HistoryItem> history = workflowSession.getHistory(workItem.getWorkflow());
+</code>
+
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col2">
+
+		<h3>Get user properties</h3>
+
+		<o><em>First method respects ClientContext user simulation</em></p>
+
+<code>
+UserProperties props = slingRequest.adaptTo(UserProperties.class);
+</code>	
+
+		<p>or</p>
+
+<code>
+@Reference
+private UserPropertiesService ups;
+...
+UserPropertiesManager upm = ups.createUserPropertiesManager(resolver);
+Authorizable authorizable = resolver.adaptTo(Authorizable.class);
+UserProperties properties = upm.getUserProperties(authorizable, "profile");
+</code>	
+
+		<p> or</p>
+
+<code>
+UserPropertiesManager upm = resolver.adaptTo(UserPropertiesManager.class);
+Authorizable authorizable = resolver.adaptTo(Authorizable.class);
+UserProperties props = upm.getUserProperties(authorizable, "profile");
+</code>	
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col2">
+
+		<h3>Sling Servlet definition</h3>
+
+		<h4>Sling Servlet annotations</h4>
+
+		<p>
+			Configurations <em>methods</em>, <em>resourceTypes</em>, <em>selectors</em>, <em>extensions</em> are <strong>IGNORED</strong> if <em>paths</em> is set.
+		</p>
+		
+		<p>
+			Methods defaults to <em>GET</em> if not specified.
+		</p>
+
+<code>
+@SlingServlet(
+        label = "Samples - Sling Servlet",
+        description = "...",
+        paths = {"/services/all-sample"},
+        methods = {"GET", "POST"}, 
+        resourceTypes = {}, 
+        selectors = {"print.a4"},
+        extensions = {"html", "htm"}  
+)
+</code>
+
+		<h4>Safe Methods Servlet (GET, HEAD)</h4>
+
+<code>
+public class SampleServlet extends SlingSafeMethodsServlet implements OptingServlet {
+    
+    @Override
+    protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response)
+            throws ServletException, IOException { ... }
+ 
+}
+</code>		
+
+		<h4>All Methods Servlet (GET, HEAD, POST, PUT, DELETE)</h4>
+
+
+<code>
+public class SampleServlet extends SlingAllMethodsServlet implements OptingServlet {
+
+    @Override
+    protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response)
+            throws ServletException, IOException { ... }
+
+}
+</code>		
+
+	</div>
+	<!-- END ITEM -->
+
+<!-- BEGIN ITEM -->
+	<div class="item col1">
+
+		<h3>Sling Filter definition</h3>
+
+		<ul>
+			<li>order: The smaller the number, the earlier in the Filter chain (can go negative); Defaults to Integer.MAX_VALUE which push it at the end of the chain</li>
+			<li>scope: SlingFilterScope.REQUEST, INCLUDE, FORWARD, ERROR, COMPONENT (REQUEST, INCLUDE, COMPONENT)
+
+		</ul>
+
+<code>
+@SlingFilter(
+        label = "Samples - Sling Filter",
+        description = "...",
+        metatype = true,
+        generateComponent = true, 
+        generateService = true,
+        order = 0, 
+        scope = SlingFilterScope.REQUEST)
+
+public class SampleSlingFilter 
+	implements javax.servlet.Filter {
+... 
+}
+</code>		
+
+	</div>
+	<!-- END ITEM -->	
+
+</div>
+<!-- END CODE SNIPPETS -->
+
+
+<!-- BEGIN JS CODE SNIPPETS  -->
+<h2 class="yellow" id="javascript-snippets">JavaScript Snippets</h2>
+
+<div class="container">
+
+	<!-- BEGIN ITEM -->
+	<div class="item col2">
+
+		<h3>Add action button to sidekick</h3>
+
+<p>
+	Add the following to a clientlib with categories = [cq.widgets]
+</p>
+
+<code>
+CQ.Ext.namespace("app", "app.sidekick", "app.sidekick.actions");
+
+app.sidekick.actions.MyButton = {
+    "context": CQ.wcm.Sidekick.PAGE,
+              /*
+                 CQ.wcm.Sidekick.PAGE
+                 CQ.wcm.Sidekick.COMPONENTS
+                 CQ.wcm.Sidekick.WORKFLOW
+                 CQ.wcm.Sidekick.VERSIONING
+                 CQ.wcm.Sidekick.INFO
+                */
+    "text": "My Button",
+    "handler": function() {
+        alert("Do something!");
+    }
+};
+
+// Add to bottom of list
+CQ.wcm.Sidekick.DEFAULT_ACTIONS.push(app.sidekick.actions.MyButton);
+
+// Insert into list
+CQ.wcm.Sidekick.DEFAULT_ACTIONS.splice(2, app.sidekick.actions.MyButton);
+</code>		
+
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col1">
+
+		<h3><a href="http://dev.day.com/docs/en/cq/current/widgets-api/index.html?class=CQ.WCM" target="_blank">WCM APIs</a></h3>
+
+		<p>
+			<em>To be used on CQ Author</em>
+		</p>
+
+
+<code>
+var [CQ.WCM.Page] page =
+	CQ.WCM.getPage('/content/path/to/page');
+
+CQ.WCM.getContentUrl();
+
+CQ.WCM.isEditMode();
+CQ.WCM.isDesignMode();
+CQ.WCM.isPreviewMode();
+CQ.WCM.setMode( CQ.WCM.MODE_EDIT | CQ.WCM.MODE_DESIGN | CQ.WCM.MODE_PREVIEW );
+</code>
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col1">
+
+		<h3>i18n</h3>
+
+<code>
+var userName = "David";
+CQ.I18n.getMessage("Hello from {0}", userName);
+</code>		
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col1">
+
+		<h3><a href="http://dev.day.com/docs/en/cq/current/widgets-api/index.html?class=CQ.shared.HTTP" target="_blank">URI APIs</a></h3>
+
+		<h4>Current URI</h4>
+
+<code>
+CQ.shared.HTTP.getPath()
+CQ.shared.HTTP.getSelectors()
+CQ.shared.HTTP.getSuffix()
+CQ.shared.HTTP.getExtension()
+</code>
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col2">
+
+		<h3><a href="http://dev.day.com/docs/en/cq/current/widgets-api/index.html?class=CQ.shared.HTTP" target="_blank">HTTP/AJAX APIs</a></h3>
+
+		<p>
+			<em>For synchronous HTTP Requests: Do not pass in the Callback function</em>
+		</p>
+
+		<h4>GET Request</h4>
+
+<code>
+var suppressForbiddenCheck = true;
+
+CQ.shared.HTTP.get('/content/geometrixx/en.json', 
+	function(options, success, response) { 
+		console.log(options); // Request options
+		console.log(success); // true/false
+		console.log(response); // Response obj
+
+		if(success) {
+			// eval turns JSON response to JS Obj
+			var myPage = CQ.shared.HTTP.eval(response);
+			console.log(myPage['jcr:primaryType'])
+		}
+	}, this, suppressForbiddenCheck);
+</code>
+
+		<h4>POST Request</h4>
+
+<code>
+var suppressErrorMsg = false;
+var suppressForbiddenCheck = true;
+
+var data = {
+	city: 'Charlestown',
+	state: 'MA',
+}
+
+CQ.shared.HTTP.post('/home/users/a/admin/profile/me', 
+	function(options, success, xhr, response) { 
+		console.log(options); // Request options
+		console.log(success); // true/false
+		console.log(xhr); // w3c xhr
+		console.log(response); // Response
+
+		if(success) {
+			console.log('Profile Location Updated!');
+		}
+	}, data, this, supressErrorMsg, supressForbiddenCheck);
+</code>
+	</div>
+	<!-- END ITEM -->
+
+
+
+	<!-- BEGIN ITEM -->
+	<div class="item col1">
+
+		<h3><a href="http://dev.day.com/docs/en/cq/current/widgets-api/index.html?class=CQ.shared.XSS" target="_blank">XSS Protection</a></h3>
+
+<code>
+var unsafe = '&lt;script>alert("foo")&lt;/script>';
+CQ.shared.XSS.getXSSValue(unsafe);
+</code>
+	</div>
+	<!-- END ITEM -->
+
+	<!-- BEGIN ITEM -->
+	<div class="item col2">
+
+		<h3>ClientContext</h3>
+
+		<p>
+			Parameter format: <em>storeName/propertyName</em>
+		</p>
+
+<code>
+ClientContext.get('profile/authorizableId');
+</code>
+
+		<p>
+			Set and retrieve attributes. (Set auto-persists to ClientContext Store)
+		</p>
+
+<code>
+ClientContext.set('profile/initials', 'DG');
+ClientContext.get('profile/initials'); //=> 'DG'
+</code>
+
+		<p>
+			Persist Store data to the defined persistance layer (usually Cookie)
+		</p>
+
+<code>
+ClientContext.persist('profile');
+</code>
+
+		<p>
+			Reset ClientContext store to its 'init' state
+		</p>
+
+<code>
+ClientContext.reset();
+</code>
+
+		<p>
+			Remove all properties/values from ClientContext Store
+		</p>
+
+<code>
+ClientContext.clear();
+</code>
+
+		<p>
+			ClientContext Stores can be interacted with directly. This is helpful for custom Stores that implement custom APIs.
+		</p>
+
+<code>
+CQ_Analytics.ProfileDataMgr.getData() //=> {authorizableId : "anonymous", etc : '...' }
+
+CQ_Analytics.ProfileDataMgr.getProperty('authorizableId')
+
+// Persists automatically
+CQ_Analytics.ProfileDataMgr.setProperty('foo', 'bar')
+CQ_Analytics.ProfileDataMgr.getProperty('foo') //=> 'bar'
+</code>
+
+        <p>
+            Wait for a ClientContext Store to load before using it.
+        </p>
+
+<code>
+CQ_Analytics.ClientContextUtils.onStoreInitialized("profile",function(store) {  
+    console.log(ClientContext.get('profile/authorizableId'));
+}, true);
+</code>
+
+	</div>
+	<!-- END ITEM -->
+
+</div>
+<!-- END JS CODE SNIPPETS  -->
+
+
+<!-- BEGIN CODE TEMPLATES  -->
+<h2 class="blue" id="code-templates">Code Templates</h2>
+
+<div class="container">
+
+	<div class="item col3">
+
+		<h3>OSGi Service Declaration</h3>
+
+<code>
+@Component(
+	label = "Service name",
+	description = "Service description",
+	metatype = true,
+	immediate = false)
+@Properties({
+    @Property(
+            label = "My Label"
+            name = "property-name",
+            value = "my value",
+            propertyPrivate = true
+    )
+})
+@Service
+public class SampleServiceImpl implements SampleService {
+    private final Logger log = 
+    	LoggerFactory.getLogger(this.getClass());
+
+    /**
+     * OSGi Properties *
+     */
+    private static final String DEFAULT_SAMPLE = "hello!";
+    private String mySample = DEFAULT_SAMPLE;
+    @Property(label = "Prop name", 
+    		  description = "Prop description", 
+    		  value = DEFAULT_SAMPLE)
+    public static final String PROP_SAMPLE = "sample";
+
+    ...
+   
+    @Activate
+    protected void activate(final Map&lt;String, String> config) { 
+        mySample = PropertiesUtil.toString(config.get(PROP_SAMPLE), DEFAULT_SAMPLE);
+    }
+
+    @Deactivate
+    protected void deactivate(final Map&lt;String, String> config) { }
+}
+</code>
+
+	</div>
+	<!-- END ITEM -->
+
+
+	<!-- BEGIN ITEM -->
+	<div class="item col3">
+
+		<h3>CQ Component JSP</h3>
+
+<code>
+&lt;%@include file="/apps/../global/global.jsp"%>&lt;%
+%>&lt;%@page session="false" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
+          import="com.site.components.SampleComponent"%>&lt;%
+/** 
+ * BEGIN COMPONENT INITIALIZATION; 
+ * MAJORITY OF LOGIC SHOULD BE ABSTRACTED INTO THE OSGi SERVICE LAYER 
+ **/
+	final SampleComponent c = sling.getService(SampleComponent.class);
+	final List&lt;String> list = c.doSomething(slingRequest);
+
+/** BEGIN MARKUP; MINIMAL LOGIC AFTER THIS POINT **/
+%>
+
+&lt;%-- Use cq:text to display values from the resource as it supports Diffing --%>
+&ltcq:text property="jcr:title" tagName="h2"/>
+
+&lt;%-- Any hardcoded values, including default values should be passed through
+	 i18n.get(..) or i18n.var(..) for future localization compatability --%>
+&lt;h3>&lt;%= i18n.get("My List") %>&lt;/h3>
+
+&lt;ul class="my-list">
+&lt;% for(final String item : list) { %>
+	&lt;li>&lt;%= item %>&lt;/li>
+&lt;%= 
+&lt;% } %>
+&lt;/ul>
+</code>
+
+	</div>
+	<!-- END ITEM -->
+
+
+	<!-- BEGIN ITEM -->
+	<div class="item col3">
+		<h3>CQ Component JavaScript</h3>
+		<p>
+			Supporting JavaScript should be unobtrusive (not in the Component JSP), but rather maintained and served from a clientlib.
+		</p>
+
+		<p>
+			Component instance specific data or parameters can be written to the component as data-* attributes, and then read by the supporting JavaScript.
+		</p>
+
+<code>
+$(function() { 
+    $('.js-myapp-components-content-sample .my-link').on('click', function() { 
+	var $this = $(this);
+
+	var componentName = 
+		$(this).data('component-name');
+
+	var alertMsg = $(this).data('alert-message');
+
+	alert(componentName + ': ' + alertMsg);
+    });
+});
+</code>
+	</div>
+	<!-- END ITEM -->
+
+
+
+    <!-- BEGIN ITEM -->
+    <div class="item col3">
+        <h3>.content.xml</h3>
+<code>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"/>
+    </code>
+    </div>
+    <!-- END ITEM -->
+
+
+
+	<!-- BEGIN ITEM -->
+	<div class="item col3">
+
+		<h3>CQ Component Dialog</h3>
+
+<code>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="0"
+    title="Component Title"
+    xtype="tabpanel">
+    &lt;items jcr:primaryType="cq:WidgetCollection">
+        &lt;tab1
+            jcr:primaryType="cq:Widget"
+            title="Tab 1"
+            xtype="panel">
+            &lt;items jcr:primaryType="cq:WidgetCollection">
+
+            	&lt;checkbox
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Checkbox"
+                    fieldDescription=""
+                    defaultValue="false"
+                    inputValue="true"
+                    name="./checkbox"
+                    type="checkbox"
+                    xtype="selection"/>
+                
+                &lt;cqinclude
+                    jcr:primaryType="cq:Widget"
+                    path="/path/to/other/dialog/inputs.infinity.json"
+                    xtype="cqinclude"/>
+
+                &lt;datetime
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Date Time"
+                    fieldDescription=""
+                    name="./dateTime"
+                    allowBlank="{Boolean}true"
+                    xtype="datetime"/>
+
+                &lt;dialogfieldset
+                    jcr:primaryType="cq:Widget"
+                    collapsed="{Boolean}true"
+                    collapsible="{Boolean}true"
+                    title="Fieldset Title"
+                    xtype="dialogfieldset&gt;
+                        &lt;items
+                        	jcr:primaryType="cq:WidgetCollection">
+                        &lt;/items>
+				&lt;/dialogfieldset>
+
+                &lt;displayfield
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    hideLabel="{Boolean}true"
+                    hidden="{Boolean}false"
+                    value="Escaped HTML or plain-text to display"
+                    xtype="displayfield"/>
+
+                &lt;dropdown
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Dropdown"
+                    fieldDescription=""                    
+                    defaultValue=""
+                    name="./dropdown"
+                    type="select"
+                    xtype="selection">
+                    &lt;options jcr:primaryType="cq:WidgetCollection">
+                        &lt;children
+                            jcr:primaryType="nt:unstructured"
+                            text="Option 1"
+                            value="option1"/>
+                        &lt;descendants
+                            jcr:primaryType="nt:unstructured"
+                            text="Option 2"
+                            value="option2"/>
+                    &lt;/options>
+                &lt;/dropdown> 
+
+                &lt;html5smartfile
+                    jcr:primaryType="cq:Widget"
+                    autoUploadDelay="1"
+                    ddGroups="[media]"                    
+                    fieldLabel="HTML 5 Smart File"
+                    fieldDescription=""
+                    fileNameParameter="./fileName"
+                    fileReferenceParameter="./fileReference"					                   
+                    name="./file"
+                    xtype="html5smartfile"/>
+
+                &lt;inlinetextfield
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Inline Text Field"
+                    fieldDescription=""
+                    name="./inlineTextField"
+                    xtype="inlinetextfield"/>
+
+                &lt;ownerdraw
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Owner Draw"
+                    fieldDescription=""
+                    html="HTML fragment to use as the owner draw's body content"
+                    name="./ownerDraw"
+                    url="The URL to retrieve the HTML code from. Replaces HTML defined in html."
+                    xtype="ownerdraw"/>
+
+                &lt;paragraphreference
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Paragraph Reference"
+                    fieldDescription=""
+                    name="./paragraphReference"
+                    xtype="paragraphreference"/>
+
+                &lt;multifield
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Multifield"
+                    fieldDescription="Click the '+' to add a new page"
+                    name="./multifield"
+                    xtype="multifield">
+                    &lt;fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="155"
+                        xtype="pathfield"/>
+                &lt;/multifield> 
+
+                &lt;pathfield
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Pathfield"
+                    fieldDescription="Drop files or pages from the Content Finder"
+                    name="./pathfield"
+                    rootPath="/content"
+                    suffix=".html"
+                    showTitlesInTree="{Boolean}true"
+                    typeAhead="{Boolean}true"                    
+                    xtype="pathfield"/>
+
+                 &lt;radiobuttons
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Radio button"
+                    fieldDescription="Field Description"
+                    name="./radioButton
+                    defaultValue="option1"
+                    type="radio"
+                    xtype="selection">
+                    &lt;options jcr:primaryType="cq:WidgetCollection">
+                        &lt;option1
+                            jcr:primaryType="nt:unstructured"
+                            text="Option 1"
+                            value="option1"/>
+                        &lt;option2
+                            jcr:primaryType="nt:unstructured"
+                            text="Option 2"
+                            value="option2"/>
+                    &lt;/options>
+                &lt;/radiobuttons>
+
+                &lt;resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./sling:resourceType"
+                    value="some/resource/type"
+                    xtype="hidden"/> 
+
+            	&lt;richtext
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Rich Text"
+                    fieldDescription=""
+                    defaultValue=""
+                    hideLabel="{Boolean}true"
+                    name="./richText"
+                    xtype="richtext">
+                    &lt;rtePlugins jcr:primaryType="nt:unstructured">
+                        &lt;table
+                            jcr:primaryType="nt:unstructured"
+                            features="*"/>
+                    &lt;/rtePlugins>
+                &lt;/richtext>   
+
+            	&lt;searchfield
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription=""
+                    fieldLabel="Search Field"
+                    name="./searchField"
+                    url="The URL where the search request is sent to (defaults to &quot;/content.search.json&quot;)"
+                    xtype="searchfield"/>
+
+                &lt;sizefield
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Sizefield"
+                    fieldDescription=""                    
+                    heightParameter="./height"
+                    widthParameter="./width"
+                    heightSuffix="px"
+                    widthSuffix="px"
+                    xtype="sizefield"/>  
+
+                &lt;textarea
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Textarea"
+                    name="./textarea"
+                    grow="{Boolean}true"
+                    xtype="textarea"/>
+
+                &lt;textfield
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Textfield"
+                    name="./textfield"
+                    xtype="textfield"/>
+
+            &lt;/items>
+        &lt;/tab1>        
+        &lt;tab2
+            jcr:primaryType="cq:Widget"
+            title="Image"
+            allowUpload="{Boolean}false"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            xtype="html5smartimage"/>       
+    &lt;/items>
+&lt;/jcr:root>
+</code>
+	</div>
+	<!-- END ITEM -->
+
+
+    <!-- BEGIN ITEM -->
+    <div class="item col3">
+        <h3>http vhost-config.conf</h3>
+<code>
+
+&lt;VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    ServerName mysite.com
+
+    DocumentRoot /opt/aem/cache
+    &lt;Directory /opt/aem/cache>
+        Options FollowSymLinks
+        AllowOverride None
+    &lt;/Directory>
+
+    &lt;IfModule disp_apache2.c>
+        SetHandler dispatcher-handler
+    &lt;/IfModule>
+
+    # BEGIN REWRITE RULES 
+    # Rewrite rules will pre-pend the AEM path prefix to requests to content pages
+
+    RewriteEngine On
+
+    # Prevent other page content trees from being served from this domain (dam and campaigns are OK) 
+    RewriteCond %{REQUEST_URI} ^/content
+    RewriteCond %{REQUEST_URI} !^/content/campaigns
+    RewriteCond %{REQUEST_URI} !^/content/dam
+    RewriteRule !^/content/mysite/en - [R=404,L,NC]
+
+    # Home page re-writing
+    # mysite.com/ or mysite.com/home > Home page
+    RewriteCond %{REQUEST_URI} ^/$
+    RewriteCond %{REQUEST_URI} ^home$
+    RewriteRule ^/(.*)$ /content/mysite/en.html [PT,L]
+
+    # Ignore requests to "known" AEM root paths, and prefix all others with the proper AEM prefix
+    RewriteCond %{REQUEST_URI} !^/apps
+    RewriteCond %{REQUEST_URI} !^/content
+    RewriteCond %{REQUEST_URI} !^/etc
+    RewriteCond %{REQUEST_URI} !^/home
+    RewriteCond %{REQUEST_URI} !^/libs
+    RewriteCond %{REQUEST_URI} !^/tmp
+    RewriteCond %{REQUEST_URI} !^/var
+    RewriteRule ^/(.*)$ /content/mysite/en/$1 [PT,L]
+
+    LogLevel warn
+    CustomLog ${APACHE_LOG_DIR}/access-mysite.com.log combined
+    ErrorLog ${APACHE_LOG_DIR}/error-mysite.com.log
+
+    # Shamlessly stolen from: http://www.cognifide.com/blogs/cq/multidomain-cq-mappings-and-apache-configuration/
+</VirtualHost>
+
+
+</code>
+    </div>
+    <!-- END ITEM -->
+
+
+
+</div>
+<!-- END CODE SKELETONS  -->
+
+</div>
+
+
+<!-- Masonry -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/2.1.08/jquery.masonry.min.js"></script>
+
+<script>
+
+$(function() {
+	$menu = $('.menu');
+
+	$('h2').each(function() { 
+		var $this = $(this);
+
+		var $link = $('<a href="#' +  $this.attr('id') + '">' + $this.text() + '</a>');	
+		$link.addClass($this.attr('class'));
+
+		$menu.append($link);
+
+	});
+});
+
+$(function() {
+	$('.container').masonry({
+	  itemSelector: '.item',
+	  columnWidth: 380,
+	  isAnimated: false	
+	});
+
+
+	$('.item.col2,.item.col3').each(function() {
+		var $item = $(this);
+		var MAX_HEIGHT = 200;
+
+		if($item.height() <= MAX_HEIGHT + 33) {
+			return;
+		}
+
+		var $bar = $('<a href="#" class="expand-toggle">Expand / Collapse</a>');	
+		$bar.click(function() { 
+			if($item.hasClass('open')) {
+				/* Close it */
+				$item.removeClass('open')
+				$item.addClass('closed');
+			} else {
+				/* Open it */
+				$item.removeClass('closed')
+				$item.addClass('open');
+			} 
+
+			$('.container').masonry('reload');
+	
+			
+			return false;
+		});
+
+		$item.addClass('closed');
+		$item.addClass('has-toggle-bar');
+		$item.append($bar);
+	});
+
+	$('.container').masonry('reload');
+});
+
+</script>
+</body>
+</html>	
