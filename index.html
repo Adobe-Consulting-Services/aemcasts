@@ -10,7 +10,7 @@ id: home
     <div class="episode" data-tags="{{ post.tags }}">
         <h3><span class="episode-number">#{{ post.number }}</span> {{ post.title }}</h3>
         <p class="description">{{ post.description }}</p>
-        <a href="{{ post.url }}" class="push-left btn btn-default">Watch this episode</a>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="push-left btn btn-default">Watch this episode</a>
     </div>
   </div>
 </div>

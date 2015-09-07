@@ -3,12 +3,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://adobe-consulting-services.github.io/aemcasts/qr.html</loc>
+		<loc>http://adobe-consulting-services.github.io{{ site.baseurl }}/qr.html</loc>
 	</url>
 
     {% for post in site.posts %}
     <url>
-        <loc>http://adobe-consulting-services.github.io/aemcasts{{ post.url | remove: 'index.html' }}</loc>
+        <loc>http://adobe-consulting-services.github.io{{ site.baseurl }}{{ post.url | remove: 'index.html' }}</loc>
     </url>
     {% endfor %}
 
@@ -16,7 +16,7 @@
     {% if page.layout != nil %}
     {% if page.layout != 'feed' %}
     <url>
-        <loc>http://adobe-consulting-services.github.io/aemcasts{{ page.url | remove: 'index.html' }}</loc>
+        <loc>http://adobe-consulting-services.github.io{{ site.baseurl }}{{ page.url | remove: 'index.html' }}</loc>
     </url>
     {% endif %}
     {% endif %}
